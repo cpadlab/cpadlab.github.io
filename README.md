@@ -1,16 +1,15 @@
-### Hi there 👋, 14wual
-
-
+### Hi there 👋, 14wual 
 ```
 Estudiante de grado medio en Sistemas Microinformáticos y Redes (SMRA)
 ```
 
-### 🚀 Conoceme
+<div>
+  <h3>🚀 Conoceme </h3>
 
-https://www.linkedin.com/in/cpadilla10/
-https://twitter.com/codewual
-https://www.youtube.com/channel/UC0B3mTwPPdKPEwLerauEtdg
-
+https://www.linkedin.com/in/cpadilla10/ <br>
+https://twitter.com/codewual <br>
+https://www.youtube.com/channel/UC0B3mTwPPdKPEwLerauEtdg <br>
+</div>
 
 <!--
 **14wual/14wual** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
