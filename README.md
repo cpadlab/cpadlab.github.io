@@ -2,6 +2,10 @@
 ```
 Estudiante de grado medio en Sistemas Microinformáticos y Redes (SMRA)
 ```
+<img src="https://github-readme-stats.vercel.app/api?username=14wual&show_icons=true&theme=gotham" alt="github stats" width="45%" align="left"/>
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=14wual&layout=compact&theme=gotham" width="45%" align="right)
+
 
 <div>
   <h3>🚀 Conoceme </h3>
