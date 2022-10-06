@@ -4,6 +4,14 @@
 ```
 Estudiante de grado medio en Sistemas Microinformáticos y Redes (SMRA)
 ```
+
+### 🚀 Conoceme
+
+https://www.linkedin.com/in/cpadilla10/
+https://twitter.com/codewual
+https://www.youtube.com/channel/UC0B3mTwPPdKPEwLerauEtdg
+
+
 <!--
 **14wual/14wual** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
