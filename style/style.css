@@ -1,0 +1,130 @@
+* {
+overflow:inherit;
+}
+
+.ascii-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.content {
+    margin: auto;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+body {
+    background: #24283b;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;}
+
+a {
+    text-decoration: none;
+    color: #9ec255;}
+
+a:hover{text-decoration: underline;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 1% 90%;
+    display: none;}
+
+#pages-cbx, #about-cbx {display: none;}
+
+.navbar { 
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 30px;}
+
+.separator {
+    margin-left: 70px;
+    border-left: 1px solid #34495e  ;
+    height: 100%;}
+
+.separator2 {
+    border: 1px solid #34495e  ;
+    width: 100%;}
+  
+li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 0.5em;}
+
+li i {margin-right: 0.5em;}
+  
+.navbar label:hover {cursor: pointer;}  
+
+.see_more:hover {
+  position: relative;
+  cursor: pointer;
+  text-decoration: underline 1px solid #61cfff;}
+
+#show-content-1, #show-content-2{display: none;}
+
+.nav-area {
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.nav-area a {
+    font-family: 'Roboto', sans-serif;
+}
+.nav-area:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.nav-area ul {
+	list-style: none;
+	margin: 0;
+}
+.nav-area>ul>li {
+	float: left;
+	position: relative;
+}
+.nav-area ul li a {
+	text-decoration: none;
+	color: #a9b1d1;
+	padding: 10px 20px;
+	display: block;
+}
+.nav-area ul li:hover a {
+	background: #24283b;
+}
+.nav-area ul ul {
+	position: absolute;
+	padding: 0;
+	min-width: 160px;
+	display: none;
+	top: 100%;
+	left: 0;
+}
+.nav-area ul li:hover>ul {
+	display: block;
+}
+.nav-area ul ul li:hover a {
+	background: #2f3549;
+}
+.nav-area ul ul li {
+	position: relative;
+}
+.nav-area ul ul ul {
+	top: 0;
+	left: 100%;
+}
+.nav-area ul ul ul li:hover a {
+	background: #2f3549;
+}
+
+.nav-area label {
+    float: right;
+    margin-right: 30px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    color: #a9b1d1;
+    margin-top: 1%;
+}
