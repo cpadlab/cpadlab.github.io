@@ -169,3 +169,25 @@ pre {
       bottom: 0;
     }
   }
+
+.mobile {
+    color: #fafbfd;
+    font-size: 50px;
+    display: none;
+}
+
+.mobile .home-links-button-mob a{
+    color: #fafbfd;
+    text-decoration: none;
+}
+
+@media (max-width: 483px) {
+    #home, .icon-button, #bar {
+      display: none;
+    }
+    
+    .mobile {
+      display: block;
+    }
+   
+  }
