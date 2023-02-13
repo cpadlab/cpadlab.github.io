@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>14wual/proyects</title>
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <a href="../index.html" class="home-button">Home</a>
+    <a hrefindex.html" class="home-button">Home</a>
     <button class="icon-button" id="open-bar-button"><i class="fi fi-br-menu-burger icon"></i></button>
 
     <div id="bar" class="bar">
