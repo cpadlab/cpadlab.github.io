@@ -1,3 +1,14 @@
+/*
+# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
+# ██║    ██║██║   ██║██╔══██╗██║     
+# ██║ █╗ ██║██║   ██║███████║██║     (code by wual)
+# ██║███╗██║██║   ██║██╔══██║██║     
+# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
+#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+# See proyect >> https://github.com/14wual/14wual.github.io
+# Follow me >> https://twitter.com/codewual
+*/
 const selectBTN = document.getElementById("install-btn");
 const install_guide = document.getElementById("install-guide");
 const closeBTN = document.getElementById("close-install-btn");
