@@ -1,0 +1,17 @@
+body {background: #333333;font-family: 'Roboto', sans-serif;}
+.bar {
+    text-align: center;
+}
+.buttons-links {
+    font-size: 30px;
+}
+.buttons-links a {
+    display: block;
+    margin: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+details {
+    color: #fff;
+    margin-top: 15px;
+}
