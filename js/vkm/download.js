@@ -16,7 +16,7 @@ closeBTN.addEventListener("click", function() {
     blackoutDiv.style.display = "none"
 });
 
-const helpfileUrl = 'http://14wual.github.io/files/vkm/install-help.pdf';
+const helpfileUrl = '../files/vkm/install-help.pdf';
 const helpBtn = document.getElementById('help-install-btn');
 helpBtn.addEventListener('click', function() {
   const xhr = new XMLHttpRequest();
