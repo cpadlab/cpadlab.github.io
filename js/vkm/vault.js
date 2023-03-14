@@ -213,13 +213,16 @@ function startVault(){
             const div7 = document.createElement('div');
             div7.setAttribute('class', 'sett-btns');
 
+            const black = document.getElementById("blackout");
+            black.style.display = "block"
+
             const button1 = document.createElement('button');
             button1.id = 'hidden-form-btn';
             button1.innerHTML = 'Cancel';
             button1.addEventListener("click", (event) => {
                 event.preventDefault();
                 div2.style.display = 'none';
-                blackoutDiv.style.display = 'none';
+                black.style.display = "none"
             })
 
             const button2 = document.createElement('button');
