@@ -5,83 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-pre {
-    padding: 10px;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: auto;
-    max-height: 200px;
-    display: flex;
-    flex-direction: column;
-  }
-
-.icon-button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    display: inline-block;
-    background-color: rgba(0, 0,0, 0);
-    border: 0;
-    color: #fafbfd;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-.icon {
-    font-size: 20px;
-    vertical-align: middle;
-  }
-  
-#copy-button {
-    padding: 10px 15px;
-    background-color: #337ab7;
-    color: #fafbfd;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    align-self: flex-end;
-  }
-
-#home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    min-width: 100%;
-  }
-  
-.wual-banner {
-    text-align: left;
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: intro-animation 2s ease-in-out forwards;
-    cursor: pointer;}
-  
-#ascii-banner {
-    font-size: 20px;
-    color: #fafbfd;
-    display: inline-block;
-    background-color: #333333;
-    border: 0;
-    padding: 20px;
-    border-radius: 5px;}
-  
-@keyframes intro-animation {
-    from {
-      top: -100%;
-    }
-    to {
-      top: 25%;
-    }
-  }
-  
 .bar {
     display: none;
     position: fixed;
@@ -143,31 +66,7 @@ pre {
     cursor: pointer;
   }
 
-.home-links-button{
-    position: absolute;
-    bottom: 0;
-    margin: 15px;
-    animation:outro-animation 2s ease-in-out forwards;
-}
 
-.home-links-button a{
-    font-size: 30px;
-    text-decoration: none;
-    margin-right: 10px;
-    padding: 15px;
-    background: rgba(0, 0,0, 0);
-    color: #fafbfd;
-    border-radius: 5px;
-}
-
-@keyframes outro-animation {
-    from {
-      bottom: -100%;
-    }
-    to {
-      bottom: 0;
-    }
-  }
 
 .mobile {
     color: #fafbfd;
