@@ -9,15 +9,10 @@
 # See proyect >> https://github.com/14wual/14wual.github.io
 # Follow me >> https://twitter.com/codewual
 */
-if (document.title === "Github") {
-    window.location.href = "https://github.com/14wual";
-}
-else if (document.title === "Twitter") {
-    window.location.href = "https://twitter.com/codewual";
-}
-else if (document.title === "YouTube") {
-    window.location.href = "https://youtube.com/@wual";
-}
-else if (document.title === "LinkedIn") {
-    window.location.href = "https://www.linkedin.com/in/cpadilla10";
-}
+const select = document.getElementById("categories-selector");
+
+select.addEventListener("change", function() {
+    const selectedOption = select.value;
+    const category_alert = "Category: " + selectedOption;
+    window.alert(category_alert)
+});

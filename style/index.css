@@ -1,3 +1,14 @@
+/*
+# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
+# ██║    ██║██║   ██║██╔══██╗██║     
+# ██║ █╗ ██║██║   ██║███████║██║     (code by wual)
+# ██║███╗██║██║   ██║██╔══██║██║     
+# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
+#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+# See proyect >> https://github.com/14wual/14wual.github.io
+# Follow me >> https://twitter.com/codewual
+*/
 body {overflow: hidden;}
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {background: #333333;font-family: 'Roboto', sans-serif;}
@@ -12,4 +23,5 @@ pre {padding: 10px;background-color: #f8f8f8;border: 1px solid #ddd;border-radiu
 .home-links-button{cursor: pointer;;position: absolute;bottom: 0;margin: 15px;animation:outro-animation 2s ease-in-out forwards;}
 .home-links-button a{font-size: 30px;text-decoration: none;margin-right: 10px;padding: 15px;background: rgba(0, 0,0, 0);color: #fafbfd;border-radius: 5px;}
 @keyframes outro-animation {from {bottom: -100%;}to {bottom: 0;}}
+
   

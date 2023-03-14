@@ -9,15 +9,15 @@
 # See proyect >> https://github.com/14wual/14wual.github.io
 # Follow me >> https://twitter.com/codewual
 */
-if (document.title === "Github") {
-    window.location.href = "https://github.com/14wual";
-}
-else if (document.title === "Twitter") {
-    window.location.href = "https://twitter.com/codewual";
-}
-else if (document.title === "YouTube") {
-    window.location.href = "https://youtube.com/@wual";
-}
-else if (document.title === "LinkedIn") {
-    window.location.href = "https://www.linkedin.com/in/cpadilla10";
-}
+const homeButton = document.getElementById("go-home-mobile");
+const vkmButton = document.getElementById("go-download-VKM");
+
+btnSettings.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.location.href = "http://14wual.github.io/";
+})
+
+vkmButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.location.href = "http://14wual.github.io/pages/vkm.html";
+})

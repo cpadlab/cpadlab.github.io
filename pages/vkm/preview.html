@@ -1,0 +1,142 @@
+<!--
+# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
+# ██║    ██║██║   ██║██╔══██╗██║     
+# ██║ █╗ ██║██║   ██║███████║██║     (code by wual)
+# ██║███╗██║██║   ██║██╔══██║██║     
+# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
+#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+# See proyect >> https://github.com/14wual/14wual.github.io
+# Follow me >> https://twitter.com/codewual
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14wual/vkm-preview</title>
+
+    <link rel="stylesheet" href="../../style/vkm/delete.css">
+    <link rel="stylesheet" href="../../style/vkm/navbar.css">
+    <link rel="stylesheet" href="../../style/vkm/preview.css">
+    <link rel="stylesheet" href="../../style/vkm/sett-panel.css">
+    <link rel="stylesheet" href="../../style/vkm/vault.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body>
+
+    <div class="navbar-preview">
+        <a href="../../index.html" target="_BLANK">Home</a>
+        <a href="../vkm.html" target="_BLANK">VKM</a>
+        <a href="download.html" target="_BLANK">Download</a>
+    </div>
+
+    <button class="icon-button" id="open-bar-button" onclick="execMenu()">
+        <i class="fi fi-br-menu-burger icon"></i>
+    </button>
+
+    <script>
+        function execMenu(){
+            var script = document.createElement('script');
+            script.src = '../../js/menu.js';
+            document.head.appendChild(script);
+        }
+    </script>
+
+    <div class="preview" id="preview">
+        <div class="navbar">
+	
+            <div class="logo">
+                <h2>WKM</h2>
+            </div>        
+            <ul class="links">
+                <li><a href="../vkm.html">Home</a></li>
+                <li><a href="generate-password.html">Generate Password</a></li>
+                <li><a href="https://github.com/14wual/vkm/" target="_BLANK">Support Us</a></li>
+                <li class="sub-nav-h"><a href="#" id="user-name-id-navbar">Username-Example</a></li>
+                <li class="sub-nav"><a href="#">Log out</a></li>
+
+            </ul>
+            <div class="right">
+                <button id="link-vault">Vault</button>
+            </div>        
+            
+        </div>
+    
+        <select id="categories-selector" class="categories-selector">
+            <option value="all">all</option>
+            <option value="default">default</option>
+            <option value="social-network">social network</option>
+            <option value="shopping">shopping</option>
+            <option value="mails">mails</option>
+            <option value="webs">webs</option>
+            <option value="others">others</option>
+        </select>
+        <input type="text" class="search-bar" id="search-bar">
+        <button class="search-btn" onclick="searchBTNSRC()">Search</button>
+        <br>
+
+        <button class="fixed-button" onclick="addnewKY()" id="show-form-btn">+ Add new key</button>
+    </div>
+
+    <div class="blackout"></div>
+
+    <div class="ank-panel">
+        <div class="ank-inputs">
+            <div class="ank-inputs-site">
+                <label for="">Site: </label>
+                <input type="text" placeholder="site-example" id="siteInput">
+                <br>
+                <label for="">URL: </label>
+                <input type="text" placeholder="example.com" id="urlInput">
+            </div>
+            <div class="ank-inputs-data">
+                <label for="">Username: </label>
+                <input type="text" placeholder="user-example" id="user-input">
+                <br>
+                <label for="">Password: </label>
+                <input type="password" placeholder="pswd-example" id="pswd-input">
+            </div>
+            <div class="ank-select-cat">
+                <label for="" id="categorySelects">Category: </label>
+                <select id="categorySelect">
+                    <option value="default">default</option>
+                    <option value="social-network">social network</option>
+                    <option value="shopping">shopping</option>
+                    <option value="mails">mails</option>
+                    <option value="webs">webs</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="ak-btns">
+            <button id="hidden-form-btn">Cancel</button>
+            <button id="add-nw-key-event">Add to Vault</button>
+        </div>
+
+    </div>
+
+    <script src="../../js/vkm/search.js"></script>
+    <script src="../../js/vkm/category-btn.js"></script>
+    <script src="../../js/vkm/vault.js"></script>
+
+    <script>
+        function addnewKY() {
+            var script = document.createElement('script');
+            script.src = '../../js/vkm/add-new.js';
+            document.head.appendChild(script);
+        } 
+    </script>
+
+    <div class="preview-mobile">
+        <p>Preview not available for mobile versions or lower than 1019px(width)</p>
+        <button id="go-home-mobile">Go Home</button>
+        <button id="go-download-VKM">Download VKM</button>
+    </div>
+
+    <script src="../../js/vkm/mobile-btn.js"></script>
+    
+</body>
+</html>

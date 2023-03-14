@@ -9,15 +9,10 @@
 # See proyect >> https://github.com/14wual/14wual.github.io
 # Follow me >> https://twitter.com/codewual
 */
-if (document.title === "Github") {
-    window.location.href = "https://github.com/14wual";
-}
-else if (document.title === "Twitter") {
-    window.location.href = "https://twitter.com/codewual";
-}
-else if (document.title === "YouTube") {
-    window.location.href = "https://youtube.com/@wual";
-}
-else if (document.title === "LinkedIn") {
-    window.location.href = "https://www.linkedin.com/in/cpadilla10";
-}
+const botonBusqueda = document.querySelector(".search-btn");
+
+botonBusqueda.addEventListener("click", function() {
+    const inputText = document.querySelector('.search-bar').value;
+    const search_alert = "Your Search: '" + inputText + "'";
+    window.alert(search_alert)
+}); 
