@@ -19,3 +19,4 @@ body {background: #24283b;}
 .navbar-preview {position: absolute;top: 20px;right: 60px;}
 .navbar-preview a {color: #fff;text-decoration: none;}
 .navbar-preview a:hover{text-decoration: underline;}
+@media (max-width: 1019px) {.preview .links {display: none;}}
