@@ -11,7 +11,6 @@
 */
 function getSearchFromURL() {
     var urlParams = new URLSearchParams(window.location.search);
-    console.log(backPage);
     return urlParams.get('previousPage');
 }
 
