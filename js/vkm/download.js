@@ -10,6 +10,7 @@
 # Follow me >> https://twitter.com/codewual
 */
 const selectBTN = document.getElementById("install-btn");
+const aboutBTN = document.getElementById("about-btn");
 const install_guide = document.getElementById("install-guide");
 const closeBTN = document.getElementById("close-install-btn");
 const blackoutDiv = document.getElementById("blackout-dow");
@@ -69,4 +70,10 @@ downloadBtn.addEventListener('click', function() {
     }
   };
   xhr.send();*/
+});
+
+aboutBTN.addEventListener('click', function() {
+  const url = "http://14wual.github.io/pages/vkm/preview.html";
+  var win = window.open(url, '_blank');
+  win.focus();
 });
