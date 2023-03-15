@@ -15,21 +15,26 @@ function getSearchFromURL() {
     return urlParams.get('previousPage');
 }
 
-var backPage = getSearchFromURL();
-console.log(backPage);
+const backButton = document.getElementById("back-btn");
 
-if (backPage == "") {
-    window.location.href = "http://14wual.github.io/";
-} else if (backPage == "") {
-    window.location.href = "http://14wual.github.io/pages/vkm.html";
-} else if (backPage == "") {
-    window.location.href = "http://14wual.github.io/pages/vkm/download.html";
-} else if (backPage == "") {
-    window.location.href = "http://14wual.github.io/pages/vkm/pre-beta.html";
-} else if (backPage == "") {
-    window.location.href = "http://14wual.github.io/pages/vkm/preview.html";
-} else if (backPage == "") {
-    window.location.href = "http://14wual.github.io/pages/vkm/thanks.html";
-} else {
-    window.location.href = "http://14wual.github.io";
-}
+backButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    var backPage = getSearchFromURL();
+    console.log(backPage);
+
+    if (backPage == "") {
+        window.location.href = "http://14wual.github.io/";
+    } else if (backPage == "") {
+        window.location.href = "http://14wual.github.io/pages/vkm.html";
+    } else if (backPage == "") {
+        window.location.href = "http://14wual.github.io/pages/vkm/download.html";
+    } else if (backPage == "") {
+        window.location.href = "http://14wual.github.io/pages/vkm/pre-beta.html";
+    } else if (backPage == "") {
+        window.location.href = "http://14wual.github.io/pages/vkm/preview.html";
+    } else if (backPage == "") {
+        window.location.href = "http://14wual.github.io/pages/vkm/thanks.html";
+    } else {
+        window.location.href = "http://14wual.github.io";
+    }
+})
