@@ -24,4 +24,4 @@ pre {padding: 10px;background-color: #f8f8f8;border: 1px solid #ddd;border-radiu
 .home-links-button a{font-size: 30px;text-decoration: none;margin-right: 10px;padding: 15px;background: rgba(0, 0,0, 0);color: #fafbfd;border-radius: 5px;}
 @keyframes outro-animation {from {bottom: -100%;}to {bottom: 0;}}
 @media (max-width: 500) {#ascii-banner {font-size: 15px;max-width: 80%;}}
-@media (max-width: 468px) {pre {font-size: 15px;max-width: 60%;}}
+@media (max-width: 468px) {pre {font-size: 15px;max-width: 60%;}#home {display: flex;justify-content: center;align-items: center;}}
