@@ -37,4 +37,4 @@ body {background: #333333;background: url(../../images/render1.png);color: #fff;
 .flip a:hover .front {background: #000;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-o-transition: all 0.8s ease;-ms-transition: all 0.8s ease;transition: all 0.8s ease;}
 .flip a:hover .back {color: #222;-webkit-transition: color 0.4s linear;-moz-transition: color 0.4s linear;-o-transition: color 0.4s linear;-ms-transition: color 0.4s linear;transition: color 0.4s linear;background: #fff;}
 .flip a:hover .back:after {-webkit-transform: rotate(6deg) translate(100px, -18px);-moz-transform: rotate(6deg) translate(100px, -18px);-o-transform: rotate(6deg) translate(100px, -18px);-ms-transform: rotate(6deg) translate(100px, -18px);transform: rotate(6deg) translate(100px, -18px);}
-@media (max-width: 1000px) {.initial-banner #p-h1 {font: size 5em;}}
+@media (max-width: 1000px) {.initial-banner #p-h1 {font-size: 5em;}}

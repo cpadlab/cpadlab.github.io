@@ -10,6 +10,7 @@
 # Follow me >> https://twitter.com/codewual
 */
 .preview {max-width: 80%;border-radius: 15px;background: #24283b;margin-top: 60px;margin-left: 8%;margin-bottom: 30px;border: 3px solid #fff;}
+@import url('https://fonts.googleapis.com/css?family=Nunito|Lacquer');
 .preview-mobile {display: none;color: #fff;font-size: 50px;text-align: center;max-width: 500px;margin: auto;}
 body {background: #24283b;}
 /*@media (max-width: 1019px) {.preview {display: none;}.preview-mobile {display: block;}}*/
@@ -19,4 +20,6 @@ body {background: #24283b;}
 .navbar-preview {position: absolute;top: 20px;right: 60px;}
 .navbar-preview a {color: #fff;text-decoration: none;}
 .navbar-preview a:hover{text-decoration: underline;}
-@media (max-width: 1019px) {.preview .links {display: none;}}
+.no-cont {width: 100%;height: 100%;background: #24283b;}
+.no-cont p {color: #fff;font-family: Nunito;}
+@media (max-width: 862px) {.links-container {display: none !important;}.right {margin-left: 50%;}}

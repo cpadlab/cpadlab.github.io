@@ -22,6 +22,7 @@ pre {padding: 10px;background-color: #f8f8f8;border: 1px solid #ddd;border-radiu
 @keyframes intro-animation {from {top: -100%;}to {top: 25%;}}
 .home-links-button{cursor: pointer;;position: absolute;bottom: 0;margin: 15px;animation:outro-animation 2s ease-in-out forwards;}
 .home-links-button a{font-size: 30px;text-decoration: none;margin-right: 10px;padding: 15px;background: rgba(0, 0,0, 0);color: #fafbfd;border-radius: 5px;}
+#ascii-banner-mobile {color: #fafbfd;background-color: #24283b;border: 0;}
+.mobile-banner{visibility: hidden;position: absolute;top: 25%;left: 25%;}
 @keyframes outro-animation {from {bottom: -100%;}to {bottom: 0;}}
-@media (max-width: 500) {#ascii-banner {font-size: 15px;max-width: 80%;}}
-@media (max-width: 468px) {pre {font-size: 15px;max-width: 60%;}#home {display: flex;justify-content: center;align-items: center;}}
+@media (max-width: 500px) {.wual-banner {display: none;}.mobile-banner{visibility: visible;}}
