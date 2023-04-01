@@ -1,63 +1,169 @@
-<!--
-# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
-# ██║    ██║██║   ██║██╔══██╗██║     
-# ██║ █╗ ██║██║   ██║███████║██║     (code by wual)
-# ██║███╗██║██║   ██║██╔══██║██║     
-# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
-#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
-
-# See proyect >> https://github.com/14wual/14wual.github.io
-# Follow me >> https://twitter.com/codewual
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>14Wual/home</title>
+    <title>Home | 14wual</title>
+
     <link rel="stylesheet" href="style/index.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <script src="https://kit.fontawesome.com/e13647fd7c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
 </head>
-<body>
-    <button class="icon-button" id="open-bar-button" onclick="execMenu()">
-        <i class="fi fi-br-menu-burger icon"></i>
-    </button>
-    <section id="home">
-        <div class="wual-banner">
-            <pre id="ascii-banner">
-# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
-# ██║    ██║██║   ██║██╔══██╗██║     
-# ██║ █╗ ██║██║   ██║███████║██║
-# ██║███╗██║██║   ██║██╔══██║██║     
-# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
-#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
-            (code by wual)</pre>
+<body>    
+
+    <header>
+        <div class="navbar">
+            <div class="navbar-le">
+                <h1>14Wual</h1>
+                <a href="#"><i class="fi fi-br-menu-burger"></i></a>
+            </div>
+            <div class="navbar-ri">
+                <a href="#main-section">Home</a>
+                <a href="#projects-section">Proyects</a>
+                <a href="#technologies-section">Skills</a>
+                <a href="pages/about.html">About Me</a>
+            </div>
         </div>
-        <div class="home-links-button">
-            <a href="https://www.linkedin.com/in/cpadilla10" target="_BLANK"><i class="fi fi-brands-linkedin"></i></a>
-            <a href="https://github.com/14wual" target="_BLANK"><i class="fi fi-brands-github"></i></a>
-            <a href="https://twitter.com/codewual" target="_BLANK"><i class="fi fi-brands-twitter"></i></a>
+    </header> 
+    
+    <section class="main-section" id="main-section">
+        <div class="main-sect-content">
+            <div id="video-container">
+                <video autoplay loop muted>
+                  <source src="img/index-banner.mp4" type="video/mp4">
+                </video>
+            <h1>Carlos Padilla</h1>
+            <h2>@14wual</h2>
+            <p>Technician of Microcomputer Systems and networks. <br> Python Developer - Red Team.</p>
+            <div class="buttons">
+                <button class="current-btn" onclick="cs()">Current</button>
+                <script>
+                    function cs(){
+                        window.location.href = '#current-section';
+                    }
+                </script>
+                <button class="contact-btn">Contact</button>
+            </div>
         </div>
     </section>
-    <div class="mobile-banner">
-        <pre id="ascii-banner-mobile">
-# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
-# ██║    ██║██║   ██║██╔══██╗██║     
-# ██║ █╗ ██║██║   ██║███████║██║
-# ██║███╗██║██║   ██║██╔══██║██║     
-# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
-#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
-            (code by wual)
-        </pre>
+
+    <section id="projects-section">
+        <h2><i class="fa-brands fa-github"></i> Personal Proyects</h2>
+        <div id="projects-container">
+            <div class="projects">
+
+              <div class="project">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1 Banner">
+                </div>
+                <div class="project-details">
+                    <h3>VKM</h3>
+                    <p>VKM is a local (web) password manager. Programmed in Django, it has encryption, sessions and different functions to host our passwords on our computer in a comfortable and simple way.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/14wual/vkm" target="_blank" class="btn-primary">Code</a>
+                        <a href="#" class="btn-secondary">Download</a>
+                    </div>
+                </div>
+              </div>    
+              
+              <div class="project-type2">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1 Banner">
+                </div>
+                <div class="project-details">
+                    <h3>Pwned</h3>
+                    <p>Pentesting Laboratories Worked</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/14wual/pwned" target="_blank" class="btn-primary">Know More</a>
+                    </div>
+                </div>
+              </div>   
+              
+              <div class="project">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1 Banner">
+                </div>
+                <div class="project-details">
+                    <h3>Dotfiles</h3>
+                    <p>Dotfiles/My personal BSPWM environment for Hacking and scripting. It consists of a BSPWM environment, with a status bar, a hotkeys, a kitty terminal, and a ZSH interpreter. For Kali Linux and ParrotOS</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/14wual/dotfiles" target="_blank" class="btn-primary">Code</a>
+                        <a href="#" class="btn-secondary">Install</a>
+                    </div>
+                </div>
+              </div>     
+
+            </div>
+        </div>
+
+    </section>     
+
+    <a href="https://github.com/14wual/">See More</a>
+
+    <section id="technologies-section">
+        <section class="technologies">
+            <div class="container">
+              <h2 class="section-title"><i class="fa-solid fa-code"></i> Skills</h2>
+              <div class="logos">
+                <div class="logo">
+                    <img src="img/django.png" alt="">
+                  <span>Django</span>
+                </div>
+                <div class="logo">
+                    <i class="fab fa-linux"></i>
+                    <span>Linux</span>
+                  </div>
+                  <div class="logo">
+                    <i class="fi fi-brands-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="logo">
+                    <i class="fa-brands fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="logo">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS</span>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="button-container">
+                <div class="button-group">
+                    <button class="btn">Active Directory</button>
+                    <button class="btn">Windows</button>
+                    <button class="btn">Microsoft Office</button>
+                    <button class="btn">Microsoft Azure</button>
+                    <button class="btn">Bspwm</button>
+                    <button class="btn">Cybersecurity</button>
+                    <button class="btn">cyber defense</button>
+                    <button class="btn">Penetration tests</button>
+                    <button class="btn">SQL</button>
+                    <button class="btn">Bash</button>
+                    <button class="btn">Linux</button>
+                    <button class="btn">HTML</button>
+                    <button class="btn">Python 3</button>
+                    <button class="btn">Django</button>
+                    <button class="btn">Cascading Style Sheets (CSS)</button>
+                    <button class="btn">Networking</button>
+                </div>
+            </div>
+
+    </section>
+
+    <div class="social-icons">
+        <a href="https://github.com/14wual" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/14wual" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com/@wual" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/cpadilla10/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-    <script src="js/index.js"></script>
-    <script>
-        function execMenu(){
-            var script = document.createElement('script');
-            script.src = '../js/menu.js';
-            document.head.appendChild(script);}
-    </script>
+      
+      
 </body>
 </html>
