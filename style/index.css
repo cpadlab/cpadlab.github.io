@@ -350,6 +350,25 @@ h3 a:hover{
       visibility: hidden;
     }
   }
+  @media screen and (max-width: 675px){
+    .project, .project-type2 {
+      display: block;
+      text-align: center;
+    }
+    .project h3 {
+      margin-top: 30px;
+    }
+    .project-buttons {
+      display: block;
+    }
+    .project-type2 .project-buttons{
+      text-align: center;
+    }
+    .project-type2 h3 {margin-top: 30px;}
+    .project-type2 p, .project-type2 h3 {
+      text-align: center;
+    }
+  }
   #skills-id {
     margin-top: -30px;
   }
