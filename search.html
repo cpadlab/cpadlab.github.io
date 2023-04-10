@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>14Wual | Search</title>
     <link rel="stylesheet" href="style/search.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-le">
+                <h1>14Wual</h1>
+                <a href="#"><i class="fi fi-br-menu-burger"></i></a>
+            </div>
+            <div class="navbar-ri">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects-section">Proyects</a>
+                <a href="http://localhost/vkm" id="vkm" target="_blank">VKM</a>
+            </div>
+        </div>
+    </header> 
+    <div id="video-container">
+        <video autoplay loop muted>
+          <source src="img/index-banner.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="ascii">
         <pre># ██╗    ██╗██╗   ██╗ █████╗ ██╗     
 # ██║    ██║██║   ██║██╔══██╗██║     
@@ -23,16 +41,8 @@
             <span class="icon"><i class="fa fa-search"></i></span>
             <input type="search" id="search" placeholder="Search..." />
         </div>
-        <button id="google"><i class="fa-brands fa-google"></i></button>
-    </div>
-    <div class="marks">
-        <button id="google"></button>
-        <button id="google"></button>
-        <button id="google"></button>
-        <button id="google"></button>
-        <button id="google"></button>
-        
-        
+        <button id="google" onclick="g_search()"><i class="fi fi-brands-google" id="icon"></i></button>
+        <script src="js/google.search.js"></script>
     </div>
 </body>
 </html>

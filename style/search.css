@@ -1,11 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body {
-    background: #65737e;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1b26;
+  }
+  x
+.navbar {
+  width: 90%;
+  background: #1a1b26;
+  margin: 2em;
+  z-index: 111;
+}
+.navbar a {
+  color: #a9b1d6;
+  text-decoration: none;
+  margin-left: 1em;
+}
+button:hover{
+  cursor: pointer;
+}
+.navbar h1 {
+  color: #a9b1d6;
+  text-decoration: none;
+  display: inline;
+}
+.navbar-ri {
+  position: fixed;
+  right: 2em;
+}
+.navbar-le {
+  position: fixed;
+  display: inline;
+  left: 2em;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+#google i{
+  position: absolute;
+  left: 131%;
+  top: 20%;
 }
 .box {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  #other i{
+    position: relative;
+    margin-left: -150%;
+    padding: 0;
+    margin: 0;
+  }
+  #video-container video {
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+    filter: blur(10px);
   }
   .ascii  {
     position: fixed;
@@ -18,10 +76,6 @@ body {
     border-radius: 5px;
     color: #63717f;
     background: #2b303b;
-  }
-  button i {
-    text-align: center;
-    color: #63717f;
   }
   .marks {
     position: fixed;
@@ -85,7 +139,27 @@ body {
     z-index: 1;
     color: #4f5b66;
   }
+  #icon{
+    position: relative;
+    margin-left: -50%;
+    font-size: 30px;
+}
+header{
+  position: absolute;
+  top: 30px;
+}
   .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
     outline:none;
     background: #ffffff;
+  }
+  #vkm {
+    border: 3px solid #a9b1d6;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all ease-in 0.3s;
+  }
+  #vkm:hover {
+    background: #a9b1d6;
+    color: #1a1b26;
+    text-decoration: none;
   }
