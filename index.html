@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>14Wual | Home</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/e13647fd7c.js" crossorigin="anonymous"></script>
 </head>
@@ -13,14 +13,24 @@
     <header>
         <div class="left-side"><a href="index.html"><span>WUAL</span></a></div>
         <div class="med-side"><span><a href="design/">Redisigned</a> by <br>14Wual © 2023</span></div>
-        <div class="right-side"><a href=""><span><i class="fa-solid fa-bars"></i></span></a></div>
+        <div class="right-side"><button id="btn-bars"><span><i class="fa-solid fa-bars"></i></span></button></div>
     </header>
 
     <div class="links">
-        <div class="top-right-side"><a class="vertical-span" href="writeup">WALK-THROUGH</a></div>
+        <div class="top-right-side"><a class="vertical-span" href="https://github.com/14wual/pwned" target="_blank">WALK-THROUGH</a></div>
         <div class="med-right-side"><a class="vertical-span" href="certified/">CERTIFIEDS</a></div>
         <div class="bottom-right-side"><a class="vertical-span" href="proyects/">PROYECTS</a></div>
     </div>
+
+    <!-- 
+
+        <div class="ssh-connect">
+            <a href="ssh://root@170:692e:a2a1:8860:12c5:f4f7:f9c0:f468" style="display: none;">Login</a>
+        </div>
+
+        PSWD 'UHV0byBlbCBxdWUgbG8gbGVhLgo=',
+        
+    -->
 
     <div class="popup-social-media">
         <div class="psm-div">
@@ -29,7 +39,6 @@
             <a target="_blank" href="https://www.youtube.com/@wual" class="psm-icons"><i class="fa-brands fa-youtube"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/cpadilla10/" class="psm-icons"><i class="fa-brands fa-linkedin"></i></a>
             <a target="_blank" href="mailto:cpadlab@gmail.com" class="psm-icons"><i class="fa-sharp fa-solid fa-at"></i></a>
-
         </div>
         <div class="level-1"><a target="_blank" href="https://tryhackme.com/p/14wual"><span>TryHackMe</span></a></div>
         <div class="level-0"><a target="_blank" href="https://app.hackthebox.com/profile/923054"><span>HackTheBox</span></a></div>
@@ -39,6 +48,20 @@
         <div class="mc-pre">CODE & PENTESTING</div>
         <div class="mc-title"><p>WUAL</p></div>
         <div class="mc-post"><p>WUAL@1014:~#</p></div>
-    </div>    
+    </div>
+
+    <div class="bars" style="display: none;" id="bars">
+        <div class="oi-delete"><button id="btn-delete"><span><i class="fa-solid fa-x"></i></span></button></div>
+        <div class="overlay-items">
+            <div class="oi-3"><a href="proyects/">PROYECTS</a></div>
+            <div class="oi-1"><a href="https://github.com/14wual/pwned" target="_blank">WRITE UPS</a></div>
+            <div class="oi-2"><a href="certified/">CERTIFIEDS</a></div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <script src="common/bar.js"></script>
+
+    
 </body>
 </html>

@@ -8,6 +8,10 @@ body {background-color: #1c1c1c;overflow: hidden;background-image: url('images/b
 header span {font-family: 'Titillium Web';color: #f4f4f4;text-decoration: none;transition: color ease-in 0.3s;}
 header .med-side span {color: #616161}
 
+button span i {right: 1em;padding:10px 10px 10px 10px;cursor: pointer;;border-radius: 50%;transition: all ease-in 0.3s;}
+button {border: 2px solid #616161;background: none;color: #616161;border-radius: 50%;transition: background ease-in 0.3s;}
+button:hover {background: #f4f4f4;color: #1c1c1c;cursor: pointer;}
+
 .left-side, .med-side, .right-side {position: absolute;top: 1em;}
 .left-side {left: 1em;}
 .left-side a {font-weight: 700;font-family: 'Roboto', sans-serif;font-size: 40px;color: #616161;text-decoration: none;}
@@ -15,8 +19,8 @@ header .med-side span {color: #616161}
 .med-side {left: calc(50% - 52.5px);text-align: center;}
 .med-side a {color: #616161;text-decoration: none; transition: color 0.3s ease-in;}
 .med-side a:hover {color: #f4f4f4;}
-.right-side {right: 1em;padding: 5px 10px 5px 10px;border: 2px solid #616161;border-radius: 50%;transition: all ease-in 0.3s;}
-.right-side:hover {background: #616161;color: #1c1c1c;cursor: pointer;}
+.right-side {right: 1em;padding: 5px 10px 5px 10px;border-radius: 50%;transition: all ease-in 0.3s;}
+.right-side:hover {color: #1c1c1c;cursor: pointer;}
 .right-side:hover span {color: #1c1c1c;}
 
 .vertical-span {writing-mode: vertical-lr; transform: rotate(360deg);}
@@ -54,3 +58,12 @@ header .med-side span {color: #616161}
 .mc-post {text-align: right;}
 .mc-post p:after {content: '|';margin-left: 5px;opacity: 1;animation: blinker 1s infinite;}
 @keyframes blinker {50% {opacity: 0;}}
+
+@media only screen and (max-width: 448px) {.links {display: none;}.med-side{display: none;}}
+
+.bars {transition: opacity ease-in 0.3;}
+.overlay {z-index: 1;position: absolute;top: 0px;height: 0px;width: 100vw;height: 100vh;background: #1c1c1c;opacity: 0.9}
+.overlay-items {z-index: 11111;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)}
+.oi-1 a, .oi-2 a, .oi-3 a {z-index: 1111;font-weight: 700;font-family: 'Roboto', sans-serif;font-size: 40px;color: #616161;text-decoration: none;transition: all ease-in 0.3s;}
+.oi-1 a:hover, .oi-2 a:hover, .oi-3 a:hover {color: #f4f4f4;font-size: 44px;}
+.oi-delete {z-index: 11111;position: absolute;top: 1em;right: 1em;}
