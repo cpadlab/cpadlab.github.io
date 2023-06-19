@@ -1,0 +1,58 @@
+
+/* 
+# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
+# ██║    ██║██║   ██║██╔══██╗██║     
+# ██║ █╗ ██║██║   ██║███████║██║     (code by wual)
+# ██║███╗██║██║   ██║██╔══██║██║     
+# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
+#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+# Reverse Shell Generator CSS
+# See proyect >> https://github.com/14wual/rsgen
+# Follow me >> https://twitter.com/14wual
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+html, body {margin: 0;padding: 0;font-family: 'Titillium Web';color: #f4f4f4;}
+body {background-color: #1c1c1c;background-image: url('../images/bg-rsgen.jpg');}
+html {scroll-behavior: smooth;}
+section {align-items: center;align-self: center;}
+.hn-left, .hn-right {position: absolute;top: 2em;}
+.hn-left a {font-size: 40px;}
+.hn-right a {font-size: 20px;margin-left: 1em;}
+.hn-left a:hover, .hn-right a:hover {cursor: pointer;text-decoration: underline;}
+nav .hn-left {left: 2em;font-weight: 700;}
+nav .hn-right {right: 2em;}
+.hn-left a, .hn-right a {text-decoration: none;color: #f4f4f4;}
+#btn-download {padding: 10px;border-radius: 10px;border: 2px solid #8338ec;transition: all ease-in 0.3s;background: #8338ec;}
+#btn-download:hover {text-decoration: none;background: #8338ec;transform: scale(1.2, 1.2);}
+#svg-wave-1 {position: absolute;bottom: 0;width: 100%;}
+.main-content {text-align: center;}
+#m-title {font-weight: 700;font-family: 'Roboto', sans-serif;text-align: center;font-size: 7em;}
+#title-blinker2 {position: relative;margin-top: -2em;font-weight: 10;font-size: 3em;}
+#title-blinker2::after {content: 'Awk';margin-left: 5px;opacity: 1;animation: blinker2 20s infinite;}
+@keyframes blinker2 {6.6667% {content: 'Awk';}13.3334% {content: 'Bash';}20.0001% {content: 'Golang';}26.6668% {content: 'Groovy';}33.3335% {content:'Java';}40.0002% {content: 'Lua';}46.6669% {content: 'Ncat';}53.3336% {content: 'Netcat';}60.0002% {content: 'NodeJS';}66.6669% {content: 'Perl';}73.3336% {content: 'PHP';}80.0003% {content: 'Powershell';}86.667% {content: 'Python';}93.3337% {content: 'Ruby';}100% {content: 'Telnet';}}
+#screenshot  {position: absolute;}
+.cs-content {position: relative;text-align: center;}
+.c-btns {position: absolute;bottom: 2em;right: 2em;background: none;}
+.c-btns a {color: #f4f4f4;text-decoration: none;padding: 10px 15px 10px 15px;transition: all ease-in 0.3s;background: none;margin-left: 5px;border-radius: 10px;transition: transform 0.3s ease;}
+.c-btns a i {background: none;}
+.c-btns a:hover {background: #1c1c1c;}
+.c-btns a:hover i {transform: scale(1.5);}
+#cs-input-ip, #cs-input-port {margin-top: 1em;height: 2em;width: 20em;border: none;color: #f4f4f4;border-radius: 5px;background: #1e2122;text-align: center;}
+.css-i-1 span, .css-i-2 span {color: #f4f4f4;margin-top: 1em;position: relative;background: #1e2122;display: inline-block;padding-left: 1em;height: 26.65px;padding: 0;margin-right: 1em;border-radius: 5px;width: 70px;}
+#dev-rev-sele {background: #1e2122;border: none;border-radius: 5px;height: 26.65px;margin-top: 1em;width: calc(270.66px + 70px + 1em);color: #f4f4f4;text-align: center;}
+.rs_shells_style {margin-top: 1em;width: calc(270.66px + 70px - 2em);background: #1e2122;color: #f4f4f4;padding: 1em;display: inline-block;border-radius: 5px;text-align: center;align-items: center;justify-content: center;overflow: hidden;}
+#rsss-btn-copy {background: none;border: none;color: #8338ec;font-size: 20px;cursor: pointer;position: relative;}
+#rsss-btn-copy i {background: none;}
+.rs_shells_style p {background: none;display: inline;text-align: center; margin: 0;}
+.dev-revser-shells {background: none;}
+.rs_awk, .rs_bash, .rs_golang, .rs_groovy, .rs_java, .rs_lua, .rs_ncat, .rs_netcat, .rs_nodejs, .rs_perl, .rs_php, .rs_powershell, .rs_python, .rs_ruby, .rs_telnet {text-align: center;position: relative;background: none;background-color: none;}
+.build {position: absolute;color: #f4f4f4;text-align: center;top: -500%;display: none;}
+.build p {font-weight: 700;font-family: 'Roboto', sans-serif;text-align: center;font-size: 2em;}
+.build a {all: none;text-align: center;position: relative;left: calc(50% - 30px);text-decoration: none;color: #f4f4f4;padding: 10px;background: #8338ec;border-radius: 5px;}
+@media only screen and (max-width: 368px) {#non-important-btns {display: none;}}
+@media only screen and (max-width: 520px) {.hn-right span {display: none;}#m-title {font-size: 4em;margin-top: 2em;}#title-blinker2{margin-top: 1em;}}
+@media only screen and (max-width: 364px) {#main {display: none;}.build{position: relative;top: 2em;display: block;}}
+@media only screen and (max-width: 260px) {.hn-right {display: none;}}
