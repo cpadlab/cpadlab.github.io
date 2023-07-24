@@ -1,0 +1,51 @@
+
+/* 
+# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
+# ██║    ██║██║   ██║██╔══██╗██║     
+# ██║ █╗ ██║██║   ██║███████║██║     (code by wual)
+# ██║███╗██║██║   ██║██╔══██║██║     
+# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
+#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+# VKM CSS
+# See proyect >> https://github.com/14wual/vkm
+# Follow me >> https://twitter.com/14wual
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+body {background: #1c1c1c;color: #f4f4f4;}
+html, body {margin: 0;padding: 0;font-family: 'Titillium Web';color: #f4f4f4;}
+nav div {display: inline;}
+body {background-color: #1c1c1c;background-image: url('../images/bg-vkm.png');background-repeat: no-repeat; background-size: auto;}
+.hn-left {position: absolute;left: 1em;top: 1em;}
+.hn-left button {border: none;color: #f4f4f4;background: none;cursor: pointer;transition: all ease-in-out 0.3s;}
+.hn-left button:hover{transform: rotate(-180deg);}
+.hn-right {position: absolute;right: 1em;top: 2em;}
+.hn-left a {color: #f4f4f4;text-decoration: none;font-weight: 700;font-size: 30px;}
+.hn-right a {margin-left: 0.5em;color: #f4f4f4;text-decoration: none;transition: all ease-in-out 0.3s;}
+.hn-right a:hover {color:#8338ec;}
+#btn-download {padding: 1em;background: #1e2122;border-radius: 10px;transition: all ease-in-out 0.3s;}
+#btn-download:hover {color: #f4f4f4;background: #8338ec;}
+.vkm-buttons {position: absolute;top: 5em;opacity: 0;transform: translate(0, -500%);transition: all ease-in-out 0.3s;z-index: -1;}
+.vkm-buttons a {padding: 1em;background: #1e2122;border-radius: 10px;display: inline;color: #f4f4f4;text-decoration: none;margin-left: 0.5em;transition: all ease-in-out 0.3s;}
+.vkm-buttons a:hover {background: #8338ec;}
+.float-version {color: #616161;position: absolute;left: 1em;bottom: 1em;}
+.float-version a {color: #616161;transition: all ease-in-out 0.3s;}
+.float-version a:hover {color: #f4f4f4;}
+.float-version p {display: inline;}
+#float-btn {position: absolute;right: 1em;color: #f4f4f4;background: none;border: none;}
+#vkm-title {font-size: 100px;font-weight: 700;margin: 0;padding: 0;}
+.vkm-content {text-align: center;}
+.vkm-btns a {color: #f4f4f4;background: #1e2122;border-radius: 10px;padding: 1em;text-decoration: none;margin-left: 0.5em;margin-top: -1em;transition: all ease-in-out 0.3s;}
+.vkm-btns a:hover {background: #8338ec;}
+.vkm-btns {position: absolute;right: 1em;bottom: 2em;}
+#vkm-title::after {content: 'V5';font-weight: 10;font-size: 50px;}
+.vkm-content {position: absolute;left:  50%;transform: translate(-50%, -70%);top: 50%;}
+.vkm-content p {margin: 0;padding: 0;margin-bottom: 2em;}
+#vkmc-pm {margin-bottom: -2em;text-align: left;}
+.float-right {position: absolute;right: 0.5em;top: 50%;transform: translate(0, -50%);}
+.float-right p {color: #616161;writing-mode: vertical-lr; transform: rotate(360deg);}
+#logo {width: 50px;}
+@media only screen and (max-width: 630px) {.float-version {display: none;}}
+@media only screen and (max-width: 438px) {#non-important-btns {display: none;}}
+@media only screen and (max-width: 376px) {#non-important-span {display: none;}.float-right {display: none;}}
