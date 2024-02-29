@@ -62,3 +62,13 @@ html {scroll-behavior: smooth;}
     width: 20px;
     height: 20px;
     transform: translate(-50%, -50%) scale(1.5);}
+:root::-webkit-scrollbar {width: 10px;}
+:root::-webkit-scrollbar-track {
+    background: var(--background);}
+:root::-webkit-scrollbar-thumb {
+    background: var(--color-5);
+    transition: all ease-in-out .3s;
+    cursor: pointer;}
+:root::-webkit-scrollbar-thumb:hover {
+    background: var(--color-8);
+}

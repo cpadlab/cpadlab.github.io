@@ -29,7 +29,7 @@ $(document).ready(function() {
                                 <p>${item.desc}</p>
 
                                 <div class="code-lang ${item.lang}"></div>
-                                <i class="fa-brands ${item.lang_icon}"></i>
+                                <i class="${item.lang_icon}"></i>
 
                             </div>
 

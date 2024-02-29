@@ -76,7 +76,7 @@
     width: 3em;
     border-radius: 5px;}
 .repository i {
-    all: unset;
+    margin-left: .5em;
     display: inline;
     color: var(--color-5);}
 .repository {
