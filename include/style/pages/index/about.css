@@ -1,0 +1,44 @@
+/*
+#   ___  ____  __   
+#  / __)(  _ \(  )  
+# ( (__  )___/ )(__  (code by cpadlab)
+#  \___)(__)  (____)
+
+# Author >> Carlos Padilla
+# Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 Feb Update)
+# Download Code >> https://github.com/cpadlab/cpadlab.github.io
+# Follow me >> https://twitter.com/nerezza0
+*/
+
+#about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    padding-top: 3em;}
+.about-rrss a {
+    text-decoration: none;
+    color: var(--color-5);
+    margin-left: 1.3em;
+    transition: all ease-in .3s;}
+.about-rrss a:first-child {margin-left: unset;}
+.about-rrss a:hover {
+    color: var(--color);}
+#about p {
+    margin-top: 1em;
+    max-width: 500px;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: 'Roboto';
+    color: var(--color-5);
+    justify-content: center;}
+.separator {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 3em;
+    height: 2px;
+    background: rgb(28,28,28);
+    background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(227,227,227,0.5) 50%, rgba(28,28,28,1) 100%);}

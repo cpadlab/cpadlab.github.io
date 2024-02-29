@@ -1,0 +1,69 @@
+/*
+#   ___  ____  __   
+#  / __)(  _ \(  )  
+# ( (__  )___/ )(__  (code by cpadlab)
+#  \___)(__)  (____)
+
+# Author >> Carlos Padilla
+# Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 Feb Update)
+# Download Code >> https://github.com/cpadlab/cpadlab.github.io
+# Follow me >> https://twitter.com/nerezza0
+*/
+
+#hn-1 h1 {
+    color: var(--color-5);
+    font-family: 'yapari';
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transition: all ease-in-out 1s;}
+header {
+    z-index: 111;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: var(--background);
+    align-items: center;}
+#hn-1 {margin-left: 3em;}
+#hn-2 {margin-right: 3em;display: flex;}
+#hn-2-separator {
+    margin-left: 1em;
+    margin-right: 1em;}
+header nav a {
+    text-decoration: none;
+    color: var(--color-5);
+    font-family: 'Roboto';
+    transition: all ease-in .3s;}
+header nav a:hover {color: var(--color-8);}
+#hn-2-sections a {margin-right: 1em;}
+#hn-2-sections a:last-child {margin-right: 0;}
+#hn-2-langs a:last-child {margin-right: 0;}
+#hn-2-langs a:first-child {margin-right: .3em;}
+
+@media only screen and (max-width: 853px) {
+    header {flex-direction: column;}
+    #hn-1 {margin-left: unset;}
+    #hn-2 {margin-right: unset;align-items: center;}
+    #hn-2-sections {align-items: center;}
+}
+@media only screen and (max-width: 561px) {
+    #hn-2 {flex-direction: column;align-items: center;margin-top: .3em;}
+    #hn-2-separator {display: none;}
+    #hn-2-langs {margin-top: .3em;}
+}
+@media only screen and (max-width: 479px) {
+    #hn-2-sections {text-align: center;}
+}
+#hn-2-sections a span {
+    background: var(--color-5);
+    padding: .4em;
+    font-size: .8rem;
+    border-radius: 5px;
+    color: var(--background);
+    transition: all ease-in .3s;}
+#hn-2-sections a:hover span {
+    background: var(--color-8);}

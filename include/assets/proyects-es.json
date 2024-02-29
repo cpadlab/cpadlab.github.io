@@ -1,0 +1,35 @@
+[   
+    {
+        "title": "capture",
+        "desc": "CTF Bypass Script para TryHackMe Room - 'Capture this!'",
+        "icon": "fa-book",
+        "view": "public",
+        "lang_icon": "fa-python",
+        "lang": "python",
+        "link": "https://github.com/cpadlab/capture",
+        "link_icon": "fa-link",
+        "link_text": "Visitar"
+    },
+    {
+        "title": "dotfiles",
+        "desc": "Todos los dotfiles de configuración para mi entorno Kali BSPWM.",
+        "icon": "fa-book",
+        "view": "public",
+        "lang_icon": "fa-terminal",
+        "lang": "shell",
+        "link": "https://github.com/cpadlab/capture",
+        "link_icon": "fa-link",
+        "link_text": "Visitar"
+    },
+    {
+        "title": "VKMv6",
+        "desc": "Bajo Desarrollo: VaultKeyManager es una bóveda de contraseñas indie autoalojada programada en Python y JS con tecnología FastApi, JQuery y SQLite3.",
+        "icon": "fa-book",
+        "view": "private",
+        "lang_icon": "fa-python",
+        "lang": "python",
+        "link": "https://github.com/cpadlab/",
+        "link_icon": "fa-lock",
+        "link_text": "Bajo Desarrollo"
+    }
+]

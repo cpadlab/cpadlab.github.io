@@ -1,0 +1,105 @@
+/*
+#   ___  ____  __   
+#  / __)(  _ \(  )  
+# ( (__  )___/ )(__  (code by cpadlab)
+#  \___)(__)  (____)
+
+# Author >> Carlos Padilla
+# Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 Feb Update)
+# Download Code >> https://github.com/cpadlab/cpadlab.github.io
+# Follow me >> https://twitter.com/nerezza0
+*/
+
+.proyects-banner img {
+    width: 9em;opacity: .5;
+    animation: floatUpDown 5s infinite;}
+.proyects-banner a {
+    text-decoration: none;
+    color: var(--color-5);
+    font-family: 'Roboto';
+    margin-top: 1em;}
+.proyects-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;}
+.proyects-banner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-left: 10em;}
+#proyects {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;}
+.repository {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-5);
+    padding: 1em;
+    border-radius: 5px;
+    max-width: 600px;
+    cursor: pointer;}
+.repository * {
+    color: var(--color-5);
+    font-family: 'Roboto';
+    transition: all ease-in .3s;}
+.code-lang {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    opacity: .4;
+    transition: all ease .4s;}
+.python {background: var(--python);}
+.shell {background: var(--shell);}
+.repository h1 {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: .5em;
+    cursor: pointer;
+    transition: all ease-in .3s;}
+.repository h1 span {
+    padding: .4em;
+    font-size: .8rem;
+    border: 1px solid var(--color-5);
+    border-radius: 5px;}
+.repository p {
+    margin-top: .5em;
+    margin-bottom: .5em;}
+.repository h1:hover {color: var(--accent);}
+.repository h1:hover span{color: var(--accent);}
+.repository:hover * {color: var(--color);}
+.repository:hover .code-lang {
+    width: 3em;
+    border-radius: 5px;}
+.repository i {
+    all: unset;
+    display: inline;
+    color: var(--color-5);}
+.repository {
+    margin-bottom: 1em;
+    position: relative;}
+.repository a {
+    float: right;
+    color: var(--color-5);
+    padding: .5em 1em;
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+    border: var(--accent) 1px solid;
+    text-decoration: none;
+    transition: all ease-in .3s;}
+.repository:hover a {
+    color: var(--color);
+    background: var(--accent);}
+.private:hover * {color:  var(--color-5);cursor: not-allowed;}
+.private:hover a {background: unset;color: var(--color-5);}
+.private:hover h1 span, .private:hover h1 {color: var(--color-5);}
+.private:hover .code-lang {width: 1em;
+    border-radius: 50%;}
+@media only screen and (max-width: 949px) {
+    .proyects-content {flex-direction: column;}
+    .proyects-banner {margin-left: unset;margin-bottom: 2em;}}

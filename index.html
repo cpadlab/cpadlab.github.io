@@ -1,80 +1,97 @@
-
-<!-- 
-# ██╗    ██╗██╗   ██╗ █████╗ ██╗     
-# ██║    ██║██║   ██║██╔══██╗██║     
-# ██║ █╗ ██║██║   ██║███████║██║     (code by wual)
-# ██║███╗██║██║   ██║██╔══██║██║     
-# ╚███╔███╔╝╚██████╔╝██║  ██║███████╗
-#  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
-
-# Index HTML
-# See proyect >> https://github.com/14wual/14wual.github.io
-# Follow me >> https://twitter.com/14wual
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- 
+    #   ___  ____  __   
+    #  / __)(  _ \(  )  
+    # ( (__  )___/ )(__  (code by cpadlab)
+    #  \___)(__)  (____)
+
+    # Author >> Carlos Padilla
+    # Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 Feb Update)
+    # Download Code >> https://github.com/cpadlab/cpadlab.github.io
+    # Follow me >> https://twitter.com/nerezza0
+    -->
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>14Wual | Home</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/e13647fd7c.js" crossorigin="anonymous"></script>
+
+    <title>Carlos Padilla</title>
+
+    <meta name="description" content="Carlos Padilla, Junior Penetration Tester Portfolio">
+    <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+
+    <meta property="og:title" content="Carlos Padilla - Portfolio">
+    <meta property="og:description" content="Carlos Padilla, Junior Penetration Tester Portfolio">
+    <meta property="og:image" content="include/assets/images/share.png">
+    <meta property="og:url" content="https://cpadlab.github.io/">
+
+    <link rel="stylesheet" href="include/style/ttf.css">
+    <link rel="stylesheet" href="include/style/main.css">
+    <link rel="stylesheet" href="include/lib/fontawesome-free-6.5.1-web/css/all.css">
+
+    <link rel="stylesheet" href="include/style/anim.css">
+
 </head>
 <body>
 
-    <header>
-        <div class="left-side"><a href="index.html"><span>WUAL</span></a></div>
-        <div class="med-side"><span><a href="design/">Redisigned</a> by <br>14Wual © 2023</span></div>
-        <div class="right-side"><button id="btn-bars"><span><i class="fa-solid fa-bars"></i></span></button></div>
-    </header>
+    <content>
 
-    <div class="links">
-        <div class="top-right-side"><a class="vertical-span" href="https://github.com/14wual/pwned" target="_blank">WALK-THROUGH</a></div>
-        <div class="med-right-side"><a class="vertical-span" href="certified/">CERTIFIEDS</a></div>
-        <div class="bottom-right-side"><a class="vertical-span" href="rsgen/">PROYECTS</a></div>
-    </div>
+        <div class="custom-cursor"><script src="include/scripts/cursor.js"></script></div>
 
-    <!-- 
+        <header></header>
+    
+        <main>
 
-        <div class="ssh-connect">
-            <a href="ssh://root@170:692e:a2a1:8860:12c5:f4f7:f9c0:f468" style="display: none;">Login</a>
-        </div>
+            <section id="home"></section>
+            <section id="about"></section>
+            <div class="separator"></div>
+            <section id="writeups"></section>
+            <section id="certifieds"></section>
+            <section id="proyects"></section>
+    
+        </main>
 
-        PSWD 'UHV0byBlbCBxdWUgbG8gbGVhLgo=',
-        
-    -->
+        <footer></footer>
 
-    <div class="popup-social-media">
-        <div class="psm-div">
-            <a target="_blank" href="https://github.com/14wual/" class="psm-icons"><i class="fa-brands fa-github"></i></a>
-            <a target="_blank" href="https://twitter.com/14wual" class="psm-icons"><i class="fa-brands fa-twitter"></i></a>
-            <a target="_blank" href="https://www.youtube.com/@wual" class="psm-icons"><i class="fa-brands fa-youtube"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/cpadilla10/" class="psm-icons"><i class="fa-brands fa-linkedin"></i></a>
-            <a target="_blank" href="mailto:cpadlab@gmail.com" class="psm-icons"><i class="fa-sharp fa-solid fa-at"></i></a>
-        </div>
-        <div class="level-1"><a target="_blank" href="https://tryhackme.com/p/14wual"><span>TryHackMe</span></a></div>
-        <div class="level-0"><a target="_blank" href="https://app.hackthebox.com/profile/923054"><span>HackTheBox</span></a></div>
-    </div>
+    </content>
 
-    <div class="main-content">
-        <div class="mc-pre">CODE & PENTESTING</div>
-        <div class="mc-title"><p>WUAL</p></div>
-        <div class="mc-post"><p>WUAL@1014:~#</p></div>
-    </div>
+    <script src="include/lib/jquery-3.7.1.min.js"></script>
 
-    <div class="bars" style="display: none;" id="bars">
-        <div class="oi-delete"><button id="btn-delete"><span><i class="fa-solid fa-x"></i></span></button></div>
-        <div class="overlay-items">
-            <div class="oi-2"><a href="vkm/">VKM</a></div>
-            <div class="oi-3"><a href="proyects/">PROYECTS</a></div>
-            <div class="oi-1"><a href="https://github.com/14wual/pwned" target="_blank">WRITE UPS</a></div>
-            <div class="oi-2"><a href="certified/">CERTIFIEDS</a></div>
-        </div>
-        <div class="overlay"></div>
-    </div>
+    <script>
 
-    <script src="common/bar.js"></script>
+        $(document).ready(function(){
+
+            var homeAnimationPromise = new Promise(function(resolve, reject) {
+                $('#home').load('include/assets/content-en/sections/home.html', function() {$('#home').animate({'opacity': 1
+                    }, {duration: 1000,
+                        complete: function() {$('#home *').animate({'opacity': 1
+                            }, {duration: 1000,complete: function() {resolve();}});}
+                    });
+                });
+            });
+
+            homeAnimationPromise.then(function() {
+
+                $('header').load('include/assets/content-en/navbar.html', function() {
+                    $('header').animate({'opacity': 1}, 500);
+                    loadRemainingContent();
+                });
+            });
+
+            function loadRemainingContent() {
+
+                $('#about').load('include/assets/content-en/sections/about.html')
+                $('#writeups').load('include/assets/content-en/sections/writeups.html');
+                $('#certifieds').load('include/assets/content-en/sections/certifieds.html');
+                $('#proyects').load('include/assets/content-en/sections/proyects.html');
+                $('footer').load('include/assets/content-en/footer.html');
+            }
+                
+        });
+
+    </script>
+
 </body>
 </html>

@@ -1,0 +1,50 @@
+/*
+#   ___  ____  __   
+#  / __)(  _ \(  )  
+# ( (__  )___/ )(__  (code by cpadlab)
+#  \___)(__)  (____)
+
+# Author >> Carlos Padilla
+# Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 Feb Update)
+# Download Code >> https://github.com/cpadlab/cpadlab.github.io
+# Follow me >> https://twitter.com/nerezza0
+*/
+
+#certifieds {
+    background: var(--color);
+    padding-top: 2em;
+    padding-bottom: 2em;}
+.certifieds-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+#section-title-h1 {
+    margin: 0;
+    margin-bottom: .3em;}
+.cc-badgets img:first-child {height: 12em;}
+.cc-badgets img:last-child {height: 10.5em;}
+.cc-links {
+    margin-right: 2em;
+    text-align: center;}
+.cc-links a {
+    text-decoration: none;
+    color: var(--background);
+    font-family: 'Roboto';
+    font-size: .8rem;
+    padding: .5em 1em;
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+    border: var(--accent) 1px solid;
+    transition: all ease-in .3s;}
+.cc-links a:hover {
+    color: var(--color);
+    background: var(--accent);}
+@media only screen and (max-width: 751px) {
+    .certifieds-content {flex-direction: column;}
+    .cc-links {margin-bottom: 1em;}
+    .cc-badgets {display: flex;align-items: center;}}
+@media only screen and (max-width: 435px) {
+    .cc-badgets {flex-direction: column;}
+    .cc-badgets div {margin-top: 1em;}}
+    

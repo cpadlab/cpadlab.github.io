@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- 
+    #   ___  ____  __   
+    #  / __)(  _ \(  )  
+    # ( (__  )___/ )(__  (code by cpadlab)
+    #  \___)(__)  (____)
+
+    # Author >> Carlos Padilla
+    # Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 Feb Update)
+    # Download Code >> https://github.com/cpadlab/cpadlab.github.io
+    # Follow me >> https://twitter.com/nerezza0
+    -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carlos Padilla</title>
+
+    <link rel="stylesheet" href="../include/style/main.css">
+    <link rel="stylesheet" href="../include/style/ttf.css">
+    <link rel="stylesheet" href="../include/lib/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="../include/style/anim.css">
+
+</head>
+<body>
+
+    <content>
+
+        <div class="custom-cursor"><script src="../include/scripts/cursor.js"></script></div>
+
+        <header></header>
+    
+        <main>
+
+            <section id="home"></section>
+            <section id="about"></section>
+            <div class="separator"></div>
+            <section id="writeups"></section>
+            <section id="certifieds"></section>
+            <section id="proyects"></section>
+    
+        </main>
+
+        <footer></footer>
+
+    </content>
+
+    <script src="../include/lib/jquery-3.7.1.min.js"></script>
+
+    <script>
+        
+        $(document).ready(function(){
+
+            var homeAnimationPromise = new Promise(function(resolve, reject) {
+                $('#home').load('../include/assets/content-es/sections/home.html', function() {$('#home').animate({'opacity': 1
+                    }, {duration: 1000,
+                        complete: function() {$('#home *').animate({'opacity': 1
+                            }, {duration: 1000,complete: function() {resolve();}});}
+                    });
+                });
+            });
+
+            homeAnimationPromise.then(function() {
+
+                $('header').load('../include/assets/content-es/navbar.html', function() {
+                    $('header').animate({'opacity': 1}, 500);
+                    loadRemainingContent();
+                });
+            });
+
+            function loadRemainingContent() {
+                $('#about').load('../include/assets/content-es/sections/about.html');
+                $('#writeups').load('../include/assets/content-es/sections/writeups.html');
+                $('#certifieds').load('../include/assets/content-es/sections/certifieds.html');
+                $('#proyects').load('../include/assets/content-es/sections/proyects.html');
+                $('footer').load('../include/assets/content-es/footer.html');
+            }
+                
+        });
+
+    </script>
+</body>
+</html>
