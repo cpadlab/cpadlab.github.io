@@ -1,11 +1,22 @@
 [   
     {
+        "title": "GPWShell",
+        "desc": "Simple Gui PHP Web Shell",
+        "icon": "fa-book",
+        "view": "public",
+        "lang_icon": "fa-brands fa-php",
+        "lang": "python",
+        "link": "https://github.com/cpadlab/GPWShell",
+        "link_icon": "fa-link",
+        "link_text": "Visit"
+    },    
+    {
         "title": "capture",
         "desc": "CTF Bypass Script para TryHackMe Room - 'Capture this!'",
         "icon": "fa-book",
         "view": "public",
         "lang_icon": "fa-brands fa-python",
-        "lang": "python",
+        "lang": "php",
         "link": "https://github.com/cpadlab/capture",
         "link_icon": "fa-link",
         "link_text": "Visitar"

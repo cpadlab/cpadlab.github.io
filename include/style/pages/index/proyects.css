@@ -55,6 +55,7 @@
     transition: all ease .4s;}
 .python {background: var(--python);}
 .shell {background: var(--shell);}
+.php {background: var(--php);}
 .repository h1 {
     display: inline-block;
     font-size: 1.5rem;
