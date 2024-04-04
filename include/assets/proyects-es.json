@@ -1,5 +1,16 @@
 [   
     {
+        "title": "VKM v6.0",
+        "desc": "VKM es un gestor de contraseñas autoalojado con una interfaz web intuitiva programada en Python y JS utilizando las tecnologías FastApi y Jquery.",
+        "icon": "fa-book",
+        "view": "public",
+        "lang_icon": "fa-brands fa-python",
+        "lang": "python",
+        "link": "https://github.com/cpadlab/vkm",
+        "link_icon": "fa-link",
+        "link_text": "Visit"
+    },
+    {
         "title": "GPWShell",
         "desc": "Simple Gui PHP Web Shell",
         "icon": "fa-book",
@@ -31,16 +42,5 @@
         "link": "https://github.com/cpadlab/capture",
         "link_icon": "fa-link",
         "link_text": "Visitar"
-    },
-    {
-        "title": "VKMv6",
-        "desc": "Bajo Desarrollo: VaultKeyManager es una bóveda de contraseñas indie autoalojada programada en Python y JS con tecnología FastApi, JQuery y SQLite3.",
-        "icon": "fa-book",
-        "view": "private",
-        "lang_icon": "fa-brands fa-python",
-        "lang": "python",
-        "link": "https://github.com/cpadlab/",
-        "link_icon": "fa-lock",
-        "link_text": "Bajo Desarrollo"
     }
 ]
