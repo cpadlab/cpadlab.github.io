@@ -1,0 +1,283 @@
+
+<cpadilla>
+    <blog total="22">
+
+        <post>
+            <code>22</code>
+            <type>WriteUp</type>
+            <date>May 20, 2024</date>
+            <title>b3dr0ck — THM WriteUp</title>
+            <desc>Server trouble in Bedrock.</desc>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/b3dr0ck-thm-writeup-ba427b8372fd</link>
+            <label_2>EN</label_2>
+        <post>
+
+        <post>
+            <code>21</code>
+            <type>WriteUp</type>
+            <date>Mar 13, 2024</date>
+            <title>Cat Pictures 2 — THM WriteUp</title>
+            <desc>Now with more Cat Pictures!</desc>
+            <image>/include/assets/blog/21/logo.webp</image>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/cat-pictures-2-thm-writeup-90580c6d6fcc</link>
+            <label_2>EN</label_2>
+            <ctfurl>https://tryhackme.com/r/room/catpictures2</ctfurl>
+        <post>
+
+        <post>
+            <code>20</code>
+            <type>Post</type>
+            <date>Mar 12, 2024</date>
+            <title>How I create a Simple PHP Web Shell</title>
+            <desc>I came up with the idea of programming my own PHP Web Shell</desc>
+            <image>/include/assets/blog/20/cap.webp</image>
+            <label_1>Web Shell</label_1>
+            <link>https://medium.com/@cpadlab/this-is-how-to-create-a-simple-php-web-shell-gpwshell-proyect-aff0106a40e2</link>
+            <label_2>Gist</label_2>
+        <post>
+
+        <post>
+            <code>19</code>
+            <type>WriteUp</type>
+            <date>Feb 28, 2024</date>
+            <title>Olympus — THM WriteUp</title>
+            <desc>My first CTF !</desc>
+            <image>/include/assets/blog/19/logo.webp</image>
+            <link>https://medium.com/@cpadlab/olympus-thm-writeup-45d4ddee8c27</link>
+            <label_1>THM</label_1>
+            <label_2>EN</label_2>
+            <ctfurl>https://tryhackme.com/r/room/olympusroom</ctfurl>
+        <post>
+
+        <post>
+            <code>18</code>
+            <type>Script</type>
+            <date>Jan 30, 2024</date>
+            <title>Capture! ByPass — THM Script</title>
+            <desc>This script automates the process of bypassing login credentials in the "Capture this!" CTF room.</desc>
+            <image>/include/assets/blog/18/logo.webp</image>
+            <label_1>Python</label_1>
+            <link>https://medium.com/@cpadlab/capture-bypass-thm-script-f97c5a0d9294</link>
+            <label_2>ByPass</label_2>
+            <ctfurl>https://tryhackme.com/room/capture</ctfurl>
+        <post>
+
+        <post>
+            <code>17</code>
+            <type>WriteUp</type>
+            <date>Nov 20, 2023</date>
+            <title>Wekor — THM WriteUp</title>
+            <desc>CTF Challenge involving Sqli, WordPress, vhost enumeration and recognizing internal services</desc>
+            <image>/include/assets/blog/17/logo.webp</image>
+            <label_1>THM</label_1>
+            <label_2>EN</label_2>
+            <link>https://medium.com/@cpadlab/wekor-thm-writeup-91f2c8853122</link>
+            <ctfurl>https://tryhackme.com/r/room/wekorra</ctfurl>
+        <post>
+
+        <post>
+            <code>16</code>
+            <type>WriteUp</type>
+            <date>Nov 19, 2023</date>
+            <title>HA Joker CTF — THM WriteUp</title>
+            <desc>Batman hits Joker.</desc>
+            <image>/include/assets/blog/16/logo.webp</image>
+            <label_1>THM</label_1>
+            <label_2>EN</label_2>
+            <link>https://medium.com/@cpadlab/ha-joker-ctf-thm-writeup-353e2d909858</link>
+            <ctfurl>https://tryhackme.com/r/room/jokerctf</ctfurl>
+        <post>
+
+        <post>
+            <code>15</code>
+            <type>WriteUp</type>
+            <date>Nov 13, 2023</date>
+            <title>Easy Peasy — THM WriteUp</title>
+            <desc>Practice using tools such as Nmap and GoBuster to locate a hidden directory to get initial access to a vulnerable machine. Then escalate your privileges through a vulnerable cronjob.</desc>
+            <location></location>
+            <image></image>
+            <label_1>THM</label_1>
+            <label_2>EN</label_2>
+            <link>https://medium.com/@cpadlab/easy-peasy-thm-writeup-fc6dc076e64c</link>
+            <ctfurl></ctfurl>
+        <post>
+
+        <post>
+            <code>14</code>
+            <type>WriteUp</type>
+            <date>Oct 28, 2023</date>
+            <title>Boiler CTF — THM WriteUp</title>
+            <desc>Intermediate level CTF</desc>
+            <location></location>
+            <image></image>
+            <label_1>THM</label_1>
+            <label_2>EN</label_2>
+            <link>https://medium.com/@cpadlab/boiler-ctf-thm-writeup-b3c3430d64ca</link>
+            <ctfurl></ctfurl>
+        <post>
+
+        <post>
+            <code>13</code>
+            <type>WriteUp</type>
+            <date>Oct 23, 2023</date>
+            <title>0x41haz — THM WriteUp</title>
+            <desc>Simple Reversing Challenge</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/0x41haz-thm-writeup-7a18647af002</link>
+        <post>
+
+        <post>
+            <code>12</code>
+            <type>WriteUp</type>
+            <date>Oct 14, 2023</date>
+            <title>Overpass 2 (Hacked) — THM WriteUp</title>
+            <desc>Overpass has been hacked! Can you analyse the attacker's actions and hack back in?</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/overpass-2-thm-writeup-d258c2de4e67</link>
+        <post>
+
+        <post>
+            <code>11</code>
+            <type>WriteUp</type>
+            <date>Oct 10, 2023</date>
+            <title>Overpass — THM WriteUp</title>
+            <desc>What happens when some broke CompSci students make a password manager?</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/overpass-thm-writeup-8c68513a78fc</link>
+        <post>
+
+        <post>
+            <code>10</code>
+            <type>WriteUp</type>
+            <date>Oct 9, 2023</date>
+            <title>JPGChat — THM WriteUp</title>
+            <desc>Exploiting poorly made custom chatting service written in a certain language...</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/jpgchat-thm-writeup-12869394de3a</link>
+        <post>
+
+        <post>
+            <code>9</code>
+            <type>WriteUp</type>
+            <date>Sep 15, 2023</date>
+            <title>Agent T — THM WriteUp</title>
+            <desc>Something seems a little off with the server.</desc>
+            <label_2>EN</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/agent-t-thm-writeup-aa17e0e7f9d5</link>
+        <post>
+
+        <post>
+            <code>8</code>
+            <type>Script</type>
+            <date>Aug 1, 2023</date>
+            <title>Agent Sudo — THM Script</title>
+            <desc>Discover Agent CODENAME || You found a secret server located under the deep sea. Your task is to hack inside the server and reveal the truth.</desc>
+            <image>/include/assets/blog/18/logo.webp</image>
+            <label_1>Python</label_1>
+            <link>https://medium.com/@cpadlab/agent-sudo-thm-scripts-7b75eba19226</link>
+            <label_2>THM</label_2>
+        <post>
+
+        <post>
+            <code>7</code>
+            <type>WriteUp</type>
+            <date>Jul 27, 2023</date>
+            <title>SQL Injection — THM WriteUp</title>
+            <desc>Learn how to detect and exploit SQL Injection vulnerabilities</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/sql-injection-thm-writeup-cb104a3178b9</link>
+        <post>
+
+        <post>
+            <code>6</code>
+            <type>WriteUp</type>
+            <date>Jul 26, 2023</date>
+            <title>Mr Robot CTF — THM WriteUp</title>
+            <desc>Based on the Mr. Robot show, can you root this box?</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/mr-robot-ctf-33249057c6de</link>
+        <post>
+
+        <post>
+            <code>5</code>
+            <type>WriteUp</type>
+            <date>Jul 25, 2023</date>
+            <title>Cyborg — THM WriteUp</title>
+            <desc>A box involving encrypted archives, source code analysis and more.</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/cyborg-thm-writeup-71b90bf0dfcc</link>
+        <post>
+
+        <post>
+            <code>4</code>
+            <type>WriteUp</type>
+            <date>Jul 24, 2023</date>
+            <title>Vulnversity — THM WriteUp</title>
+            <desc>Learn about active recon, web app attacks and privilege escalation.</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/vulnversity-thm-writeup-39ec5800011d</link>
+        <post>
+
+        <post>
+            <code>3</code>
+            <type>WriteUp</type>
+            <date>Jul 23, 2023</date>
+            <title>Basic Pentesting — THM WriteUp</title>
+            <desc>This is a machine that allows you to practise web app hacking and privilege escalation</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/basic-pentesting-thm-writeup-39a17fdca985</link>
+        <post>
+
+        <post>
+            <code>2</code>
+            <type>WriteUp</type>
+            <date>Jul 22, 2023</date>
+            <title>SimpleCTF — THM WriteUp</title>
+            <desc>Beginner level ctf</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/simplectf-thm-writeup-75ec002bbeb4</link>
+        <post>
+
+        <post>
+            <code>1</code>
+            <type>WriteUp</type>
+            <date>Jul 15, 2023</date>
+            <title>Kiba — THM WriteUp</title>
+            <desc>Identify the critical security flaw in the data visualization dashboard, that allows execute remote code execution.</desc>
+            <label_2>ES</label_2>
+            <label_1>THM</label_1>
+            <link>https://medium.com/@cpadlab/kiba-thm-writeup-by-14wual-cc09f2f161d3</link>
+        <post>
+
+        <!-- 
+        <post>
+            <code></code>
+            <type></type>
+            <date></date>
+            <title></title>
+            <desc></desc>
+            <location></location>
+            <image></image>
+            <label_1></label_1>
+            <label_2></label_2>
+            <link></link>
+            <ctfurl></ctfurl>
+        <post>
+        -->
+
+
+    </blog>
+</cpadilla>

@@ -1,99 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- 
+#   ___  ____  __   
+#  / __)(  _ \(  )  
+# ( (__  )___/ )(__  (code by cpadlab)
+#  \___)(__)  (____)
 
-    <!-- 
-    #   ___  ____  __   
-    #  / __)(  _ \(  )  
-    # ( (__  )___/ )(__  (code by cpadlab)
-    #  \___)(__)  (____)
-
-    # Author >> Carlos Padilla
-    # Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 Feb Update)
-    # Download Code >> https://github.com/cpadlab/cpadlab.github.io
-    # Follow me >> https://twitter.com/nerezza0
-    -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Carlos Padilla</title>
-
-    <meta name="description" content="Carlos Padilla, Junior Penetration Tester Portfolio">
-    <meta name="keywords" content="Carlos, Carlos Padilla, penstester, JR Penetration Tester, Portfolio">
-
-    <meta property="og:title" content="Carlos Padilla - Portfolio">
-    <meta property="og:description" content="Carlos Padilla, Junior Penetration Tester Portfolio">
-    <meta property="og:image" content="include/assets/images/share.png">
-    <meta property="og:url" content="https://cpadlab.github.io/">
-
-    <link rel="stylesheet" href="include/style/ttf.css">
-    <link rel="stylesheet" href="include/style/main.css">
-    <link rel="stylesheet" href="include/lib/fontawesome-free-6.5.1-web/css/all.css">
-
-    <link rel="stylesheet" href="include/style/anim.css">
-
-    <link rel="icon" type="image/png" href="include/assets/images/test.jpg">
-
-</head>
-<body>
-
-    <content>
-
-        <div class="custom-cursor"><script src="include/scripts/cursor.js"></script></div>
-
-        <header></header>
-    
-        <main>
-
-            <section id="home"></section>
-            <section id="about"></section>
-            <div class="separator"></div>
-            <section id="writeups"></section>
-            <section id="certifieds"></section>
-            <section id="proyects"></section>
-    
-        </main>
-
-        <footer></footer>
-
-    </content>
-
-    <script src="include/lib/jquery-3.7.1.min.js"></script>
-
-    <script>
-
-        $(document).ready(function(){
-
-            var homeAnimationPromise = new Promise(function(resolve, reject) {
-                $('#home').load('include/assets/content-en/sections/home.html', function() {$('#home').animate({'opacity': 1
-                    }, {duration: 1000,
-                        complete: function() {$('#home *').animate({'opacity': 1
-                            }, {duration: 1000,complete: function() {resolve();}});}
-                    });
-                });
-            });
-
-            homeAnimationPromise.then(function() {
-
-                $('header').load('include/assets/content-en/navbar.html', function() {
-                    $('header').animate({'opacity': 1}, 500);
-                    loadRemainingContent();
-                });
-            });
-
-            function loadRemainingContent() {
-
-                $('#about').load('include/assets/content-en/sections/about.html')
-                $('#writeups').load('include/assets/content-en/sections/writeups.html');
-                $('#certifieds').load('include/assets/content-en/sections/certifieds.html');
-                $('#proyects').load('include/assets/content-en/sections/proyects.html');
-                $('footer').load('include/assets/content-en/footer.html');
-            }
-                
-        });
-
-    </script>
-
-</body>
-</html>
+# Author >> Carlos Padilla
+# Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 May Update)
+# Download Code >> https://github.com/cpadlab/cpadlab.github.io
+# Follow me >> https://twitter.com/cpadlab
+-->
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Carlos Padilla</title><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin=anonymous referrerpolicy=no-referrer><link rel=stylesheet href=/include/style/common/main.css><link rel=stylesheet href=/include/style/modules/navbar.css><link rel=stylesheet href=/include/style/modules/footer.css><link rel=stylesheet href=/include/style/modules/home.css><link rel=stylesheet href=/include/style/pages/index/index.css><link rel=stylesheet href=/include/style/pages/index/about.css><link rel=stylesheet href=/include/style/pages/index/blog.css><link rel=stylesheet href=/include/style/pages/index/proyects.css><link rel=stylesheet href=/include/style/pages/index/certifieds.css><link rel=stylesheet href=/include/lib/slick/slick/slick.css><link rel=stylesheet href=/include/lib/slick/slick/slick-theme.css><link rel=stylesheet href=/include/lib/roadmap/dist/jquery.roadmap.min.css><link href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css rel=stylesheet><link rel=icon type=image/png href=/include/assets/img/test.jpg></head><body><header></header><div class=host-hidden-menu></div><section id=home><div class=home-content><div class=hc-box><div class=nickname><div class=nickname-box></div><span></span></div></div><div class=page-title><h1>Carlos Padilla</h1><h2 class=pt-type-text title="Junior Penetration Tester w/ eJPT;Multi-Platform App Dev Studient;Systems and Network Technician"></h2></div></div></section><div class=fixed-bottom-btns><button id=toggle-theme-btn><i class="fa-solid fa-moon"></i></button><a id=go-up-btn href=#><i class="fa-solid fa-up-long"></i></a></div><main><section class=animate data-animate=fadeInRight data-duration=1s data-delay=0.5s data-offset=100 data-iteration=1 id=about></section><section class=animate data-animate=fadeInRight data-duration=1s data-delay=0.5s data-offset=100 data-iteration=1 id=certifieds-2><div id=live-timeline></div></section></main><main id=main-2><section id=blog class=animate data-animate=fadeInDown data-duration=1s data-delay=0.5s data-offset=100 data-iteration=1></section><section id=certifieds class=animate data-animate=fadeInRight data-duration=1s data-delay=0.5s data-offset=100 data-iteration=1><h1 class=certifieds-h1 id=section-title-h1>Certifieds</h1><div class=certifieds-slider><img src=/include/assets/img/ejpt.png><img src=/include/assets/img/CyberEssentials.png></div></section><section id=proyects class=animate data-animate=fadeInLeft data-duration=1s data-delay=0.5s data-offset=100 data-iteration=1></section></main><footer><div class=footer-content><h1>Carlos Padilla</h1><div class=fc-sections><a href=#>Home</a><a href=#about>About</a><a href=#blog>Blog</a><a href=#certifieds>Certifieds</a><a href=#proyects>Proyects</a></div><div class=fc-social-media><a target=_blank href=https://github.com/cpadlab><i class="fa-brands fa-github"></i></a><a target=_blank href=https://www.youtube.com/@wual><i class="fa-brands fa-youtube"></i></a><a target=_blank href=https://linkedin.com/in/cpadilla10><i class="fa-brands fa-linkedin"></i></a><a target=_blank href=https://medium.com/@cpadlab><i class="fa-brands fa-medium"></i></a><a target=_blank href=https://twitter.com/cpadlab><i class="fa-brands fa-x-twitter"></i></a></div></div></footer><script src=/include/lib/jquery-3.7.1.min.js></script><script src=/include/lib/slick/slick/slick.js></script><script src=/include/lib/roadmap/dist/jquery.roadmap.min.js></script><script src=/include/lib/moreless/moreless.js></script><script src=/include/lib/teletype/jquery.teletype.min.js></script><script src=/include/lib/resizable/dist/jquery-resizable.min.js></script><script src=/include/lib/scrolla/dist/js/jquery.scrolla.min.js></script><script type=module src=/include/scripts/pages/index/boot.js></script></body></html>

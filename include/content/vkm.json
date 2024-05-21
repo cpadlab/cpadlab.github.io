@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Github",
+        "site": "https://github.com/cpadlab",
+        "username": "cpadlab",
+        "password": "myp4assw0rd",
+        "category": "code",
+        "favorites": true
+    }
+]

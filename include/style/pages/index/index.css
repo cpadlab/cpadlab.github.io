@@ -1,0 +1,13 @@
+/* <!-- 
+#   ___  ____  __   
+#  / __)(  _ \(  )  
+# ( (__  )___/ )(__  (code by cpadlab)
+#  \___)(__)  (____)
+
+# Author >> Carlos Padilla
+# Proyect >> CPWvFeb24 (Carlos Padilla Web 2024 May Update)
+# Download Code >> https://github.com/cpadlab/cpadlab.github.io
+# Follow me >> https://twitter.com/cpadlab
+--> */
+
+#main-2,main{padding-top:3em;width:70%;margin:0 auto;border-left:2px solid var(--primary)}#main-2{border-right:2px solid var(--primary)}@media only screen and (max-width:800px){#main-2,main{width:90%}#main-2{border-right:unset}}#others{padding:1em;max-width:70%;margin:0 auto}@media only screen and (max-width:950px){#others{max-width:100%}}

@@ -10,4 +10,4 @@
 # Follow me >> https://twitter.com/cpadlab
 --> */
 
-.certifieds-h1{color:var(--text);margin-bottom:1em;text-align:center;align-items:center;justify-content:center}
+export function getQueryParam(e){return new URL(window.location.href).searchParams.get(e)}

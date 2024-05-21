@@ -10,4 +10,4 @@
 # Follow me >> https://twitter.com/cpadlab
 --> */
 
-.certifieds-h1{color:var(--text);margin-bottom:1em;text-align:center;align-items:center;justify-content:center}
+main{padding-top:3em;width:70%;margin:0 auto;border-left:2px solid var(--primary)}@media only screen and (max-width:800px){main{width:90%}}
