@@ -1,0 +1,34 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Carlos Padilla Blog</title>
+        <link>https://cpadlab.github.io/</link>
+        <description>Recent content on cpadlab blog</description>
+        <language>en-EN</language>
+        <lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://cpadlab.github.io/include/blog.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>The perils of Python: How to program a KeyLogger</title>
+            <link>https://medium.com/@cpadlab/the-perils-of-python-how-to-program-a-keylogger-easy-0c01719354d6</link>
+            <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+            <guid>https://medium.com/@cpadlab/the-perils-of-python-how-to-program-a-keylogger-easy-0c01719354d6s</guid>
+            <description>Explores the risks of Python by detailing how to create a KeyLogger, highlighting its threat to personal privacy and security by covertly capturing keystrokes.</description>
+            <labels>
+                <label>Python</label>
+                <label>KeyLogger</label>
+                <label>Malware</label>
+            </labels>
+        </item>
+        <item>
+            <title>This is how I create a Simple PHP Web Shell</title>
+            <link>https://medium.com/@cpadlab/this-is-how-to-create-a-simple-php-web-shell-gpwshell-proyect-aff0106a40e2</link>
+            <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+            <guid>https://medium.com/@cpadlab/this-is-how-to-create-a-simple-php-web-shell-gpwshell-proyect-aff0106a40e2</guid>
+            <description>I always use the Pentest Monkey reverse shell when uploading php files when playing ctfs. So, for a change, I came up with the idea of programming my own PHP Web Shell.</description>
+            <labels>
+                <label>PHP</label>
+                <label>WebShell</label>
+                <label>Gist</label>
+            </labels>
+        </item>
+    </channel>
+</rss>

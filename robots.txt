@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /include/
+Disallow: /script/
+Disallow: /style/
+Disallow: /lib/
+Disallow: /README.md
+
+Allow: /include/assets/
+Allow: /include/blog.xml
+Allow: /include/writeup.xml
+
+Sitemap: https://cpadlab.github.io/sitemap.xml
