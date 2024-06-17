@@ -3,10 +3,11 @@ $(document).ready(function() {
     var items = [];
     var totalPages = 0;
     var currentPage = 1;
-    var selectedCategory = "all"; // Inicialmente, mostrar todos los elementos
+    var selectedCategory = "all";
 
     function loadItems(xml) {
         $(xml).find('item').each(function(index) {
+
             var title = $(this).find('title').text();
             var link = $(this).find('link').attr('href');
             var date = $(this).find('pubDate').text();
@@ -24,42 +25,38 @@ $(document).ready(function() {
             `;
 
             items.push(itemHTML);
+
         });
 
         totalPages = Math.ceil(items.length / itemsPerPage);
         showPage(1);
         renderButtons();
+
     }
 
     function showPage(page) {
         var startIndex = (page - 1) * itemsPerPage;
         var endIndex = startIndex + itemsPerPage;
         var filteredItems = items.filter(function(item) {
-            if (selectedCategory === "all") {
-                return true;
-            } else {
-                return $(item).data('category') === selectedCategory;
-            }
+            if (selectedCategory === "all") {return true;
+            } else {return $(item).data('category') === selectedCategory;}
         });
 
         var writeupsContainer = $('.wc-writeups');
         writeupsContainer.animate({ height: 0, opacity: 0 }, 500, function() {
             writeupsContainer.empty().append(filteredItems.slice(startIndex, endIndex));
-            writeupsContainer.css('height', 'auto'); // Establece la altura automática para calcular la altura real
-            var newHeight = writeupsContainer.height(); // Obtén la nueva altura
-            writeupsContainer.css('height', 0); // Establece la altura de nuevo a 0 antes de la animación
+            writeupsContainer.css('height', 'auto');
+            var newHeight = writeupsContainer.height();
+            writeupsContainer.css('height', 0);
             writeupsContainer.css('opacity', 0);
-            writeupsContainer.animate({ height: newHeight, opacity: 1 }, 500); // Anima a la nueva altura
+            writeupsContainer.animate({ height: newHeight, opacity: 1 }, 500);
         });
     }
 
     function renderButtons() {
         var filteredItems = items.filter(function(item) {
-            if (selectedCategory === "all") {
-                return true;
-            } else {
-                return $(item).data('category') === selectedCategory;
-            }
+            if (selectedCategory === "all") {return true;
+            } else {return $(item).data('category') === selectedCategory;}
         });
 
         totalPages = Math.ceil(filteredItems.length / itemsPerPage);
@@ -75,18 +72,15 @@ $(document).ready(function() {
                     showPage(page);
                 }
             });
-            if (i === 1) {
-                button.attr('id', 'wc-nexts-on');
-            }
+            if (i === 1) {button.attr('id', 'wc-nexts-on');}
             $('.wc-nexts-btns').append(button);
         }
     }
 
     $("input[name='value-radio']").change(function() {
-        selectedCategory = $(this).val(); // Actualizar la categoría seleccionada
-        showPage(1); // Mostrar la primera página de la nueva categoría
-        renderButtons(); // Volver a generar los botones basados en la nueva categoría
-        // Establecer el primer botón como activo
+        selectedCategory = $(this).val();
+        showPage(1);
+        renderButtons();
         $('.wc-nexts-btns button').removeAttr('id');
         $('.wc-nexts-btns button:first').attr('id', 'wc-nexts-on');
     });
@@ -96,14 +90,11 @@ $(document).ready(function() {
         type: "GET",
         url: "/include/writeup.xml",
         dataType: "xml",
-        success: function(xml) {
-            loadItems(xml);
-        },
-        error: function(xhr, status, error) {
-            console.error("Error al cargar el archivo XML:", error);
-        }
+        success: function(xml) {loadItems(xml);
+        }, error: function(xhr, status, error) {console.error("XML Error:", error);}
     });
 
     $("input[name='value-radio'][value='all']").prop("checked", true);
+    
 });
 

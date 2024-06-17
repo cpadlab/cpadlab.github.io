@@ -40,15 +40,11 @@ $(document).ready(function() {
                 var pubDate = $(this).find('pubDate').text();
                 var description = $(this).find('description').text();
                 var labels = [];
-                $(this).find('labels label').each(function() {
-                    labels.push($(this).text());
-                });
-    
+
+                $(this).find('labels label').each(function() {labels.push($(this).text());});
                 createBlogPost(title, link, pubDate, description, labels);
+
             });
-        },
-        error: function(error) {
-            console.error('Error fetching XML:', error);
-        }
+        }, error: function(error) {console.error('Error fetching XML:', error);}
     });
 });
