@@ -1,253 +1,414 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light"> 
+<!doctype html>
+<html lang=en data-theme=dark>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Carlos Padilla - Blog, Writeups & Projects</title>
-    <meta name="description" content="Explore the blog, writeups, and projects by Carlos Padilla, a junior penetration tester and multi-platform app developer.">
-    <meta name="keywords" content="cpadlab, Carlos Padilla, pentester, cybersecurity blog, writeups, projects">
-    <meta name="author" content="Carlos Padilla">
-    <link rel="canonical" href="https://cpadlab.github.io/">
-    
-    <meta property="og:title" content="Carlos Padilla - Blog, Writeups & Projects">
-    <meta property="og:description" content="Explore the blog, writeups, and projects by Carlos Padilla, a junior penetration tester and multi-platform app developer.">
-    <meta property="og:image" content="https://cpadlab.github.io/include/assets/share.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cpadlab.github.io/">
-
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://cpadlab.github.io/sitemap.xml">
-
-    <meta name="twitter:title" content="Carlos Padilla - Blog, Writeups & Projects">
-    <meta name="twitter:description" content="Explore the blog, writeups, and projects by Carlos Padilla, a junior penetration tester and multi-platform app developer.">
-    <meta name="twitter:image" content="https://cpadlab.github.io/include/assets/share.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@cpadlab">
-
-    <meta name="theme-color" content="#37602b" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#acd4a0" media="(prefers-color-scheme: dark)">
-
-    <link rel="manifest" href="https://cpadlab.github.io/include/assets/favicon/site.webmanifest">
-    
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cpadlab.github.io/include/assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cpadlab.github.io/include/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://cpadlab.github.io/include/assets/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="https://cpadlab.github.io/include/assets/favicon/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://cpadlab.github.io/include/assets/favicon/apple-touch-icon.png">
-
-    <link rel="stylesheet" href="https://cpadlab.github.io/include/style/main.css">
-    <link rel="stylesheet" href="https://cpadlab.github.io/include/style/navbar.css">
-    <link rel="stylesheet" href="https://cpadlab.github.io/include/style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cpadlab.github.io/include/lib/slick/slick.css">
-    <link rel="stylesheet" href="https://cpadlab.github.io/include/lib/slick/slick-theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<title>Carlos Padilla</title>
+<meta name=description content="Explore the blog, writeups, and projects by Carlos Padilla, a junior penetration tester and multi-platform app developer.">
+<meta name=keywords content="cpadlab, Carlos Padilla, pentester, cybersecurity blog, writeups, projects">
+<meta name=author content="Carlos Padilla">
+<link rel=canonical href=https://cpadlab.github.io/ >
+<meta name=robots content="index, follow">
+<meta name=twitter:title content="Carlos Padilla - Blog, Writeups & Projects">
+<meta name=twitter:description content="Explore the blog, writeups, and projects by Carlos Padilla, a junior penetration tester and multi-platform app developer.">
+<meta name=twitter:image content=include/assets/share.png>
+<meta name=twitter:card content=summary_large_image>
+<meta name=twitter:site content=@cpadlab>
+<meta property=og:title content="Carlos Padilla - Blog, Writeups & Projects">
+<meta property=og:description content="Explore the blog, writeups, and projects by Carlos Padilla, a junior penetration tester and multi-platform app developer.">
+<meta property=og:image content=include/assets/share.png>
+<meta property=og:type content=website>
+<meta property=og:url content=https://cpadlab.github.io/ >
+<meta name=theme-color content=#1f1674 media="(prefers-color-scheme: light)">
+<meta name=theme-color content=#958be9 media="(prefers-color-scheme: dark)">
+<link rel=manifest href=site.webmanifest>
+<link rel=icon type=image/png sizes=16x16 href=include/assets/favicon/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=include/assets/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=192x192 href=include/assets/favicon/android-chrome-192x192.png>
+<link rel=icon type=image/png sizes=512x512 href=include/assets/favicon/android-chrome-512x512.png>
+<link rel=apple-touch-icon sizes=180x180 href=include/assets/favicon/apple-touch-icon.png>
+<link rel=stylesheet href=include/styles/common/main.css>
+<link rel=stylesheet href=include/styles/common/default.css>
+<link rel=stylesheet href=include/styles/modules/navbar.css>
+<link rel=stylesheet href=include/styles/modules/footer.css>
+<link rel=stylesheet href=include/styles/sections/home.css>
+<link rel=stylesheet href=include/styles/sections/blog.css>
+<link rel=stylesheet href=include/styles/sections/writeups.css>
+<link rel=stylesheet href=include/styles/sections/projects.css>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel=stylesheet>
+<link rel=stylesheet href=include/lib/slick-1.8.1/slick/slick.css>
+<link rel=stylesheet href=include/lib/slick-1.8.1/slick/slick-theme.css>
+<link rel=stylesheet href=include/lib/animate.min.css>
+<link rel=stylesheet href=include/lib/simple-lightbox/dist/simple-lightbox.min.css>
 </head>
 <body>
-
-    <div class="float-btns">
-        <label id="switch-theme" class="switch">
-            <input type="checkbox" id="theme-checkbox">
-            <span class="slider"></span>
-        </label>
-    </div>
-
-    <header>
-
-        <nav><div></div><span>cpadlab</span></nav>
-
-        <nav>
-            <a id="hn-link-home" class="hn-link" href="#home">
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
-            </a>            
-            <a id="hn-link-blog" class="hn-link" href="#blog">
-                <i class="fa-solid fa-book"></i>
-                <span>Blog</span>
-            </a>            
-            <a id="hn-link-writeups" class="hn-link" href="#writeups">
-                <i class="fa-solid fa-pen-nib"></i>
-                <span>Writeups</span>
-            </a>                
-            <a id="hn-link-proyects" class="hn-link" href="#projects">
-                <i class="fa-solid fa-code-merge"></i>
-                <span>Projects</span>
-            </a>                
-            
-            <button onclick="window.open('https://tryhackme.com/p/cpadlab', '_blank')" id="hn-toggle"><i class="fa-solid fa-user-secret"></i></button>
-            <a id="thm-link" href="https://tryhackme.com/p/cpadlab" target="_blank"><span>TryHackMe</span></a>
-        </nav>
-
-    </header>
-
-    <main>
-
-        <section id="home" class=animate data-animate=fadeIn data-duration=1s data-delay=.5s data-offset=1 data-iteration=>
-            <div class="section-content home-content">
-                
-                <h1 class="SourceCodePro">Carlos Padilla</h1>
-                
-                <h2 title="Junior Penetration Tester;Jr. Multiplatform App. Developer;Microcomputer Systems Technician;">Junior Penetration Tester</h2>
-                
-                <p>Certified with the eJPT, I invest my free time playing CTFs, as I am a lover of offensive cybersecurity. I have a degree as a MicroComputer Systems Technician and I love python programming.  I am currently studying Multiplatform Application Development and I dream of becoming one day the best Pentester.</p>
-                
-                <div class="hc-buttons">
-                    <a title="github/cpadlab" data-tooltip="github/cpadlab" href="https://github.com/cpadlab" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a title="medium/@cpadlab" data-tooltip="medium/@cpadlab" href="https://medium.com/@cpadlab" target="_blank"><i class="fa-brands fa-medium"></i></a>
-                    <a title="linkedin/cpadilla10" data-tooltip="linkedin/cpadilla10" href="https://linkedin.com/in/cpadilla10" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-
-            </div>
-        </section>
-    
-        <section id="blog" class=animate data-animate=fadeIn data-duration=1s data-delay=.5s data-offset=1 data-iteration=>
-            <div class="section-content blog-content">
-                
-                <h1 class="SourceCodePro bc-h1">Blog</h1>
-                <div class="bc-blogs"></div>
-
-            </div>
-        </section>
-    
-        <section id="writeups" class=animate data-animate=fadeIn data-duration=1s data-delay=.5s data-offset=1 data-iteration=>
-            <div class="section-content writeups-content">
-                
-                <h1 class="SourceCodePro wc-h1">Writeups</h1>
-                
-                <div class="radio-input">
-
-                    <input value="all" name="value-radio" id="value-1" type="radio">
-                    <label for="value-1">All</label>
-                    
-                    <input value="Easy" name="value-radio" id="value-2" type="radio">
-                    <label for="value-2">Easy</label>
-                    
-                    <input value="Medium" name="value-radio" id="value-3" type="radio">
-                    <label for="value-3">Medium</label>
-                    
-                    <input value="Hard" name="value-radio" id="value-4" type="radio">
-                    <label for="value-4">Hard</label>
-                
-                </div>
-                
-                <div class="wc-writeups"></div>
-                
-                <div class="wc-nexts-btns"><button id="wc-nexts-on">1</button></div>
-    
-            </div>
-        </section>
-    
-        <section id="projects" class=animate data-animate=fadeIn data-duration=1s data-delay=.5s data-offset=1 data-iteration=>
-            <div class="section-content proyects-content">
-                
-                <h1 class="SourceCodePro pc-h1">Projects</h1>
-                
-                <div class="pc-proyects">
-                    
-                    <div class="proyect">
-
-                        <div class="p-up"><img title="VKM" alt="VaultKeyManager Image Preview" id="vault-image" src="include/assets/dark-vault.png"></div>
-                        
-                        <div class="p-down">
-                        
-                            <h2>VKMv6.1</h2>
-
-                            <div class="pr-labels">
-                                <div class="pr-labels-label"><i class="fa-brands fa-python"></i> <span>Python</span></div>
-                                <div class="pr-labels-label"><i class="fa-brands fa-square-js"></i><span>JavaScript</span></div>
-                                <div class="pr-labels-label"><i class="fa-solid fa-database"></i><span>SQLite3</span></div>
-                            </div>
-
-                            <p>VKM (Vault Key Manager) is a self-hosted password manager with an intuitive web interface programmed in Python and JS using FastApi and Jquery technologies.</p>
-                            
-                            <div class="pr-buttons">
-                                <a title="Download or Review the VKM Projet" target="_blank"href="https://github.com/cpadlab/vkm"><i class="fa-solid fa-code"></i><span>Proyect</span></a>
-                                <a title="Read the VKM Readme" target="_blank" href="https://github.com/cpadlab/vkm/blob/master/README.md"><i class="fa-brands fa-readme"></i><span>ReadMe</span></a>
-                                <a title="Released VKM v6.0 on April 2024" target="_blank" href="https://github.com/cpadlab/vkm/releases/tag/V6.0"><i class="fa-solid fa-code-branch"></i><span>Released v6.0</span></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-    
-                    <div class="proyect">
-                        
-                        <div class="p-up"><img title="GPWShell" alt="GPWShell Image Preview" id="gpwshell-image" src="include/assets/dark-gpwshell.png"></div>
-                        
-                        <div class="p-down">
-                        
-                            <h2 data-info="Gui PHP Web Shell">GPWShell</h2>
-                        
-                            <div class="pr-labels">
-                                <div class="pr-labels-label"><i class="fa-brands fa-php"></i><span>PHP</span></div>
-                                <div class="pr-labels-label"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
-                                <div class="pr-labels-label"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
-                            </div>
-
-                            
-                            <p>GPWShell is a web shell with a simple interface programmed in php in the style of webshell c99.</p>
-                           
-                            <div class="pr-buttons">
-                                <a title="Github Gist: GPWShell - Simple GUI PHP Web Shell" target="_blank"href="https://gist.github.com/cpadlab/3be045083546c6ff19d2ab21db20057b"><i class="fa-solid fa-code"></i><span>Gist</span></a>
-                                <a title="Blog: This is how I create a Simple PHP Web Shell " target="_blank" href="https://medium.com/@cpadlab/this-is-how-to-create-a-simple-php-web-shell-gpwshell-proyect-aff0106a40e2"><i class="fa-brands fa-readme"></i><span>Blog</span></a>
-                            </div>
-                        </div>
-
-                    </div>
-    
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-
-        <div class="footer-row-up">
-            <a aria-label="Contact with me!" title="mail/cpadlab@proton.me" href="mailto:cpadlab@proton.me"><i class="fa-regular fa-envelope"></i><span>Contacto</span></a>
-            <a title="RSS Channel" href="include/writeup.xml" target="_blank"><i class="fa-solid fa-rss"></i><span>RSS</span></a>
-            <a aria-label="Follow on Medium!" title="medium/@cpadlab" href="https://medium.com/@cpadlab" target="_blank"><i class="fa-brands fa-medium"></i><span>Blog</span></a>
-            <a aria-label="Follow on Github!" title="github/cpadlab" href="https://github.com/cpadlab" target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
-            <a aria-label="Subscribe to my Newsletter!" title="Medium Newsletter" href="https://medium.com/@cpadlab/subscribe" target="_blank"><i class="fa-regular fa-newspaper"></i><span>Newsletter</span></a>    
-        </div>
-
-    </footer>
-
-    <script src="include/lib/jquery-3.7.1.min.js"></script>
-    <script src="include/script/blog.js"></script>
-    <script type="module" src="include/script/theme.js"></script>
-    <script src="include/lib/moment.js"></script>
-    <script src="include/script/writeup.js"></script>
-    <script src="include/script/scroll-sections.js"></script>
-    <script src="include/lib/jquery.teletype.min.js"></script>
-    <script src="include/lib/scrolla/dist/js/jquery.scrolla.min.js"></script>
-
-    <script>
-        
-        $( function() {
-            $( '.home-content h2' ).each( function() {
-                var items = $( this ).attr( 'title' ) + ';' + $( this ).text();
-                $( this ).empty().attr( 'title', '' ).teletype( {
-                text: $.map( items.split( ';' ), $.trim ),
-                typeDelay: 10,
-                backDelay: 20,
-                cursor: '▋',
-                delay: 3000,
-                preserve: false,
-                prefix: '[cpadlab ~]# ',
-                loop: 0
-                } );
-            } );
-        } );
-
-        $("#projects").scrolla({ once: true})
-        $("#writeups").scrolla({once: true})
-        $("#blog").scrolla({once: true})
-        $("#home").scrolla({once: true})
-
-    </script>
-
+<div class=black-overlay></div>
+<div class=float-buttons>
+<a href=# data-tooltip=Previous id=prev-section>
+<span hidden>Previous section</span>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+</a>
+<a href=# data-tooltip=Next id=next-section>
+<span hidden>Next section</span>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
+</a>
+</div>
+<header class="__header intro-animation-effects" data-animate=fadeInDown data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<div class=__navbar_container_child_1>
+<div></div>
+<span>cpadlab</span>
+</div>
+<nav class=__navbar_container_child_2>
+<a id=__navbar_a2_home href=#home><span class=section_selected>Home</span></a>
+<a id=__navbar_a2_blog href=#blog><span>Blog</span></a>
+<a id=__navbar_a2_writeups href=#writeups><span>Writeups</span></a>
+<a id=__navbar_a2_projects href=#projects><span>Projects</span></a>
+</nav>
+<nav class=__navbar_container_child_3>
+<button class=__default_button_1 id=toggle_hidden_menu_button data-tooltip=Menu>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+<span hidden>Menú</span>
+</button>
+<button class=__default_button_2 id=toggle_hidden_search_button data-tooltip=TryHackMe onclick='window.open("https://tryhackme.com/p/cpadlab","_blank")'>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"/></svg>
+<span hidden>Search</span>
+</button>
+<label class=toggle_color_theme_button data-tooltip=Theme>
+<input type=checkbox>
+<div class=slider>
+<div class=circle></div>
+</div>
+</label>
+</nav>
+</header>
+<menu data-status=close id=hidden_navbar_menu>
+<button id=close_hidden_menu_button>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+<span hidden>Close Menu</span>
+</button>
+<div class=navbar_menu_content>
+<div class=navbar_menu_content_row_0>
+<a href=#home><span>Home</span></a>
+<a href=#blog><span>Blog</span></a>
+<a href=#writeups><span>Writeups</span></a>
+<a href=#projects><span>Projects</span></a>
+</div>
+<div class=navbar_menu_content_row_1>
+<div class=navbar_menu_content_row_1_left>
+<h3>About</h3>
+<p>Certified with the eJPT, I invest my free time playing CTFs, as I am a lover of offensive cybersecurity. I have a degree as a MicroComputer Systems Technician and I love python programming. I am currently studying Multiplatform Application Development and I dream of becoming one day the best Pentester.</p>
+</div>
+<div class=navbar_menu_content_row_1_right>
+<div class=navbar_menu_content_row_1_right_row1>
+<h3>Discover</h3>
+<a href=https://github.com/cpadlab target=_blank rel="noopener follow">Github</a>
+<a href=https://medium.com/@cpadlab target=_blank rel="noopener follow">Medium</a>
+<a href=https://medium.com/@cpadlab/subscribe target=_blank rel="noopener follow">Newsletter</a>
+</div>
+<div class=navbar_menu_content_row_1_right_row2>
+<h3>Connect</h3>
+<a href=https://www.linkedin.com/in/cpadilla10 target=_blank rel="noopener follow">LinkedIn</a>
+<a href=mailto:cpadlab@proton.me>Mail</a>
+</div>
+</div>
+</div>
+</div>
+</menu>
+<menu data-status=close id=hidden_search_menu></menu>
+<main>
+<section id=home class=__default_section_1>
+<div class=__default_content_section>
+<div class=home-container>
+<h1 class="__default_h1 intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>Carlos Padilla</h1>
+<span id=home-span class=intro-animation-effect data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1><b>Junior Penetration Tester</b></span>
+<p class=intro-animation-effect data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>Certified with the eJPT, I invest my free time playing CTFs, as I am a lover of offensive cybersecurity. I have a degree as a MicroComputer Systems Technician and I love python programming. I am currently studying Multiplatform Application Development and I dream of becoming one day the best Pentester.</p>
+<div class="home-buttons intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<a href=https://github.com/cpadlab target=_blank class=__default_button_1>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+<span>Contact</span>
+</a>
+<a href=https://github.com/cpadlab target=_blank class=__default_button_2>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+<span>Github</span>
+</a>
+<a href=https://www.linkedin.com/in/cpadilla10 target=_blank class=__default_button_2>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+<span>LinkedIn</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section id=blog>
+<div class=__default_content_section>
+<h1 class="__default_h1 intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>Blog</h1><hr class=intro-animation-effect data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<div class=topics>
+<div class=topics-info>
+</div>
+<div class="topics-container intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<span class=filter-topic-btn>Python</span>
+<span class=filter-topic-btn>PHP</span>
+<span class=filter-topic-btn>KeyLogger</span>
+<span class=filter-topic-btn>WebShell</span>
+<span class=filter-topic-btn>Gist</span>
+<span class=filter-topic-btn>Malware</span>
+<span class=filter-topic-btn>Python</span>
+<span class=filter-topic-btn>PHP</span>
+<span class=filter-topic-btn>KeyLogger</span>
+<span class=filter-topic-btn>WebShell</span>
+<span class=filter-topic-btn>Gist</span>
+<span class=filter-topic-btn>Malware</span>
+</div>
+</div>
+<div class="blog_container intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=100 data-iteration=1></div>
+<div class="pagination intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1></div>
+</div>
+</section>
+<section id=writeups>
+<div class=__default_content_section>
+<h1 class="__default_h1 intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>Writeups</h1><hr data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1 class=intro-animation-effect>
+<div class=filters>
+<div class="filter-year intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<select id=filter-year-select>
+<option value=all>2023 - 2024</option>
+<option value=2024>2024</option>
+<option value=2023>2023</option>
+</select>
+</div>
+<div class=filter-type>
+<div class="filter-type-input intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<input type=radio name=filters-type id=filter-type-input-all checked>
+<label for=filter-type-input-all>All</label>
+</div>
+<div class="filter-type-input intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<input type=radio name=filters-type id=filter-type-input-easy>
+<label for=filter-type-input-easy>Easy</label>
+</div>
+<div class="filter-type-input intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<input type=radio name=filters-type id=filter-type-input-medium>
+<label for=filter-type-input-medium>Medium</label>
+</div>
+<div class="filter-type-input intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<input type=radio name=filters-type id=filter-type-input-hard>
+<label for=filter-type-input-hard>Hard</label>
+</div>
+</div>
+</div>
+<div class=intro-animation-effect data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=100 data-iteration=1>
+<div class=writeups_container></div>
+</div>
+<div class="pagination intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1>
+<button id=prevButton>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+<span>Most recent writeups</span>
+</button>
+<button id=nextButton>
+<span>Previous writeups</span>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+</button>
+</div>
+</div>
+</section>
+<section id=projects class=__default_section_2>
+<svg class=projects-svg-separator xmlns=http://www.w3.org/2000/svg viewBox="0 0 1440 320"><path fill=var(--background) fill-opacity=1 d=M0,160L26.7,181.3C53.3,203,107,245,160,229.3C213.3,213,267,139,320,106.7C373.3,75,427,85,480,106.7C533.3,128,587,160,640,192C693.3,224,747,256,800,234.7C853.3,213,907,139,960,101.3C1013.3,64,1067,64,1120,69.3C1173.3,75,1227,85,1280,80C1333.3,75,1387,53,1413,42.7L1440,32L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z></path></svg>
+<div class=__default_content_section>
+<h1 class="__default_h1 intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=100 data-iteration=1>Projects</h1><hr class=intro-animation-effect data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=100 data-iteration=1>
+<div class="project-container intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=100 data-iteration=1>
+<article class=project>
+<div class=project-left>
+<div class=project-left-container>
+<a href=include/assets/npw.png class=zoom-image>
+<img src=include/assets/npw.png alt="Dr. Nicolas Padilla's website">
+</a>
+</div>
+</div>
+<div class=project-right>
+<h2>Dr. Nicolás Padilla (Portfolio)</h2>
+<div class=pr-labels-container>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM180.9 444.9c-33.7 0-53.2-17.4-63.2-38.5L152 385.7c6.6 11.7 12.6 21.6 27.1 21.6c13.8 0 22.6-5.4 22.6-26.5V237.7h42.1V381.4c0 43.6-25.6 63.5-62.9 63.5zm85.8-43L301 382.1c9 14.7 20.8 25.6 41.5 25.6c17.4 0 28.6-8.7 28.6-20.8c0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5c0-31.6 24.1-55.6 61.6-55.6c26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18c-12.3 0-20.1 7.8-20.1 18c0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2c0 37.8-29.8 58.6-69.7 58.6c-39.1 0-64.4-18.6-76.7-43z"/></svg>
+<span>JavaScript</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg height=64 width=64 viewBox="0 0 32 32" fill=#0868ac><path d="M2.144 7.705c-2.83 4.07-2.48 9.364-.316 13.7.05.104.105.206.158.308l.1.195c.02.038.042.075.063.112.037.07.075.134.113.202l.207.354.118.194.24.375.102.158c.113.168.228.336.347.5l.068.092a16.39 16.39 0 0 0 .316.42l.12.152.292.36.112.134c.133.157.27.313.407.465.014.015.02.02.024.026a20.44 20.44 0 0 0 .414.436l.133.134.33.324.135.13a16.98 16.98 0 0 0 .453.412l.496.42.17.136.343.268.183.14.385.276.18.127c.123.085.248.166.374.247l.162.108a20.81 20.81 0 0 0 .585.358l.162.1.44.246c.08.043.162.084.243.125l.314.163.073.035.13.062.498.23.105.047a17.83 17.83 0 0 0 .581.241l.14.056.548.203.07.024a21.72 21.72 0 0 0 .61.2l.148.044c.2.063.416.14.63.178 13.694 2.497 17.67-8.23 17.67-8.23-3.34 4.352-9.27 5.5-14.9 4.222-.213-.048-.42-.114-.627-.176l-.156-.047a18.62 18.62 0 0 1-.604-.197l-.083-.03a20.87 20.87 0 0 1-.532-.197l-.15-.06a15.16 15.16 0 0 1-.575-.24l-.115-.05-.485-.226-.14-.067c-.126-.06-.25-.127-.375-.2l-.25-.13c-.152-.08-.3-.166-.45-.252l-.152-.085a21.76 21.76 0 0 1-.585-.358c-.053-.034-.105-.07-.158-.105l-.416-.277c-.046-.03-.1-.064-.134-.094l-.394-.285-.175-.132-.355-.278-.158-.127-.442-.373a.73.73 0 0 0-.05-.04l-.465-.423-.13-.126-.332-.33-.13-.13c-.14-.143-.276-.287-.4-.434-.007-.007-.014-.014-.02-.022a16.98 16.98 0 0 1-.416-.474l-.1-.13-.3-.37-.1-.137-.346-.46C2.982 15.6 1.86 9.722 4.354 4.902m6.58-.625c-2.048 2.947-1.937 6.9-.34 10.008a13.06 13.06 0 0 0 .906 1.512c.307.44.647.963 1.054 1.316.148.163.302.32.46.477l.12.12a13.41 13.41 0 0 0 .469.436c.007.005.012.012.02.017.182.16.366.3.553.458l.124.097a13.46 13.46 0 0 0 .574.419l.017.012c.086.06.174.115.262.173.042.027.082.056.124.082a11.64 11.64 0 0 0 .425.26l.06.035.376.2c.044.025.1.046.134.07l.263.136c.013.007.027.012.04.018a11.39 11.39 0 0 0 .548.255l.12.05a14.16 14.16 0 0 0 .45.182l.192.07a14.26 14.26 0 0 0 .413.143l.187.06c.197.06.4.14.597.173 10.573 1.752 13.014-6.4 13.014-6.4-2.2 3.17-6.46 4.68-11.008 3.5a13.06 13.06 0 0 1-.599-.173c-.06-.018-.12-.038-.18-.058l-.42-.144-.2-.07a15.08 15.08 0 0 1-.45-.182l-.122-.05a12.58 12.58 0 0 1-.552-.256l-.277-.14-.16-.082a13.16 13.16 0 0 1-.35-.197l-.084-.047a12.34 12.34 0 0 1-.424-.26c-.043-.027-.085-.057-.128-.085l-.275-.182a13.24 13.24 0 0 1-.57-.418l-.13-.1c-2-1.572-3.568-3.72-4.318-6.154-.786-2.525-.617-5.36.745-7.66m5.732-.183C17.12 3.5 17 5.698 17.838 7.66c.883 2.083 2.693 3.716 4.806 4.5l.262.1.116.036.377.1c5.838 1.128 7.42-2.996 7.843-3.603-1.387 1.997-3.718 2.476-6.578 1.782-.226-.055-.474-.137-.692-.214a8.46 8.46 0 0 1-.822-.341 8.5 8.5 0 0 1-1.441-.879C19.15 7.2 17.56 3.486 19.23.47"/></svg>
+<span>Jquery</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+<span>CSS</span>
+</label>
+</div>
+<p>Dr. Nicolás Padilla is SENIOR LECTURER in Computer Sciences at the University of Almería.</p>
+<div class=pr-links-container>
+<a href=https://w3.ual.es/personal/npadilla/ target=_blank class=__default_button_2>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/></svg>
+<span>Preview</span>
+</a>
+</div>
+</div>
+</article>
+<article class=project>
+<div class=project-left>
+<div class=project-left-container>
+<a href=include/assets/vault.png class=zoom-image>
+<img src=include/assets/vault.png alt="Screenshot of the VKM project">
+</a>
+</div>
+</div>
+<div class=project-right>
+<h2>VKMv6 (Vault Key Manager)</h2>
+<div class=pr-labels-container>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+<span>Python</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM180.9 444.9c-33.7 0-53.2-17.4-63.2-38.5L152 385.7c6.6 11.7 12.6 21.6 27.1 21.6c13.8 0 22.6-5.4 22.6-26.5V237.7h42.1V381.4c0 43.6-25.6 63.5-62.9 63.5zm85.8-43L301 382.1c9 14.7 20.8 25.6 41.5 25.6c17.4 0 28.6-8.7 28.6-20.8c0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5c0-31.6 24.1-55.6 61.6-55.6c26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18c-12.3 0-20.1 7.8-20.1 18c0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2c0 37.8-29.8 58.6-69.7 58.6c-39.1 0-64.4-18.6-76.7-43z"/></svg>
+<span>JavaScript</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
+<span>SQLite3</span>
+</label>
+</div>
+<p>VKM (Vault Key Manager) is a self-hosted password manager with an intuitive web interface programmed in Python and JS using FastApi and Jquery technologies.</p>
+<div class=pr-links-container>
+<a href=https://github.com/cpadlab/vkm target=_blank class=__default_button_2>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+<span>Project</span>
+</a>
+<a href=https://github.com/cpadlab/vkm/blob/master/README.md target=_blank class=__default_button_3>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M528.3 46.5H388.5c-48.1 0-89.9 33.3-100.4 80.3-10.6-47-52.3-80.3-100.4-80.3H48c-26.5 0-48 21.5-48 48v245.8c0 26.5 21.5 48 48 48h89.7c102.2 0 132.7 24.4 147.3 75 .7 2.8 5.2 2.8 6 0 14.7-50.6 45.2-75 147.3-75H528c26.5 0 48-21.5 48-48V94.6c0-26.4-21.3-47.9-47.7-48.1zM242 311.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5V289c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V251zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm259.3 121.7c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5V228c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.8c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V190z"/></svg>
+<span>ReadMe</span>
+</a>
+<a href=https://github.com/cpadlab/vkm/releases/tag/V6.0 target=_blank class=__default_button_3>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg>
+<span>v6.0</span>
+</a>
+</div>
+</div>
+</article>
+<article class=project>
+<div class=project-left>
+<div class=project-left-container>
+<a href=include/assets/clannyeri2.png class=zoom-image>
+<img src=include/assets/clannyeri.png alt="Nyeri Clan Website">
+</a>
+</div>
+</div>
+<div class=project-right>
+<h2>Clan Nyeri (Web)</h2>
+<div class=pr-labels-container>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM180.9 444.9c-33.7 0-53.2-17.4-63.2-38.5L152 385.7c6.6 11.7 12.6 21.6 27.1 21.6c13.8 0 22.6-5.4 22.6-26.5V237.7h42.1V381.4c0 43.6-25.6 63.5-62.9 63.5zm85.8-43L301 382.1c9 14.7 20.8 25.6 41.5 25.6c17.4 0 28.6-8.7 28.6-20.8c0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5c0-31.6 24.1-55.6 61.6-55.6c26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18c-12.3 0-20.1 7.8-20.1 18c0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2c0 37.8-29.8 58.6-69.7 58.6c-39.1 0-64.4-18.6-76.7-43z"/></svg>
+<span>JavaScript</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg height=64 width=64 viewBox="0 0 32 32" fill=#0868ac><path d="M2.144 7.705c-2.83 4.07-2.48 9.364-.316 13.7.05.104.105.206.158.308l.1.195c.02.038.042.075.063.112.037.07.075.134.113.202l.207.354.118.194.24.375.102.158c.113.168.228.336.347.5l.068.092a16.39 16.39 0 0 0 .316.42l.12.152.292.36.112.134c.133.157.27.313.407.465.014.015.02.02.024.026a20.44 20.44 0 0 0 .414.436l.133.134.33.324.135.13a16.98 16.98 0 0 0 .453.412l.496.42.17.136.343.268.183.14.385.276.18.127c.123.085.248.166.374.247l.162.108a20.81 20.81 0 0 0 .585.358l.162.1.44.246c.08.043.162.084.243.125l.314.163.073.035.13.062.498.23.105.047a17.83 17.83 0 0 0 .581.241l.14.056.548.203.07.024a21.72 21.72 0 0 0 .61.2l.148.044c.2.063.416.14.63.178 13.694 2.497 17.67-8.23 17.67-8.23-3.34 4.352-9.27 5.5-14.9 4.222-.213-.048-.42-.114-.627-.176l-.156-.047a18.62 18.62 0 0 1-.604-.197l-.083-.03a20.87 20.87 0 0 1-.532-.197l-.15-.06a15.16 15.16 0 0 1-.575-.24l-.115-.05-.485-.226-.14-.067c-.126-.06-.25-.127-.375-.2l-.25-.13c-.152-.08-.3-.166-.45-.252l-.152-.085a21.76 21.76 0 0 1-.585-.358c-.053-.034-.105-.07-.158-.105l-.416-.277c-.046-.03-.1-.064-.134-.094l-.394-.285-.175-.132-.355-.278-.158-.127-.442-.373a.73.73 0 0 0-.05-.04l-.465-.423-.13-.126-.332-.33-.13-.13c-.14-.143-.276-.287-.4-.434-.007-.007-.014-.014-.02-.022a16.98 16.98 0 0 1-.416-.474l-.1-.13-.3-.37-.1-.137-.346-.46C2.982 15.6 1.86 9.722 4.354 4.902m6.58-.625c-2.048 2.947-1.937 6.9-.34 10.008a13.06 13.06 0 0 0 .906 1.512c.307.44.647.963 1.054 1.316.148.163.302.32.46.477l.12.12a13.41 13.41 0 0 0 .469.436c.007.005.012.012.02.017.182.16.366.3.553.458l.124.097a13.46 13.46 0 0 0 .574.419l.017.012c.086.06.174.115.262.173.042.027.082.056.124.082a11.64 11.64 0 0 0 .425.26l.06.035.376.2c.044.025.1.046.134.07l.263.136c.013.007.027.012.04.018a11.39 11.39 0 0 0 .548.255l.12.05a14.16 14.16 0 0 0 .45.182l.192.07a14.26 14.26 0 0 0 .413.143l.187.06c.197.06.4.14.597.173 10.573 1.752 13.014-6.4 13.014-6.4-2.2 3.17-6.46 4.68-11.008 3.5a13.06 13.06 0 0 1-.599-.173c-.06-.018-.12-.038-.18-.058l-.42-.144-.2-.07a15.08 15.08 0 0 1-.45-.182l-.122-.05a12.58 12.58 0 0 1-.552-.256l-.277-.14-.16-.082a13.16 13.16 0 0 1-.35-.197l-.084-.047a12.34 12.34 0 0 1-.424-.26c-.043-.027-.085-.057-.128-.085l-.275-.182a13.24 13.24 0 0 1-.57-.418l-.13-.1c-2-1.572-3.568-3.72-4.318-6.154-.786-2.525-.617-5.36.745-7.66m5.732-.183C17.12 3.5 17 5.698 17.838 7.66c.883 2.083 2.693 3.716 4.806 4.5l.262.1.116.036.377.1c5.838 1.128 7.42-2.996 7.843-3.603-1.387 1.997-3.718 2.476-6.578 1.782-.226-.055-.474-.137-.692-.214a8.46 8.46 0 0 1-.822-.341 8.5 8.5 0 0 1-1.441-.879C19.15 7.2 17.56 3.486 19.23.47"/></svg>
+<span>Jquery</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+<span>CSS</span>
+</label>
+</div>
+<p>The Nyeri Clan is a scout family belonging to the Cape of Venus group. Since it was founded it has tried to professionalize every project carried out by the clan. For this, a web site that encompasses and shows all their work.</p>
+<div class=pr-links-container>
+<a href=https://www.clannyeri.com/ target=_blank class=__default_button_2>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/></svg>
+<span>Preview</span>
+</a>
+<a href=https://github.com/nyerii/nyerii.github.io target=_blank class=__default_button_3>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+<span>Code</span>
+</a>
+</div>
+</div>
+</article>
+<article class=project>
+<div class=project-left>
+<div class=project-left-container>
+<a href=include/assets/dark-gpwshell.png class=zoom-image>
+<img src=include/assets/dark-gpwshell.png alt="Screenshot of the gist/project GPWShell">
+</a>
+</div>
+</div>
+<div class=project-right>
+<h2>GPWShell (Gui PHP WebShell)</h2>
+<div class=pr-labels-container>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/></svg>
+<span>PHP</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+<span>HTML</span>
+</label>
+<label>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+<span>CSS</span>
+</label>
+</div>
+<p>GPWShell is a web shell with a simple interface programmed in php in the style of webshell c99.</p>
+<div class=pr-links-container>
+<a href=https://gist.github.com/cpadlab/3be045083546c6ff19d2ab21db20057b target=_blank class=__default_button_2>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+<span>Gist</span>
+</a>
+<a href=https://medium.com/@cpadlab/this-is-how-to-create-a-simple-php-web-shell-gpwshell-proyect-aff0106a40e2 target=_blank class=__default_button_3>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M528.3 46.5H388.5c-48.1 0-89.9 33.3-100.4 80.3-10.6-47-52.3-80.3-100.4-80.3H48c-26.5 0-48 21.5-48 48v245.8c0 26.5 21.5 48 48 48h89.7c102.2 0 132.7 24.4 147.3 75 .7 2.8 5.2 2.8 6 0 14.7-50.6 45.2-75 147.3-75H528c26.5 0 48-21.5 48-48V94.6c0-26.4-21.3-47.9-47.7-48.1zM242 311.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5V289c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V251zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm259.3 121.7c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5V228c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.8c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V190z"/></svg>
+<span>Blog</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="pagination intro-animation-effect" data-animate=fadeInUp data-duration=1s data-delay=.3s data-offset=1 data-iteration=1></div>
+</div>
+</section>
+</main>
+<footer>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 1440 320"><path fill=var(--primary) fill-opacity=1 d=M0,64L34.3,64C68.6,64,137,64,206,58.7C274.3,53,343,43,411,74.7C480,107,549,181,617,181.3C685.7,181,754,107,823,64C891.4,21,960,11,1029,10.7C1097.1,11,1166,21,1234,37.3C1302.9,53,1371,75,1406,85.3L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z></path></svg>
+<div class=__default_content_section>
+<div class=footer-content-row-0>
+<a href=mailto:cpadlab@proton.me target=_blank data-tooltip=cpadlab@proton.me>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+<span>Contacto</span>
+</a>
+<a href=include/content/writeup.xml target=_blank>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
+<span>RSS</span>
+</a>
+<a href=https://medium.com/@cpadlab target=_blank>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M180.5 74.3C80.8 74.3 0 155.6 0 256S80.8 437.7 180.5 437.7 361 356.4 361 256 280.2 74.3 180.5 74.3zm288.3 10.6c-49.8 0-90.2 76.6-90.2 171.1s40.4 171.1 90.3 171.1 90.3-76.6 90.3-171.1H559C559 161.5 518.6 84.9 468.8 84.9zm139.5 17.8c-17.5 0-31.7 68.6-31.7 153.3s14.2 153.3 31.7 153.3S640 340.6 640 256C640 171.4 625.8 102.7 608.3 102.7z"/></svg>
+<span>Blog</span>
+</a>
+<a href=https://github.com/cpadlab target=_blank>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+<span>Github</span>
+</a>
+<a href=https://medium.com/@cpadlab/subscribe target=_blank>
+<svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H296c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z"/></svg>
+<span>Newsletter</span>
+</a>
+</div>
+<div class=footer-content-row-1>
+<p>Copyright © 2024 Carlos Padilla - All rights reserved</p>
+</div>
+</div>
+</footer>
+<script src=include/lib/jquery-3.7.1.min.js></script>
+<script type=module src=include/scripts/modules/theme.js></script>
+<script src=include/scripts/modules/navbar.js></script>
+<script src=include/lib/slick-1.8.1/slick/slick.min.js></script>
+<script src=include/scripts/sections/blog.js></script>
+<script src=include/scripts/sections/writeups.js></script>
+<script src=include/scripts/sections/projects.js></script>
+<script src=include/lib/jquery.scrolla.min.js></script>
+<script src=include/lib/simple-lightbox/dist/simple-lightbox.jquery.min.js></script>
+<script>$(".intro-animation-effect").scrolla({mobile:!0,once:!0}),$(".zoom-image").simpleLightbox({overlay:!0,spinner:!0,nav:!0,maxZoom:1})</script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+export function setCookie(e,t){let n=new Date;n.setTime(n.getTime()+864e5);let i="expires="+n.toUTCString();document.cookie=e+"="+t+";"+i+";path=/"}export function getCookie(e){let t=e+"=",n=document.cookie.split(";");for(let i=0;i<n.length;i++){let o=n[i];for(;" "==o.charAt(0);)o=o.substring(1,o.length);if(0==o.indexOf(t))return o.substring(t.length,o.length)}return null}
