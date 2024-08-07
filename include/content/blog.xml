@@ -7,6 +7,18 @@
 <lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate>
 <atom:link href="https://cpadlab.github.io/include/blog.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>How to Crack the FNMT Certificate?</title>
+<link>https://medium.com/@cpadlab/how-to-crack-the-fnmt-certificate-7baac8bdf07a</link>
+<pubDate>Wed, 07 Aug 2024 13:57:06 +0000</pubDate>
+<guid>https://medium.com/@cpadlab/how-to-crack-the-fnmt-certificate-7baac8bdf07a</guid>
+<description>So I recovered the password of my FNMT digital certificate in Linux by programming a tool to avoid the tedious process of requesting a new one.</description>
+<labels>
+<label>Python</label>
+<label>FNMT</label>
+<label>Cryptography</label>
+</labels>
+</item>
+<item>
 <title>The perils of Python: How to program a KeyLogger</title>
 <link>https://medium.com/@cpadlab/the-perils-of-python-how-to-program-a-keylogger-easy-0c01719354d6</link>
 <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
