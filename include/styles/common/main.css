@@ -1,1 +1,7 @@
-#blog,#writeups,section{min-height:100vh}:root[data-theme=dark]{--text:#e7e6f4;--background:#080614;--primary:#958be9;--secondary:#1c0f8a;--accent:#4430f8}:root[data-theme=light]{--text:#0c0b19;--background:#edebf9;--primary:#1f1674;--secondary:#8275f0;--accent:#1b07cf}*{margin:0;padding:0;box-sizing:border-box;outline:0;font-family:Montserrat,sans-serif}body{background:var(--background);color:var(--text);background-image:radial-gradient(ellipse 80% 80% at 50% -20%,var(--secondary),var(--background))}html{scroll-behavior:smooth}#blog,#writeups{display:flex;align-items:center;justify-content:center}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--dark);
+}

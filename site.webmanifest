@@ -34,11 +34,11 @@
             "type": "image/x-icon"
           }
     ],
-    "theme_color": "#958be9",
-    "background_color": "#080614",
+    "theme_color": "#f5e41b",
+    "background_color": "#000000",
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
-    "description": "Blog, Writeups & Proyects by Carlos Padilla."
+    "description": "Carlos Padilla, Front-end web development & Junior Penetration Tester."
   }
   
