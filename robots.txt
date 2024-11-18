@@ -1,5 +1,10 @@
+
 User-agent: *
-Disallow: /include/
+Disallow: /src/
+Disallow: /alwed/include/
+Disallow: /tesla/static/
+Disallow: /robots.txt
 Disallow: /README.md
 
-Sitemap: https://cpadlab.github.io/sitemap.xml
+Allow: /tesla/
+Allow: /alwed/

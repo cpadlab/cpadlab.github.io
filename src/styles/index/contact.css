@@ -1,0 +1,119 @@
+.contact {
+    padding-top: 3em;
+    padding-bottom: 5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    color: var(--white-050);
+    font-family: var(--text-font);
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.contact-form-row_1 {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+.contact-form-row_1-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    flex: 1;
+}
+
+.contact-form-row_1-column input,
+.contact-form-row_2 textarea {
+    border: 0;
+    background: 0 0;
+    font-size: var(--font-size-regular);
+    font-family: var(--text-font);
+    font-weight: 400;
+    width: 100%;
+    padding-bottom: 1em;
+    color: var(--white-200);
+    flex: 1;
+    position: relative;
+    border-bottom: 1px solid var(--white-500);
+    transition: border-bottom ease 200ms;
+}
+
+.contact-form-row_1-column input::placeholder,
+.contact-form-row_2 textarea::placeholder {
+    color: var(--white-500);
+}
+.contact-form-row_1-column input::-ms-input-placeholder,
+.contact-form-row_2 textarea::-ms-input-placeholder {
+    color: var(--white-500);
+}
+
+#contact form {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#contact form textarea:focus,
+#contact form input:focus {
+    border-bottom: 1px solid var(--white-050);
+}
+
+.contact-form-row_2 {
+    display: flex;
+    gap: 2em;
+}
+.contact-form-row_2 button {
+    background: var(--white-050);
+    color: var(--black-950);
+    text-decoration: none;
+    display: block;
+    padding: .8em 2em;
+    border-radius: 3em;
+    font-size: var(--font-size-regular);
+    font-family: var(--text-font);
+    overflow: hidden;
+    position: relative;
+    transition: all ease .2s;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: .5em;
+    cursor: pointer;
+    border: 0;
+}
+
+.contact-form-row_2 button:hover {
+    background: var(--white-050);
+}
+
+.contact-form-row_2 button:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--red-600);
+    width: 150%;
+    height: 150%;
+    z-index: 0;
+    clip-path: circle(0% at 0% -100%);
+    transition: clip-path ease .7s;
+}
+
+.contact-form-row_2 button:hover::after {
+    clip-path: circle(150% at 50% 50%);
+}
+
+.contact-form-row_2 button:hover {
+    transform: translateY(-3px);
+    color: var(--white-050);
+}
+
+.contact-form-row_2 button span {
+    position: relative;
+    z-index: 11;
+    text-wrap: nowrap;
+}

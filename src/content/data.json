@@ -1,0 +1,19 @@
+[
+    {
+        "project": "Nicolás Padilla",
+        "category": "Web Design, Development",
+        "client": "Nicolás Padilla, UAL",
+        "year": 2024,
+        "id": "npadilla",
+        "desc": "I developed the web page of Dr. Nicolás Padilla, Senior Lecturer in Computer Science at the University of Almería (UAL). In this version 2024, we have implemented smooth transitions between sections using GSAP, improved the aesthetic design and expanded the information on the home page.",
+        "photo_hover": "",
+        "url": "https://w3.ual.es/personal/npadilla/",
+        "meta": [
+            "JQuery", "GSap", "SmoothScroll", "Design", "Development"
+        ],
+        "img": [
+            "/src/assets/npadilla-2.png", "/src/assets/npadilla-1.png", "/src/assets/npadilla-3.png"
+        ],
+        "img_alt": "Nicolás Padilla Website Photo"
+    }
+]

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+:root {
+
+    --font-inter: "Inter", sans-serif;
+    
+    --white-050: #ffffff;
+    --white-100: #efefef;
+    --white-200: #dcdcdc;
+    --white-300: #bdbdbd;
+    --white-400: #989898;
+    --white-500: #7c7c7c;
+    --white-600: #656565;
+    --white-700: #525252;
+    --white-800: #464646;
+    --white-900: #3d3d3d;
+    --white-950: #292929;
+
+    --black-050: #f6f6f6;
+    --black-100: #e7e7e7;
+    --black-200: #d1d1d1;
+    --black-300: #b0b0b0;
+    --black-400: #888888;
+    --black-500: #6d6d6d;
+    --black-600: #5d5d5d;
+    --black-700: #4f4f4f;
+    --black-800: #454545;
+    --black-900: #3d3d3d;
+    --black-950: #000000;
+
+    --red-050: #fff0f0;
+    --red-100: #ffdddd;
+    --red-200: #ffc0c0;
+    --red-300: #ff9595;
+    --red-400: #ff5858;
+    --red-500: #ff2424;
+    --red-600: #fe0404;
+    --red-700: #d60000;
+    --red-800: #bf0404;
+    --red-900: #910b0b;
+    --red-950: #500000;
+
+    --background-color: var(--black-950);
+    --text-color: var(--white-050);
+    --text-font: var(--font-inter);
+    --font-size-regular: 1rem;
+    --font-size-small: .8rem;
+    
+}
+
+body {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

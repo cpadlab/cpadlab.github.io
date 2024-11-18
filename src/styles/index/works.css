@@ -1,0 +1,189 @@
+.hw-separator{
+    height: 100vh;
+}
+
+section.works {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#wc-cursor {
+    width: 350px;
+    z-index: 3;
+    height: 50vh;
+    position: fixed;
+    border-radius: 3em;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity ease .5s;
+    pointer-events: none;
+}  
+
+
+div.work-container {
+    width: 90%;   
+    margin: 0 auto;
+    z-index: 11111;
+}
+
+.work-card {
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-decoration: none;
+    z-index: 10 !important;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    z-index: 22;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+}
+.wc-border {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    transition: all ease 200ms;
+    background: var(--white-050);
+}
+
+.work-card span {
+    display: block;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+    line-height: 1.1rem;
+    font-family: var(--text-font);
+    font-size: var(--font-size-regular);
+    font-weight: 500;
+    user-select: none;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+.work-card span::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--text-color);
+    transition: color ease 200ms, padding-left ease 300ms, padding-right ease 300ms, top 1s ease;
+}
+
+/* .work-card span.visible::after {
+    top: 0;
+} */
+
+.work-card:hover span::after {
+    color: var(--black-950);
+}
+
+.work-card span.wc-category {
+    width: 45vw;
+    display: flex;
+}
+
+.work-card span.wc-client {
+    width: 25vw;
+    display: flex;
+}
+
+.work-card .wc-project {
+    width: 35vw;
+}
+
+.work-card .wc-year {
+    width: 10vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.work-card span.wc-year::after {
+    right: 0;
+    left: unset;
+}
+
+.work-card:hover .wc-project::after {
+    padding-left: 1em;
+}
+
+.work-card:hover .wc-year::after {
+    padding-right: 1em;
+}
+
+.work-card.header {
+    cursor: default;
+    border-top: 1px solid transparent;
+}
+
+.work-card.header span {
+    color: var(--white-400);
+    font-size: var(--font-size-small);
+}
+
+.work-card.header:hover .wc-project {
+    margin-left: unset;
+}
+
+.work-card img {
+    display: none;
+}
+
+.wc-background {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-050);
+    position: absolute;
+    top: -100%;
+}
+.work-card.link:hover .wc-background {
+    top: 0%;
+}
+
+.work-card.header:hover .wc-project {
+    padding-left: unset;
+}
+
+.work-card.header:hover .wc-year {
+    padding-right: unset;
+}
+
+@media only screen and (max-width: 800px) {
+    .wc-client {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .wc-category {
+        display: none !important;
+    }
+    .work-card .wc-project {
+        width: 100%;
+    }
+    .work-card .wc-year {
+        min-width: 10vw;
+        width: 65px;
+    }
+    
+}
+
+/* .work-page {
+    z-index: 1111111;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--black-950);
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.wp-banner {
+    height: 50vh;
+    background: pink;
+} */
