@@ -1,0 +1,119 @@
+section.about {
+    background: var(--violet-400);
+    opacity: 1;
+}
+
+section.about div.about-container {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+}
+
+section.about div.about-container div.ac-content {
+    position: relative;
+}
+
+/* section.about div.about-container div.ac-content div.acc-image-container {
+    position: absolute;
+    right: 1em;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 25vw;
+    height: 40vh;
+    opacity: .8;
+    z-index: 0;
+}
+
+section.about div.about-container div.ac-content div.acc-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+section.about div.about-container h2 {
+    font-size: 5rem;
+    color: var(--purple-950);
+    font-family: var(--laygrotesk);
+    line-height: 1;
+    text-align: left;
+    cursor: default;
+}
+
+section.about div.about-container h2 span.number {
+    color: var(--purple-900);
+    font-size: 4rem;
+}
+
+section.about div.about-container p {
+    font-size: 2rem;
+    color: var(--purple-900);
+    font-weight: normal;
+    line-height: 1;
+    font-family: var(--laygrotesk);
+    cursor: default;
+    z-index: 111;
+}
+
+section.about div.about-container p div {
+    display: inline-block;
+}
+section.about div.about-container div.acc-links {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+section.about div.about-container div.acc-links a {
+    display: flex;
+    padding: .5em;
+    border-radius: .5em;
+    border: 1px solid var(--purple-950);
+    position: relative;
+    overflow: hidden;
+}
+
+section.about div.about-container div.acc-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--purple-950);
+    width: 150%;
+    height: 150%;
+    z-index: 0;
+    clip-path: circle(0% at 0% 100%);
+    transition: clip-path ease .7s;
+}
+
+section.about div.about-container div.acc-links a:hover::after {
+    clip-path: circle(150% at 50% 50%);
+}
+
+section.about div.about-container div.acc-links a svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: var(--purple-900);
+    transition: fill ease 400ms;
+    z-index: 11;
+}
+
+section.about div.about-container div.acc-links a:hover svg {
+    fill: var(--violet-400);
+}
+
+@media only screen and (max-width: 550px) {
+    section.about div.about-container {
+        width: 90%;
+    }
+}
+
+section.about div.about-gradient-transition {
+    height: 300px;
+    background: linear-gradient(180deg, var(--violet-400) 0%, var(--purple-950) 100%);
+}

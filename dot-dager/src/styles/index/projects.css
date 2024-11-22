@@ -1,0 +1,243 @@
+
+section.projects div.projects-container {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+}
+
+section.projects div.projects-container h2 {
+    font-size: 5rem;
+    color: var(--purple-100);
+    font-family: var(--laygrotesk);
+    line-height: 1;
+    text-align: left;
+    cursor: default;
+}
+
+section.projects div.projects-container h2 span.number {
+    color: var(--purple-500);
+    font-size: 4rem;
+}
+
+div.projects-container div.pc-content div.github-container {
+    display: flex;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    gap: .5em;
+    justify-content: center;
+    max-height: 500px;
+    overflow-y: hidden;
+    -webkit-mask-image: -webkit-linear-gradient(-90deg, rgba(0,0,0, 1) 0%, rgba(0,0,0, 0) 100%);
+    mask-image: linear-gradient(-90deg, rgba(0,0,0, 1) 0%, rgba(0,0,0, 0) 100%);
+    mask: linear-gradient(180deg, rgba(0,0,0, 1) 30%, rgba(0,0,0, 0) 100%);
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card {
+    background: var(--purple-200);
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid var(--purple-400);
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    text-decoration: none;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--purple-600);
+    width: 150%;
+    height: 150%;
+    z-index: 0;
+    clip-path: circle(0% at 100% 100%);
+    transition: clip-path ease .7s;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card:hover::after {
+    clip-path: circle(150% at 50% 50%);
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card * {
+    transition: 500ms color ease;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card:hover * {
+    color: var(--purple-100);
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card time,
+div.projects-container div.pc-content div.github-container a.gc-card h3,
+div.projects-container div.pc-content div.github-container a.gc-card p,
+div.projects-container div.pc-content div.github-container a.gc-card span {
+    color: var(--purple-950);
+    font-family: var(--laygrotesk);
+    line-height: 1;
+    z-index: 22;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card p {
+    font-family: 1.2rem;
+    max-width: 400px;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card div.gcc-labels {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    padding-top: .2em;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card div.gcc-labels div {
+    padding: .5em;
+    background: var(--purple-300);
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+    gap: .2em;
+    z-index: 222;
+    transition: background ease 600ms;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card:hover div.gcc-labels div {
+    background: var(--purple-950);
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card:hover div.gcc-labels div * {
+    transition: color ease 400ms, fill ease 400ms;
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card:hover div.gcc-labels div * {
+    color: var(--purple-300);
+    fill: var(--purple-300);
+}
+
+div.projects-container div.pc-content div.github-container a.gc-card div.gcc-labels svg {
+    width: .8em;
+    height: .8em;
+    fill: var(--purple-950);
+}
+
+@media only screen and (max-width: 1000px) {
+    section.projects div.projects-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    div.projects-container div.pc-content div.github-container a.gc-card {
+        flex: 1;
+    }
+    div.projects-container div.pc-content div.github-container {
+        flex-direction: column;
+    }
+}
+
+section.projects div.projects-container div.pc-content div.gc-link {
+    display: flex;
+    justify-content: center;
+    margin-top: -3em;
+    margin-bottom: 5em;
+}
+
+section.projects div.projects-container div.pc-content div.gc-link a {
+    font-size: 1.2rem;
+    color: var(--purple-300);
+    font-family: var(--laygrotesk);
+    text-decoration: none;
+    padding: .8em 1.3em;
+    border-radius: 3em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    border: 1px solid var(--purple-300);
+    position: relative;
+    overflow: hidden;
+    transition: color ease 400ms, border ease 400ms;   
+}
+
+section.projects div.projects-container div.pc-content div.gc-link a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--violet-400);
+    width: 150%;
+    height: 150%;
+    z-index: 0;
+    clip-path: circle(0% at 0% -100%);
+    transition: clip-path ease .7s;
+}
+
+section.projects div.projects-container div.pc-content div.gc-link a:hover::after {
+    clip-path: circle(150% at 50% 50%);
+}
+
+section.projects div.projects-container div.pc-content div.gc-link a span {
+    max-width: auto;
+    text-wrap: nowrap;
+    z-index: 1;
+}
+
+section.projects div.projects-container div.pc-content div.gc-link a svg {
+    width: 2.5em;
+    height: 1em;
+    stroke: var(--purple-300);
+    rotate: 180deg;
+    transition: all ease 400ms;
+    z-index: 1;
+}
+
+section.projects div.projects-container div.pc-content div.gc-link a:hover {
+    color: var(--purple-950);
+    border: 1px solid var(--violet-400);
+}
+
+section.projects div.projects-container div.pc-content div.gc-link a:hover svg {
+    width: 4em;
+    stroke: var(--violet-950);
+}
+
+
+section.projects div.projects-container div.pc-content div.lumber-jack-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 3em;
+    margin-top: -30em;
+    flex-wrap: wrap;
+}
+
+section.projects div.projects-container div.pc-content div.lumber-jack-container h3 {
+    font-size: 5rem;
+    color: var(--purple-100);
+    font-family: var(--laygrotesk);
+    line-height: 1;
+    text-align: left;
+    cursor: default;
+}
+
+section.projects div.projects-container div.pc-content div.lumber-jack-container iframe {
+    height: 60vh;
+    max-width: 600px;
+    opacity: 0;
+    width: 100%;
+    border-radius: 3em;
+    z-index: 1111;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

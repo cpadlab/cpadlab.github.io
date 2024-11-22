@@ -1,0 +1,31 @@
+:root {
+    --purple-050: #faf8fb;
+    --purple-100: #f3f0f7;
+    --purple-200: #e8e0ee;
+    --purple-300: #d7c8df;
+    --purple-400: #bea7cb;
+    --purple-500: #a082b3;
+    --purple-600: #826293;
+    --purple-700: #6d507b;
+    --purple-800: #5a4365;
+    --purple-900: #4d3a55;
+    --purple-950: #2d1e34;
+
+    --violet-050: #fbf7fd;
+    --violet-100: #f6ecfb;
+    --violet-200: #eeddf7;
+    --violet-300: #e1c1f1;
+    --violet-400: #cc94e5;
+    --violet-500: #bb72da;
+    --violet-600: #a754c9;
+    --violet-700: #9141af;
+    --violet-800: #7a3990;
+    --violet-900: #632f74;
+    --violet-950: #441853;
+
+    --primary: var(--purple-600);
+
+    --neuebit: "NeueBit";
+    --saoldisplay: "SaolDisplay";
+    --laygrotesk: "LayGrotesk";
+}
