@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Página principal -->
+    <url>
+        <loc>https://cpadlab.github.io/</loc>
+        <lastmod>2024-11-23</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Sección: Tesla -->
+    <url>
+        <loc>https://cpadlab.github.io/tesla/</loc>
+        <lastmod>2024-11-23</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Sección: Alwed -->
+    <url>
+        <loc>https://cpadlab.github.io/alwed/</loc>
+        <lastmod>2024-11-23</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Sección: Dot-Dager -->
+    <url>
+        <loc>https://cpadlab.github.io/dot-dager/</loc>
+        <lastmod>2024-11-23</lastmod>
+        <priority>0.8</priority>
+    </url>
+</urlset>

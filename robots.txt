@@ -1,10 +1,33 @@
 
 User-agent: *
 Disallow: /src/
+Disallow: /src/assets/
+Disallow: /src/content/
+Disallow: /src/fonts/
+Disallow: /src/libs/
+Disallow: /src/scripts/
+Disallow: /src/styles/
+
 Disallow: /alwed/include/
+Disallow: /alwed/include/assets/
+Disallow: /alwed/include/scripts/
+Disallow: /alwed/include/styles
+
 Disallow: /tesla/static/
-Disallow: /robots.txt
-Disallow: /README.md
+Disallow: /tesla/static/assets/
+Disallow: /tesla/static/lib/
+Disallow: /tesla/static/scripts/
+Disallow: /tesla/static/styles/
+Disallow: /tesla/static/fonts/
+
+Disallow: /dot-dager/src/
+Disallow: /dot-dager/src/assets/
+Disallow: /dot-dager/src/content/
+Disallow: /dot-dager/src/fonts/
+Disallow: /dot-dager/src/libs/
+Disallow: /dot-dager/src/scripts/
+Disallow: /dot-dager/src/styles/
 
 Allow: /tesla/
 Allow: /alwed/
+Allow: /dot-dager/

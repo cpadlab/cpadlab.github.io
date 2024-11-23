@@ -24,7 +24,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="mobile-web-app-capable" content="yes">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H58BQD6RM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -46,14 +45,10 @@
     <script defer="" src="./src/libs/gsap/gsap.min.js"></script>
     <script defer="" src="./src/libs/gsap/plugins/ScrollTrigger.min.js"></script>
     <script defer="" src="./src/libs/gsap/plugins/TweenLite.min.js"></script>
-    <script defer="" src="./src/libs/SmoothScroll.min.js"></script>
-    <script defer="">SmoothScroll();</script>
     <script defer="" src="./src/scripts/index/mask-entry.js"></script>
     <script defer="" src="./src/scripts/index/gsap.js"></script>
-    <script defer="" src="./src/scripts/index/work_card-background.js"></script>
-    <script defer="" src="./src/scripts/index/work_card-cursor.js"></script>
-    <script defer="" src="./src/scripts/index/contact.js"></script>
     <script defer="" src="./src/scripts/index/work.js"></script>
+    <script defer="" src="./src/scripts/index/contact.js"></script>
 </head>
 <body>
     <header>
@@ -110,56 +105,7 @@
                     <span class="wc-client">Client</span>
                     <span class="wc-year">Year</span>
                 </div>
-                <div class="wc-hover" id="wc-hover">
-                    <button class="work-card link" onclick="openWork($('#npadilla'))" data-image="https://blog.olivierlarose.com/medias/demos/mouse-image-distortion/3.jpg">
-                        <div class="wc-border"></div>
-                        <span data-text="Nicolás Padilla" class="wc-project">N. Padilla</span>
-                        <span data-text="Web Design, Development" class="wc-category">Web Design, Development</span>
-                        <span data-text="Nicolás Padilla, UAL" class="wc-client">Nicolás Padilla, UAL</span>
-                        <span data-text="2023" class="wc-year">2024</span>
-                        <div class="wc-background"></div>
-                    </button>
-                    <button class="work-card link" data-image="./src/assets/dot-dager-cover.webp" onclick="openWork($('#dotdager'))">
-                        <div class="wc-border"></div>
-                        <span data-text="Dot Dager Portfolio" class="wc-project">Dot Dager Portfolio</span>
-                        <span data-text="Gsap Animation" class="wc-category">Gsap Animation</span>
-                        <span data-text="Competition DG" class="wc-client">Competition DG</span>
-                        <span data-text="2024" class="wc-year">2024</span>
-                        <div class="wc-background"></div>
-                    </button>
-                    <button class="work-card link" data-image="./src/assets/tesla-cover.webp" onclick="openWork($('#tesla'))">
-                        <div class="wc-border"></div>
-                        <span data-text="Tesla Landing Page" class="wc-project">Tesla Landing Page</span>
-                        <span data-text="Gsap Horizontal Scroll" class="wc-category">Gsap Horizontal Scroll</span>
-                        <span data-text="Spec Work" class="wc-client">Spec Work</span>
-                        <span data-text="2024" class="wc-year">2024</span>
-                        <div class="wc-background"></div>
-                    </button>
-                    <button class="work-card link" data-image="./src/assets/nyeri-cover.webp" onclick="openWork($('#nyeri'))">
-                        <div class="wc-border"></div>
-                        <span data-text="Clan Nyeri" class="wc-project">Clan Nyeri</span>
-                        <span data-text="Web design, Development" class="wc-category">Web design, Development</span>
-                        <span data-text="Asoc. Nyeri" class="wc-client">Asoc. Nyeri</span>
-                        <span data-text="2024" class="wc-year">2024</span>
-                        <div class="wc-background"></div>
-                    </button>
-                    <button class="work-card link" data-image="./src/assets/alwed-cover.webp" onclick="openWork($('#alwed'))">
-                        <div class="wc-border"></div>
-                        <span data-text="Alwed" class="wc-project">Alwed</span>
-                        <span data-text="Locomotive Scroll" class="wc-category">Locomotive Scroll</span>
-                        <span data-text="Spec Work" class="wc-client">Spec Work</span>
-                        <span data-text="2024" class="wc-year">2024</span>
-                        <div class="wc-background"></div>
-                    </button>
-                    <button class="work-card link" onclick="openWork($('#psikebana'))" data-image="./src/assets/psikebana-cover.webp">
-                        <div class="wc-border"></div>
-                        <span data-text="Psikebana" class="wc-project">Psikebana</span>
-                        <span data-text="Web design, Development" class="wc-category">Web design, Development</span>
-                        <span data-text="Ilu Martínez" class="wc-client">Ilu Martínez</span>
-                        <span data-text="2024" class="wc-year">2024</span>
-                        <div class="wc-background"></div>
-                    </button>
-                </div>
+                <div class="wc-hover" id="wc-hover"></div>
             </div>
         </section>
         <section id="contact" class="contact">
@@ -209,173 +155,5 @@
         </div>
     </footer>
     <div class="project-transition"></div>
-    <section class="project" id="psikebana">
-        <div class="project-content">
-            <div class="project-close">
-                <button onclick="closeWork($('#psikebana'))">
-                    <svg width="100" height="18" viewBox="0 0 50 9"><path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path></svg>
-                    <div>
-                        <span data-text="Return">Return</span>
-                    </div>
-                </button>
-            </div>
-            <h2>I carried out the development of the website of the psychologist Ilu Martínez, with a colorful and intuitive design that follows the branding of her personal brand. The website has dynamic animations that give life to a page full of information.</h2>
-            <div><a href="https://psikebana.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg><span>See website</span></a></div>
-            <div>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Animations</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>JQuery</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Slick</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Animate.css</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Design</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Development</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>RSS</span></li>
-                </ul>
-            </div>
-            <div class="project-images">
-                <div><img loading="lazy" src="./src/assets/psikebana-3.png" alt="Ilu Martínez (psikebana) Website Photo"></div>
-                <div><img loading="lazy" src="./src/assets/psikebana-1.png" alt="Ilu Martínez (psikebana) Website Photo"></div>
-                <div><img loading="lazy" src="./src/assets/psikebana-2.png" alt="Ilu Martínez (psikebana) Website Photo"></div>
-            </div>
-        </div>
-    </section>
-    <section class="project" id="nyeri">
-        <div class="project-content">
-            <div class="project-close">
-                <button onclick="closeWork($('#nyeri'))">
-                    <svg width="100" height="18" viewBox="0 0 50 9"><path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path></svg>
-                    <div>
-                        <span data-text="Return">Return</span>
-                    </div>
-                </button>
-            </div>
-            <h2>I developed the website for the Nyeri Youth Association, with a compact and efficient design that presents all the information of the association in a clear and accessible way: projects, news, blog, and more. It is a static website optimized with jQuery and powered with Slick for a fluid and modern navigation.</h2>
-            <div><a href="https://www.clannyeri.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg><span>See website</span></a></div>
-            <div>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>JQuery</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Slick</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Design</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Development</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>RSS</span></li>
-                </ul>
-            </div>
-            <div class="project-images">
-                <div><img loading="lazy" src="./src/assets/nyeri-3.png" alt="Clan Nyeri Website Photo"></div>
-                <div><img loading="lazy" src="./src/assets/nyeri-1.png" alt="Clan Nyeri Website Photo 2"></div>
-                <div><img loading="lazy" src="./src/assets/nyeri-2.png" alt="Clan Nyeri Website Photo 3"></div>
-            </div>
-        </div>
-    </section>
-    <section class="project" id="dotdager">
-        <div class="project-content">
-            <div class="project-close">
-                <button onclick="closeWork($('#dotdager'))">
-                    <svg width="100" height="18" viewBox="0 0 50 9"><path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path></svg>
-                    <div>
-                        <span data-text="Return">Return</span>
-                    </div>
-                </button>
-            </div>
-            <h2>The Dot Dager Portfolio is a project made for their contest in collaboration with Fiverr. A minimalist website with a clean design and scroll animations with gsap.</h2>
-            <div><a href="/dot-dager/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg><span>See website</span></a></div>
-            <div>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>GSAP</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>ScrollTrigger</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>JQuery</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Design</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Development</span></li>
-                </ul>
-            </div>
-            <div class="project-images">
-                <div><img loading="lazy" src="./src/assets/dot-dager-3.png" alt="Dot Dager Work Photo 3"></div>
-                <div><img loading="lazy" src="./src/assets/dot-dager-2.png" alt="Dot Dager Work Photo"></div>
-                <div><img loading="lazy" src="./src/assets/dot-dager-1.png" alt="Dot Dager Work Photo 2"></div>
-            </div>
-        </div>
-    </section>
-    <section class="project" id="alwed">
-        <div class="project-content">
-            <div class="project-close">
-                <button onclick="closeWork($('#alwed'))">
-                    <svg width="100" height="18" viewBox="0 0 50 9"><path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path></svg>
-                    <div>
-                        <span data-text="Return">Return</span>
-                    </div>
-                </button>
-            </div>
-            <h2>Alwed (Spec Work), is a personal project where I have implemented Locomotive Scroll to create a fluid and modern experience on the website of a fictitious web development company.</h2>
-            <div><a href="/alwed/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg><span>See website</span></a></div>
-            <div>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Locomotive Scroll</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>JQuery</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Design</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Development</span></li>
-                </ul>
-            </div>
-            <div class="project-images">
-                <div><img loading="lazy" src="./src/assets/alwed-2.png" alt="Alwed Spec Work Photo"></div>
-                <div><img loading="lazy" src="./src/assets/alwed-1.png" alt="Alwed Spec Work Photo 2"></div>
-                <div><img loading="lazy" src="./src/assets/alwed-3.png" alt="Alwed Spec Work Photo 3"></div>
-            </div>
-        </div>
-    </section>
-    <section class="project" id="npadilla">
-        <div class="project-content">
-            <div class="project-close">
-                <button onclick="closeWork($('#npadilla'))">
-                    <svg width="100" height="18" viewBox="0 0 50 9"><path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path></svg>
-                    <div>
-                        <span data-text="Return">Return</span>
-                    </div>
-                </button>
-            </div>
-            <h2>I developed the web page of Dr. Nicolás Padilla, Senior Lecturer in Computer Science at the University of Almería (UAL). In this version 2024, we have implemented smooth transitions between sections using GSAP, improved the aesthetic design and expanded the information on the home page.</h2>
-            <div><a href="https://w3.ual.es/personal/npadilla/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg><span>See website</span></a></div>
-            <div>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>JQuery</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>GSap</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>SmoothScroll</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Design</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Development</span></li>
-                </ul>
-            </div>
-            <div class="project-images">
-                <div><img loading="lazy" src="./src/assets/npadilla-2.png" alt="Nicolás Padilla Website Photo"></div>
-                <div><img loading="lazy" src="./src/assets/npadilla-1.png" alt="Nicolás Padilla Website Photo 2"></div>
-                <div><img loading="lazy" src="./src/assets/npadilla-3.png" alt="Nicolás Padilla Website Photo 3"></div>
-            </div>
-        </div>
-    </section>
-    <section class="project" id="tesla">
-        <div class="project-content">
-            <div class="project-close">
-                <button onclick="closeWork($('#tesla'))">
-                    <svg width="100" height="18" viewBox="0 0 50 9"><path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path></svg>
-                    <div>
-                        <span data-text="Return">Return</span>
-                    </div>
-                </button>
-            </div>
-            <h2>Tesla's project (Spec Work) recreates the design of the official site (as per its October 31, 2024 version), adding a unique twist: a horizontal scroll effect implemented with GSAP. The result is a fluid and immersive visual experience that merges the original Tesla style with innovative navigation.</h2>
-            <div><a href="/tesla/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg><span>See website</span></a></div>
-            <div>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Gsap</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>ScrollMagic</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>JQuery</span></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg><span>Development</span></li>
-                </ul>
-            </div>
-            <div class="project-images">
-                <div><img loading="lazy" src="./src/assets/tesla-2.png" alt="Tesla Spec Work Proyect Photo"></div>
-                <div><img loading="lazy" src="./src/assets/tesla-3.png" alt="Tesla Spec Work Proyect Photo 2"></div>
-                <div><img loading="lazy" src="./src/assets/tesla-1.png" alt="Tesla Spec Work Proyect Photo 3"></div>
-            </div>
-        </div>
-    </section>
 </body>
 </html>

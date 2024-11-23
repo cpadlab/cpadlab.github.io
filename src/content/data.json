@@ -1,19 +1,128 @@
 [
     {
-        "project": "Nicolás Padilla",
-        "category": "Web Design, Development",
-        "client": "Nicolás Padilla, UAL",
-        "year": 2024,
+        "id": "dotdager",
+        "image_hover": "/src/assets/dot-dager-cover.webp",
+        "table_project_name": "Dot Dager Portfolio",
+        "table_project_category": "GSAP Animation",
+        "table_project_client": "-",
+        "table_project_year": "2024",
+        "section_project_text": "The Dot Dager Portfolio is a project made for their contest in collaboration with Fiverr. A minimalist website with a clean design and scroll animations with gsap.",
+        "section_project_link": "/dot-dager/",
+        "section_project_labels": [
+            "GSAP", "ScrollTrigger","JQuery", "Design", "Development"
+        ],
+        "section_project_images": [
+            "/src/assets/dot-dager-3.png",
+            "/src/assets/dot-dager-2.png",
+            "/src/assets/dot-dager-1.png"
+        ]
+    },
+    {
         "id": "npadilla",
-        "desc": "I developed the web page of Dr. Nicolás Padilla, Senior Lecturer in Computer Science at the University of Almería (UAL). In this version 2024, we have implemented smooth transitions between sections using GSAP, improved the aesthetic design and expanded the information on the home page.",
-        "photo_hover": "",
-        "url": "https://w3.ual.es/personal/npadilla/",
-        "meta": [
-            "JQuery", "GSap", "SmoothScroll", "Design", "Development"
+        "image_hover": "https://blog.olivierlarose.com/medias/demos/mouse-image-distortion/3.jpg",
+        "table_project_name": "Nicolás Padilla",
+        "table_project_category": "Web Design, Development",
+        "table_project_client": "Nicolás Padilla, UAL",
+        "table_project_year": "2023",
+        "section_project_text": "I developed the web page of Dr. Nicolás Padilla, Senior Lecturer in Computer Science at the University of Almería (UAL). In this version 2024, we have implemented smooth transitions between sections using GSAP, improved the aesthetic design and expanded the information on the home page.",
+        "section_project_link": "https://w3.ual.es/personal/npadilla/",
+        "section_project_labels": [
+            "JQuery", "GSAP", "SmoothScroll", "Design", "Development"
         ],
-        "img": [
-            "/src/assets/npadilla-2.png", "/src/assets/npadilla-1.png", "/src/assets/npadilla-3.png"
+        "section_project_images": [
+            "/src/assets/npadilla-2.png",
+            "/src/assets/npadilla-1.png",
+            "/src/assets/npadilla-3.png"
+        ]
+    },
+    {
+        "id": "tesla",
+        "image_hover": "/src/assets/tesla-cover.webp",
+        "table_project_name": "Tesla Landing Page",
+        "table_project_category": "GSAP Horizontal Scroll",
+        "table_project_client": "-",
+        "table_project_year": "2024",
+        "section_project_text": "Tesla's project (Spec Work) recreates the design of the official site (as per its October 31, 2024 version), adding a unique twist: a horizontal scroll effect implemented with GSAP. The result is a fluid and immersive visual experience that merges the original Tesla style with innovative navigation.",
+        "section_project_link": "/tesla/",
+        "section_project_labels": [
+            "Gsap", "ScrollMagic", "JQuery", "Development"
         ],
-        "img_alt": "Nicolás Padilla Website Photo"
+        "section_project_images": [
+            "/src/assets/tesla-2.png",
+            "/src/assets/tesla-3.png",
+            "/src/assets/tesla-1.png"
+        ]
+    },
+    {
+        "id": "nyeri",
+        "image_hover": "/src/assets/nyeri-cover.webp",
+        "table_project_name": "Clan Nyeri",
+        "table_project_category": "Web design, Development",
+        "table_project_client": "Asoc. Nyeri",
+        "table_project_year": "2024",
+        "section_project_text": "I developed the website for the Nyeri Youth Association, with a compact and efficient design that presents all the information of the association in a clear and accessible way: projects, news, blog, and more. It is a static website optimized with jQuery and powered with Slick for a fluid and modern navigation.",
+        "section_project_link": "https://www.clannyeri.com/",
+        "section_project_labels": [
+            "JQuery", "Slick", "Design", "Development", "RSS"
+        ],
+        "section_project_images": [
+            "/src/assets/nyeri-3.png", 
+            "/src/assets/nyeri-1.png", 
+            "/src/assets/nyeri-2.png"
+        ]
+    },
+    {
+        "id": "alwed",
+        "image_hover": "/src/assets/alwed-cover.webp",
+        "table_project_name": "Alwed",
+        "table_project_category": "Locomotive Scroll",
+        "table_project_client": "-",
+        "table_project_year": "2024",
+        "section_project_text": "Alwed (Spec Work), is a personal project where I have implemented Locomotive Scroll to create a fluid and modern experience on the website of a fictitious web development company.",
+        "section_project_link": "/alwed/",
+        "section_project_labels": [
+            "Locomotive Scroll", "JQuery", "Design", "Development"
+        ],
+        "section_project_images": [
+            "/src/assets/alwed-2.png", 
+            "/src/assets/alwed-1.png", 
+            "/src/assets/alwed-3.png"
+        ]
+    },
+    {
+        "id": "psikebana",
+        "image_hover": "/src/assets/psikebana-cover.webp",
+        "table_project_name": "Psikebana Website",
+        "table_project_category": "Web design, Development",
+        "table_project_client": "Ilu Martínez",
+        "table_project_year": "2024",
+        "section_project_text": "I carried out the development of the website of the psychologist Ilu Martínez, with a colorful and intuitive design that follows the branding of her personal brand. The website has dynamic animations that give life to a page full of information.",
+        "section_project_link": "https://psikebana.com/",
+        "section_project_labels": [
+            "Animations", "JQuery", "Slick", "Animate.css", "Design", "Development", "RSS"
+        ],
+        "section_project_images": [
+            "/src/assets/psikebana-3.png",
+            "/src/assets/psikebana-1.png",
+            "/src/assets/psikebana-2.png"
+        ]
+    },
+    {
+        "id": "matepropiedades",
+        "image_hover": "",
+        "table_project_name": "MATE Propiedades",
+        "table_project_category": "Web Development",
+        "table_project_client": "Grupo Mate Propiedades",
+        "table_project_year": "2024",
+        "section_project_text": "The MATE Propiedades Group website is a static website programmed using only HTML and CSS with the objective of creating a public facing brochure accessible from anywhere in the world.",
+        "section_project_link": "https://grupomatepropiedades.com/",
+        "section_project_labels": [
+            "HTML", "CSS", "Development"
+        ],
+        "section_project_images": [
+            "/src/assets/matepropiedades-1.png",
+            "/src/assets/matepropiedades-2.png",
+            "/src/assets/matepropiedades-3.png"
+        ]
     }
 ]
