@@ -31,3 +31,4 @@ Disallow: /dot-dager/src/styles/
 Allow: /tesla/
 Allow: /alwed/
 Allow: /dot-dager/
+Allow: /dot-dager/es/
