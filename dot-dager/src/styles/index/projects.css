@@ -4,7 +4,7 @@ section.projects div.projects-container {
     margin: 0 auto;
     min-height: 100vh;
     padding-top: 25vh;
-    padding-bottom: 25vh;
+    padding-bottom: 10em;
 }
 
 section.projects div.projects-container h2 {

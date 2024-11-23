@@ -1,0 +1,105 @@
+section.music {
+    padding-bottom: 25vh;
+}
+
+section.music div.music-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {    
+    section.music div.music-content {
+        width: 90%;
+    }
+}
+
+section.music div.music-content h2 {
+    font-size: 5rem;
+    color: var(--purple-100);
+    font-family: var(--laygrotesk);
+    line-height: 1;
+    text-align: left;
+    cursor: default;
+}
+
+section.music div.music-content h2 span.number {
+    color: var(--purple-500);
+    font-size: 4rem;
+}
+
+
+section.music div.music-content div.mc-songs,
+section.music div.music-content div.mc-playsong {
+    margin-top: 1em;
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+    max-width: 200px;
+    margin-right: 1em;
+    position: relative;
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    color: var(--purple-300);
+    font-family: var(--laygrotesk);
+    line-height: 1;
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card div.mc-songs-card-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card div.mc-songs-card-image div.mc-songs-card-hover {
+    background: var(--purple-950);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: all ease 200ms;
+    clip-path: circle(0% at 50% 100%);
+    transition: clip-path ease .5s;
+    background: rgba(0,0,0, .5);
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card div.mc-songs-card-image div.mc-songs-card-hover svg {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    fill: var(--violet-200);
+    opacity: 0;
+    transition: top ease 200ms, opacity ease 300ms;
+    transition-delay: .3s;
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card:hover div.mc-songs-card-image div.mc-songs-card-hover svg {
+    top: 50%;
+    opacity: 1;
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card:hover div.mc-songs-card-image div.mc-songs-card-hover {
+    clip-path: circle(150% at 50% 50%);
+}
+
+section.music div.music-content div.mc-songs a.mc-songs-card div.mc-songs-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

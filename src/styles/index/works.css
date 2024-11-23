@@ -70,7 +70,7 @@ div.work-container {
     left: 0;
     top: 0;
     color: var(--text-color);
-    transition: color ease 200ms, padding-left ease 300ms, padding-right ease 300ms, top 1s ease;
+    transition: color ease-in-out 400ms, padding-left ease 300ms, padding-right ease 300ms, top 1s ease;
 }
 
 /* .work-card span.visible::after {
