@@ -1,12 +1,5 @@
 
 User-agent: *
-Disallow: /src/
-Disallow: /src/assets/
-Disallow: /src/content/
-Disallow: /src/fonts/
-Disallow: /src/libs/
-Disallow: /src/scripts/
-Disallow: /src/styles/
 
 Disallow: /alwed/include/
 Disallow: /alwed/include/assets/
@@ -32,3 +25,5 @@ Allow: /tesla/
 Allow: /alwed/
 Allow: /dot-dager/
 Allow: /dot-dager/es/
+
+Sitemap: https://cpadlab.github.io/sitemap.xml
