@@ -1,0 +1,118 @@
+header.header {
+    position: fixed;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1111;
+}
+
+header.header a._header-root-link {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    position: relative;
+}
+
+header.header a._header-root-link div.underline {
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: var(--purple-400);
+    left: 0;
+    bottom: 0;
+    transition: width ease 200ms;
+}
+
+header.header a._header-root-link div.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+    background: var(--purple-100);
+    transition: width ease 500ms;
+}
+
+header.header a._header-root-link span {
+    font-family: var(--laygrotesk);
+    color: var(--purple-300);
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    transition: color ease 200ms;
+    font-weight: bold;
+    transition: all ease 200ms;
+}
+
+header.header a._header-root-link svg {
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+header.header a._header-root-link svg path {
+    fill: var(--purple-100);
+}
+
+header.header nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+header.header nav a._header-default-link {
+    font-family: var(--laygrotesk);
+    color: var(--purple-300);
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    transition: color ease 200ms;
+}
+
+header.header nav a._header-default-link span {
+    position: relative;
+}
+
+header.header a._header-root-link span:hover,
+header.header nav a._header-default-link:hover {
+    color: var(--purple-100);
+}
+
+header.header nav a._header-default-link div.underline {
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: var(--purple-400);
+    left: 0;
+    bottom: 0;
+    transition: width ease 200ms;
+}
+
+header.header nav a._header-default-link div.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+    background: var(--purple-100);
+    transition: width ease 500ms;
+}
+
+header.header a._header-root-link:hover div.underline,
+header.header a._header-root-link:hover div.underline::after,
+header.header nav a._header-default-link:hover span::after,
+header.header nav a._header-default-link:hover div.underline,
+header.header nav a._header-default-link:hover div.underline::after {
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "NeueBit";
+    src: url('../fonts/NeueBit.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SaolDisplay";
+    src: url('../fonts/SaolDisplay.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LayGrotesk";
+    src: url('../fonts/LayGrotesk.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

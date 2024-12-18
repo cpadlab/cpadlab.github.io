@@ -1,0 +1,143 @@
+footer.footer {
+    background: var(--violet-400);
+    padding: 1em;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    position: sticky;
+    bottom: 0;
+}
+
+footer.footer div.footer-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {    
+    footer.footer div.footer-content {
+        width: 90%;
+    }
+}
+
+footer.footer div.footer-content h2 {
+    font-size: 5rem;
+    color: var(--purple-950);
+    font-family: var(--laygrotesk);
+    line-height: 1;
+    text-align: left;
+    cursor: default;
+}
+
+footer.footer div.footer-content h2 span.number {
+    color: var(--purple-900);
+    font-size: 4rem;
+}
+
+form.form-container div.form-content {
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+    gap: .5em;
+}
+
+form.form-container div.form-content div.input-group {
+    display: flex;
+    gap: .5em;
+}
+
+form.form-container div.form-content div.input-group textarea,
+form.form-container div.form-content div.input-column input,
+form.form-container div.form-content div.input-group input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    color: var(--purple-950);
+    font-size: 1.2rem;
+    padding: .5em;
+    border-bottom: 1px solid var(--purple-900);
+    font-family: var(--laygrotesk);
+}
+
+form.form-container div.form-content div.input-group textarea::placeholder,
+form.form-container div.form-content div.input-column input::placeholder,
+form.form-container div.form-content div.input-group input::placeholder {
+    color: var(--purple-900);
+}
+
+form.form-container div.form-content button {
+    font-size: 1.2rem;
+    padding: .5em 1em;
+    background: transparent;
+    border: 1px solid var(--purple-900);
+    border-radius: 3em;
+    margin-top: .5em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    transition: color ease 400ms, border ease 400ms;
+}
+
+form.form-container div.form-content button span {
+    z-index: 111;
+    position: relative;
+}
+
+form.form-container div.form-content button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--purple-950);
+    width: 150%;
+    height: 150%;
+    z-index: 0;
+    clip-path: circle(0% at 0% -100%);
+    transition: clip-path ease .7s;
+}
+
+form.form-container div.form-content button:hover::after {
+    clip-path: circle(150% at 50% 50%);
+}
+
+form.form-container div.form-content button:hover {
+    color: var(--purple-300);
+    border: 1px solid var(--purple-950);
+}
+
+.footer-info {
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.footer-info p {
+    text-align: center;
+    font-family: var(--laygrotesk);
+    font-size: 1.2rem;
+    color: var(--purple-950);
+}
+
+.footer-info a {
+    color: var(--purple-950);
+    text-decoration: none;
+    position: relative;
+}
+.footer-info a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0%;
+    height: 1px;
+    background: var(--purple-950);
+    transition: width ease 200ms;
+}
+
+.footer-info a:hover::after {
+    width: 100%;
+}

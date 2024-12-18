@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/roboto-flex/RobotoFlex-VariableFont.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-white: #fff;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+main.wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+div.pin-wrapper {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    position: relative;
+}
+
+section {
+    height: 100vh;
+    background: white;
+}
+
+section.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+section.slider {
+    background: #000;
+}
+
+section.panel div.section-abs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+}
+
+section.panel div.section-background {
+    object-fit: cover;
+    background-size: cover !important;
+    z-index: 0;
+}
+
+section.model-y div.section-background {
+    background: url(../assets/model-y.avif) no-repeat center center;
+}
+
+div.werobot div.section-background {
+    background: url(../assets/werobot.avif) no-repeat center center;
+}
+div.apr div.section-background {
+    background: url(../assets/0appr.avif) no-repeat center center;
+}
+
+.sc-content {
+    z-index: 1111 !important;
+}
+
+section.model-3 div.section-background {
+    background: url(../assets/model-3.avif) no-repeat center center;
+}
+section.model-x div.section-background {
+    background: url(../assets/model-x.avif) no-repeat center center;
+}
+section.model-s div.section-background {
+    background: url(../assets/model-s.avif) no-repeat center center;
+}
+section.cybertruck div.section-background {
+    background: url(../assets/cybertruck.avif) no-repeat center center;
+}
+section.solar-panels div.section-background {
+    background: url(../assets/solar-panels.avif) no-repeat center center;
+}
+section.solar-roof div.section-background {
+    background: url(../assets/solar-roof.avif) no-repeat center center;
+}
+section.powerwall div.section-background {
+    background: url(../assets/powerwall.avif) no-repeat center center;
+}
+section.accessories div.section-background {
+    background: url(../assets/accessories.avif) no-repeat center center;
+}
+
+section.panel div.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.panel div.section-content div.sc-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+    gap: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.sc-content h2,
+section.panel div.section-content div.sc-header h2 {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    cursor: default;
+}
+
+section.panel div.section-content div.sc-header h3 {
+    background: transparent;
+    border: 0;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    cursor: default;
+    position: relative;
+}
+
+section.panel div.section-content div.sc-header p.link,
+section.panel div.section-content div.sc-header h3.link {
+    cursor: pointer;
+}
+
+section.panel div.section-content div.sc-header h3 span {
+    position: relative;
+}
+
+p.link::after,
+h3.link span::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-white);
+    transition: all ease 200ms;
+}
+
+p.link:hover::after,
+h3.link:hover span::after {
+    height: 2px;
+    bottom: -3px;
+}
+
+section.panel div.section-content div.sc-header p {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    cursor: default;
+    margin-top: .3em;
+    position: relative;
+}
+
+footer.footer {
+    position: relative;
+    padding: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+footer.footer p {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+div.sc-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2vh;
+}
+
+div.sc-buttons button.sc-button {
+    block-size: 40px;
+    width: 100%;
+    max-width: calc(8px*33);
+    min-width: calc(8px*33);
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform ease 200ms;
+}
+
+div.sc-buttons button.sc-button:hover {
+    transform: translateY(-3px);
+}
+
+div.sc-buttons button.sc-button.sc-button_1 {
+    background: #3e6ae1;
+    color: var(--color-white);
+}
+
+div.sc-buttons button.sc-button.sc-button_2 {
+    background: var(--color-white);
+    color: #393C41;
+}
+
+div.sc-header svg {
+    width: 300px;
+}
+
+div.sc-header svg path {
+    fill: var(--color-white);
+}
+
+button.hidden {
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    div.sc-buttons {
+        flex-direction: column;
+        gap: .5em;
+        padding: 1em;
+        padding-bottom: 0;
+    }
+    div.sc-buttons button.sc-button {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    footer.footer p {
+        max-width: 90%;
+    }
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+section.panel div.section-content div.sc-header h3 button {
+    background: transparent;
+    border: 0;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+section.panel div.section-content div.sc-header p button {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    cursor: pointer;
+    margin-top: .3em;
+    position: relative;
+}
+
+section.video {
+    position: relative;
+    overflow: hidden;
+}
+
+div.video-container {
+    display: block;
+    position: relative;
+}
+
+div.video-container video {
+    object-fit: cover;
+    width: 100%;
+}
+div.scroll-button-container {
+    position: absolute;
+    z-index: 1111;
+    display: flex;
+    gap: .5em;
+    left: 2vw;
+    bottom: 50%;
+    
+    flex-direction: column;
+}
+
+div.scroll-button-container button {
+    transition: opacity ease 200ms;
+    opacity: .5;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    background: var(--color-white);
+    border-radius: .5em;
+}
+
+div.scroll-button-container button:hover {
+    opacity: .7;
+}
+
+div.scroll-button-container button.selected {
+    height: 2em;
+    opacity: 1;
+}
+
+
+.slider-card {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slider-content {
+    position: relative;
+}
+.slick-track {
+    height: 100vh;
+}
+
+.sc-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+    gap: .5em;
+}
+
+.slider-arrows {
+    padding: 1em;
+    width: 100%;
+    position: absolute;
+    bottom: 1em;
+    z-index: 1;
+    left: 0;
+}
+
+.slider-arrows ul {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    list-style: none;
+}
+.slider-arrows ul button {
+    width: 1em;
+    height: 1em;
+    background: var(--color-white);
+    display: flex;
+    border-radius: .5em;
+    border: 0;
+    overflow: hidden;
+    color: transparent;
+    cursor: pointer;
+    opacity: .5;
+}
+
+li.slick-active button {
+    opacity: 1;
+}
