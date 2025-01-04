@@ -1,0 +1,48 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+    
+        <title>Carlos Padilla Blog</title>
+        <link>https://cpadlab.github.io/</link>
+        <description>Carlos Padilla Blog RSS Feed</description>
+        <language>en-EN</language>
+        <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://cpadlab.github.io/include/blog.xml" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title>All my solutions to MiduDev's AdventJS 2024 | 25 Python, JavaScript and TypeScript Programming Challenges</title>
+            <link>https://medium.com/@cpadlab/all-my-solutions-to-midudevs-adventjs-2024-25-python-javascript-and-typescript-programming-bf1f0bcdbde7</link>
+            <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+            <guid>https://medium.com/@cpadlab/all-my-solutions-to-midudevs-adventjs-2024-25-python-javascript-and-typescript-programming-bf1f0bcdbde7</guid>
+            <description>Discover my 25 solutions to MiduDev's AdventJs 2024 challenges.</description>
+            <media:content url="https://cpadlab.github.io/assets/images/blog/blo-003.png" type="image/png" />
+        </item>
+
+        <item>
+            <title>Text Parallax with Framer Motion</title>
+            <link>https://medium.com/@cpadlab/text-parallax-with-framer-motion-a724d1ce85d0</link>
+            <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+            <guid>https://medium.com/@cpadlab/text-parallax-with-framer-motion-a724d1ce85d0</guid>
+            <description>Implementation of a scrolling parallax text using Framer Motion and React.</description>
+            <media:content url="https://cpadlab.github.io/assets/images/blog/blo-004.webp" type="image/webp" />
+        </item>
+
+        <item>
+            <title>Awesome GSAP Section Transition</title>
+            <link>https://medium.com/@cpadlab/awesome-gsap-section-transition-aba4271c0e0c</link>
+            <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+            <guid>https://medium.com/@cpadlab/awesome-gsap-section-transition-aba4271c0e0c</guid>
+            <description>Implementation of a transition between sections using React and TailwindCSS, inspired by Jack Elder.</description>
+            <media:content url="https://cpadlab.github.io/assets/images/blog/blo-002.webp" type="image/webp" />
+        </item>
+
+        <item>
+            <title>JQuery Mask Entry Animation</title>
+            <link>https://medium.com/@cpadlab/jquery-mask-entry-animation-62325bb9b35b</link>
+            <pubDate> Tue, 19 Nov 2024 00:00:00 +0000</pubDate>
+            <guid>https://medium.com/@cpadlab/awesome-gsap-section-transition-aba4271c0e0c</guid>
+            <description>Implementation of an intro animation with clip-path mask for images using jQuery and jQuery UI, inspired by the Olivier Larose blog.</description>
+            <media:content url="https://cpadlab.github.io/assets/images/blog/blo-001.webp" type="image/webp" />
+        </item>
+        
+    </channel>
+</rss>
