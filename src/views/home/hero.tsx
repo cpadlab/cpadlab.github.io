@@ -7,7 +7,7 @@ export const HomeHeroSection = ({ scrollYProgress }: { scrollYProgress: MotionVa
     const rotate = useTransform(scrollYProgress, [0, 1], [0, -4]);
 
     return (
-        <motion.section style={{ scale, rotate }} className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden z-0 origin-center bg-black select-none">
+        <motion.section style={{ scale, rotate }} className="sticky top-0 h-dvh w-full flex justify-center items-center overflow-hidden z-0 origin-center bg-black select-none">
             <div className="relative w-full h-full flex flex-col justify-center items-center">
 
                 <video autoPlay playsInline loop muted className="absolute -z-[1] inset-0 h-full w-full object-cover mask-180">

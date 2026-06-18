@@ -5,14 +5,15 @@ import { StickyFooter } from "@/views/sticky-footer";
 import { getAllPosts } from "@/lib/blog";
 
 export default function Page() {
-  const posts = getAllPosts();
+    
+    const posts = getAllPosts();
 
-  return (
-    <main className="bg-black text-white min-h-screen">
-      <HomeViewEffect />
-      <HomeAboutSection />
-      <HomeBlogSection posts={posts} />
-      <StickyFooter />
-    </main>
-  );
+    return (
+        <main className="bg-black text-white min-h-dvh">
+            <HomeViewEffect />
+            <HomeAboutSection />
+            <HomeBlogSection posts={posts} />
+            <StickyFooter />
+        </main>
+    );
 }
