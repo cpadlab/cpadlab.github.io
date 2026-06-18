@@ -34,11 +34,19 @@ export const viewport = {
   initialScale: 1,
 };
 
-export const metadata: Metadata = {
-    title: "Creative Portfolio | Full Stack Developer",
-    description: "Premium digital portfolio showcasing full-stack projects, responsive design, and high-performance applications.",
-    keywords: ["portfolio", "developer", "nextjs", "react", "tailwind", "web designer", "static export"],
-    authors: [{ name: "Developer" }],
+export const metadata: Metadata = {                                                                                                                  
+    title: "Carlos Padilla | Creative Portfolio & Blog",                                                                                             
+    description: "Portfolio and blog by Carlos Padilla. Showcasing full-stack development, automation, cybersecurity, pentesting, writeups, and high-performance web applications.",
+    keywords: [ 
+        "Carlos Padilla", "cpadlab", "portfolio", "personal website", "full stack developer", "frontend developer", 
+        "security engineer", "web designer", "creative portfolio", "Almería", "Spain", "cybersecurity", "pentesting", 
+        "ethical hacking", "tryhackme", "thm", "ctf", "thm writeups", "thm rooms", "writeups", "soar", "incident response", 
+        "security engineering", "automated soar playbooks", "keylogger development", "php web shell", "fnmt certificate crack", 
+        "eJPT", "OSCP", "nextjs", "react", "tailwind", "tailwindcss", "typescript", "javascript", "python", "docker", "gsap", 
+        "scrolltrigger", "framer motion", "lenis scroll", "smooth scrolling", "static export", "adventjs", "midudev", 
+        "adventjs solutions"
+    ],
+    authors: [{ name: "Carlos Padilla" }],
     robots: "index, follow",
 };
 
