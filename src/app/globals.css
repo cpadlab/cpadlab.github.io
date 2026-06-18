@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-editorial: var(--font-editorial), system-ui, sans-serif;
+  --font-greatvibes: var(--font-great-vibes), cursive;
+  --font-mondwest: var(--font-mondwest), monospace;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer base {
+  .mask-180 {
+      -webkit-mask-image: linear-gradient(-90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+      mask-image: linear-gradient(-90deg, #000, #0000 90%);
+      -webkit-mask: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+      mask: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html, body, a, button, input, textarea {
+    cursor: none !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .pointer-device-only {
+    display: none !important;
+  }
+}
