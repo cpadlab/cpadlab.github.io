@@ -35,7 +35,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {                                                                                                                  
-    title: "Carlos Padilla | Creative Portfolio & Blog",                                                                                             
+    title: "Carlos Padilla",
     description: "Portfolio and blog by Carlos Padilla. Showcasing full-stack development, automation, cybersecurity, pentesting, writeups, and high-performance web applications.",
     keywords: [ 
         "Carlos Padilla", "cpadlab", "portfolio", "personal website", "full stack developer", "frontend developer", 
