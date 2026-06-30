@@ -12,7 +12,6 @@ export default function Page() {
         <main className="bg-black text-white min-h-dvh">
             <HomeViewEffect />
             <HomeAboutSection />
-            <HomeBlogSection posts={posts} />
             <StickyFooter />
         </main>
     );

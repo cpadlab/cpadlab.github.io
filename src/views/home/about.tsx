@@ -170,7 +170,7 @@ export const HomeAboutSection = () => {
                 <div /><div /><div />
                 <div className="lg:col-span-2 space-y-2 text-white">
                     <p className="text-6xl font-editorial">
-                        <span className="opacity-50">01.</span>{" "}
+                        {/*<span className="opacity-50">01.</span>*/}
                         <span className="font-greatvibes mr-1.5">A</span>bout
                     </p>
                     <div className="text-xl leading-relaxed text-neutral-200">

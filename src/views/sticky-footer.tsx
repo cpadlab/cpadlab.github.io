@@ -26,8 +26,8 @@ export const StickyFooter = () => {
     }, []);
 
     return (
-        <div className="relative h-[450px] bg-black select-none z-0" style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
-            <div className="fixed bottom-0 h-[450px] w-full bg-neutral-950 text-neutral-400 font-sans border-t border-neutral-900 px-8 md:px-12 py-12 flex flex-col justify-between">
+        <div className="relative h-[450px] bg-neutral-900 select-none z-0" style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
+            <div className="fixed bottom-0 h-[450px] w-full bg-neutral-900 text-neutral-400 font-sans border-t border-neutral-900 px-8 md:px-12 py-12 flex flex-col justify-between">
         
                 <div className="flex flex-col">
                     <Link href="/" className="hover:text-white transition-colors">
