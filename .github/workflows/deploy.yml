@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Porfolio Deploy
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: "20"
           cache: npm
 
       - name: Setup Pages
