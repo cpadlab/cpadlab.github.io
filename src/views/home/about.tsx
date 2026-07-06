@@ -164,7 +164,7 @@ export const HomeAboutSection = () => {
     };
 
     return (
-        <section ref={containerRef} className="bg-black pt-24 pb-48 z-20 relative select-none">
+        <section id="about" ref={containerRef} className="bg-black pt-24 pb-48 z-20 relative select-none">
             <div className="flex justify-center">
                 <div className="grid lg:grid-cols-5 md:grid-cols-2 container lg:px-12 px-8">
                 <div /><div /><div />

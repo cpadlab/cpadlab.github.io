@@ -31,3 +31,14 @@ html {
     display: none !important;
   }
 }
+
+/* 3D Perspective Character Roll Hover Trigger */
+.perspective-hover-group:hover .perspective-char-primary {
+  transform: translateY(-100%) rotateX(90deg) !important;
+  opacity: 0 !important;
+}
+
+.perspective-hover-group:hover .perspective-char-secondary {
+  transform: translateY(-100%) rotateX(0deg) !important;
+  opacity: 1 !important;
+}
