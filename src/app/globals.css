@@ -7,9 +7,6 @@
   --font-sans: var(--font-inter), system-ui, sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 @layer base {
   .mask-180 {
