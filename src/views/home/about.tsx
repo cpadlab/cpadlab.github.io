@@ -13,27 +13,48 @@ interface WordItem {
 export const HomeAboutSection = () => {
 
     const containerRef = useRef<HTMLDivElement>(null);
-    const refs = useRef<HTMLSpanElement[]>([]);
+    const textRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        const el = containerRef.current;
-        if (!el || refs.current.length === 0) return;
-        const anim = gsap.to(refs.current, {
-            scrollTrigger: {
-                trigger: el,
-                scrub: true,
-                start: "top 75%",
-                end: "bottom 85%",
-            },
-            opacity: 1,
-            ease: "none",
-            stagger: 0.1,
-        });
-        return () => {
-            if (anim.scrollTrigger) anim.scrollTrigger.kill();
-            anim.kill();
-        };
+
+        const ctx = gsap.context(() => {
+            const mm = gsap.matchMedia();
+
+            mm.add("(max-width: 767px)", () => {
+                gsap.to(".about-char", {
+                    scrollTrigger: {
+                        trigger: textRef.current,
+                        scrub: 0.5,
+                        start: "top 80%",
+                        end: "bottom 60%",
+                    },
+                    opacity: 1,
+                    ease: "none",
+                    stagger: {
+                        amount: 0.8,
+                    },
+                });
+            });
+
+            mm.add("(min-width: 768px)", () => {
+                gsap.to(".about-char", {
+                    scrollTrigger: {
+                        trigger: textRef.current,
+                        scrub: 0.5,
+                        start: "top 75%",
+                        end: "bottom 65%",
+                    },
+                    opacity: 1,
+                    ease: "none",
+                    stagger: {
+                        amount: 1,
+                    },
+                });
+            });
+        }, containerRef);
+
+        return () => ctx.revert();
     }, []);
 
     const wordsList: WordItem[] = [
@@ -146,14 +167,10 @@ export const HomeAboutSection = () => {
                 <span key={wordIdx} className="inline-block whitespace-nowrap mr-1.5">
                     {word.text.split("").map((char, charIdx) => {
                         const classNames = [
-                            "opacity-15",
-                            "transition-opacity",
-                            "duration-300",
-                            word.bold ? "font-bold text-white" : "",
-                            word.italic ? "italic text-neutral-300" : ""
+                            "about-char", "opacity-20", "will-change-[opacity]", word.bold ? "font-bold text-white" : "", word.italic ? "italic text-neutral-300" : ""
                         ].filter(Boolean).join(" ");
                         return (
-                            <span key={charIdx} ref={(el) => {if (el && !refs.current.includes(el)) {refs.current.push(el);}}} className={classNames}>
+                            <span key={charIdx} className={classNames}>
                                 {char}
                             </span>
                         );
@@ -164,19 +181,21 @@ export const HomeAboutSection = () => {
     };
 
     return (
-        <section id="about" ref={containerRef} className="bg-black pt-24 pb-48 z-20 relative select-none">
+        <section id="about" ref={containerRef} className="bg-black pt-20 sm:pt-24 pb-32 sm:pb-48 z-20 relative select-none">
             <div className="flex justify-center">
-                <div className="grid lg:grid-cols-5 md:grid-cols-2 container lg:px-12 px-8">
-                <div /><div /><div />
-                <div className="lg:col-span-2 space-y-2 text-white">
-                    <p className="text-6xl font-editorial">
-                        {/*<span className="opacity-50">01.</span>*/}
-                        <span className="font-greatvibes mr-1.5">A</span>bout
-                    </p>
-                    <div className="text-xl leading-relaxed text-neutral-200">
-                        {renderWords()}
+                <div className="grid lg:grid-cols-5 md:grid-cols-2 container lg:px-12 px-6 sm:px-8">
+                    <div className="hidden lg:block" />
+                    <div className="hidden lg:block" />
+                    <div className="hidden lg:block" />
+                    <div className="lg:col-span-2 space-y-4 text-white">
+                        <p className="text-5xl sm:text-6xl font-editorial">
+                            {/*<span className="opacity-50">01.</span>*/}
+                            <span className="font-greatvibes mr-1.5">A</span>bout
+                        </p>
+                        <div ref={textRef} className="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed text-neutral-200">
+                            {renderWords()}
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>

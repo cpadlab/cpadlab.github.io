@@ -96,7 +96,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
     return (
-        <html lang="en" className={`${EditorialFont.variable} ${GreatVibesFont.variable} ${MondwestFont.variable} ${interFont.variable} scroll-smooth`}>
+        <html lang="en" className={`${EditorialFont.variable} ${GreatVibesFont.variable} ${MondwestFont.variable} ${interFont.variable}`}>
             <body className="flex flex-col font-sans antialiased">
                 <Header />
                 <SmoothScroll />
