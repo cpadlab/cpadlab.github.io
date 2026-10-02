@@ -38,10 +38,10 @@ export const viewport = {
 export const metadata: Metadata = {
     metadataBase: new URL("https://cpadlab.github.io"),
     title: {
-        default: "Carlos Padilla — Portfolio & Blog",
+        default: "Carlos Padilla | Software Developer, Cybersecurity & Engineering Blog",
         template: "%s | Carlos Padilla"
     },
-    description: "Portfolio and blog by Carlos Padilla. Showcasing full-stack development, automation, cybersecurity, pentesting, writeups, and high-performance web applications.",
+    description: "Software developer focused on full-stack development, cybersecurity and automation. Explore my engineering blog, technical projects and professional experience.",
     keywords: [ 
         "Carlos Padilla", "cpadlab", "portfolio", "personal website", "full stack developer", "frontend developer", 
         "security engineer", "web designer", "creative portfolio", "Almería", "Spain", "cybersecurity", "pentesting", 
@@ -70,8 +70,8 @@ export const metadata: Metadata = {
         },
     },
     openGraph: {
-        title: "Carlos Padilla — Portfolio & Blog",
-        description: "Portfolio and blog by Carlos Padilla. Showcasing full-stack development, automation, cybersecurity, pentesting, writeups, and high-performance web applications.",
+        title: "Carlos Padilla | Software Developer, Cybersecurity & Engineering Blog",
+        description: "Software developer focused on full-stack development, cybersecurity and automation. Explore my engineering blog, technical projects and professional experience.",
         url: "https://cpadlab.github.io",
         siteName: "Carlos Padilla",
         locale: "en_US",
@@ -87,8 +87,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Carlos Padilla — Portfolio & Blog",
-        description: "Portfolio and blog by Carlos Padilla. Showcasing full-stack development, automation, cybersecurity, pentesting, writeups, and high-performance web applications.",
+        title: "Carlos Padilla | Software Developer, Cybersecurity & Engineering Blog",
+        description: "Software developer focused on full-stack development, cybersecurity and automation. Explore my engineering blog, technical projects and professional experience.",
         images: ["/images/banner.webp"],
         creator: "@cpadlab",
     }
