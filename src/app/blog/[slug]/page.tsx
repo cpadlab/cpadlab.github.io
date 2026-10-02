@@ -20,10 +20,40 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         };
     }
 
+    const url = `https://cpadlab.github.io/blog/${slug}/`;
+    const coverImage = post.cover || "https://cpadlab.github.io/images/banner.webp";
+    const publishedTime = post.date ? new Date(post.date).toISOString() : undefined;
+
     return {
         title: `${post.title} — Carlos Padilla`,
         description: post.description,
         keywords: post.tags,
+        alternates: {
+            canonical: url,
+        },
+        openGraph: {
+            title: post.title,
+            description: post.description,
+            url,
+            type: "article",
+            publishedTime,
+            modifiedTime: publishedTime,
+            authors: ["Carlos Padilla"],
+            tags: post.tags,
+            images: [
+                {
+                    url: coverImage,
+                    alt: post.title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: post.title,
+            description: post.description,
+            images: [coverImage],
+            creator: "@cpadlab",
+        },
     };
 }
 
@@ -37,22 +67,35 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
     const relatedPosts = getRelatedPosts(post, 3);
 
+    const formattedDate = post.date ? new Date(post.date).toISOString() : new Date().toISOString();
+    const coverImage = post.cover || "https://cpadlab.github.io/images/banner.webp";
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": post.title,
         "description": post.description,
-        "image": post.cover || "https://cpadlab.github.io/images/banner.webp",
-        "datePublished": post.date ? new Date(post.date).toISOString() : new Date().toISOString(),
-        "dateModified": post.date ? new Date(post.date).toISOString() : new Date().toISOString(),
-        "author": {
-            "@type": "Person",
-            "name": "Carlos Padilla",
-            "url": "https://cpadlab.github.io"
-        },
+        "image": [
+            coverImage
+        ],
+        "datePublished": formattedDate,
+        "dateModified": formattedDate,
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Carlos Padilla",
+                "url": "https://cpadlab.github.io",
+                "jobTitle": "SOAR Developer & Security Engineer",
+                "sameAs": [
+                    "https://es.linkedin.com/in/cpadilla10",
+                    "https://github.com/cpadlab"
+                ]
+            }
+        ],
         "publisher": {
             "@type": "Organization",
             "name": "Carlos Padilla",
+            "url": "https://cpadlab.github.io",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://cpadlab.github.io/favicon.ico"
@@ -61,7 +104,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": `https://cpadlab.github.io/blog/${slug}`
-        }
+        },
+        "articleSection": post.category || "Technology",
+        "keywords": post.tags?.join(", ")
     };
 
     return (

@@ -11,7 +11,7 @@ export async function GET() {
   <channel>
     <title>Carlos Padilla</title>
     <link>${baseUrl}</link>
-    <description>Portfolio and blog by Carlos Padilla. Showcasing full-stack development, automation, cybersecurity, pentesting, writeups, and high-performance web applications.</description>
+    <description>Software developer focused on full-stack development, cybersecurity and automation. Explore my engineering blog, technical projects and professional experience.</description>
     <language>en-US</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml" />

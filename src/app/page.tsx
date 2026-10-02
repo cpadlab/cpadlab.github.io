@@ -20,7 +20,7 @@ export default function Page() {
             "@type": "Organization",
             "name": "Grupo TRC"
         },
-        "description": "Portfolio and blog by Carlos Padilla. Specializing in full-stack development, SOAR automation, and incident response.",
+        "description": "Software developer focused on full-stack development, cybersecurity and automation. Explore my engineering blog, technical projects and professional experience.",
         "image": "https://cpadlab.github.io/images/banner.webp"
     };
 
