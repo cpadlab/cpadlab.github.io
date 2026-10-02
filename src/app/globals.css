@@ -18,7 +18,7 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-    html, body, a, button, input, textarea {
+    html, body, a, button, input, textarea, canvas {
         cursor: none !important;
     }
 }
@@ -43,4 +43,14 @@
     .sticky-transition-mobile {
         transform: none !important;
     }
+}
+
+.dino-canvas {
+    filter: invert(1);
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.dino-canvas:hover {
+    opacity: 1;
 }
