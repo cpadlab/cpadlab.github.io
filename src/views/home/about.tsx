@@ -164,7 +164,7 @@ export const HomeAboutSection = () => {
     const renderWords = () => {
         return wordsList.map((word, wordIdx) => {
             return (
-                <span key={wordIdx} className="inline-block whitespace-nowrap mr-1.5">
+                <span key={wordIdx} className="inline-block whitespace-nowrap mr-1.5 font-light">
                     {word.text.split("").map((char, charIdx) => {
                         const classNames = [
                             "about-char", "opacity-20", "will-change-[opacity]", word.bold ? "font-bold text-white" : "", word.italic ? "italic text-neutral-300" : ""
@@ -183,19 +183,16 @@ export const HomeAboutSection = () => {
     return (
         <section id="about" ref={containerRef} className="bg-black pt-20 sm:pt-24 pb-32 sm:pb-48 z-20 relative select-none">
             <div className="flex justify-center">
-                <div className="grid lg:grid-cols-5 md:grid-cols-2 container lg:px-12 px-6 sm:px-8">
-                    <div className="hidden lg:block" />
-                    <div className="hidden lg:block" />
-                    <div className="hidden lg:block" />
+                <div className="grid container lg:px-12 px-6 sm:px-8">
                     <div className="lg:col-span-2 space-y-4 text-white">
-                        <p className="text-5xl sm:text-6xl font-editorial">
-                            {/*<span className="opacity-50">01.</span>*/}
+                        <p className="text-5xl sm:text-6xl font-editorial text-center">
                             <span className="font-greatvibes mr-1.5">A</span>bout
                         </p>
-                        <div ref={textRef} className="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed text-neutral-200">
+                        <div ref={textRef} className="text-base text-center sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed text-neutral-200">
                             {renderWords()}
                         </div>
                     </div>
+                    <div className="hidden lg:block col-span-3" />
                 </div>
             </div>
         </section>
