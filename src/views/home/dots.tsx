@@ -86,32 +86,92 @@ function BlobItem({ blob }: BlobItemProps) {
                 ease: "power2.out",
                 overwrite: "auto",
             });
-        };
 
-        const handleMouseLeave = () => {
-            if (!eyeGroupRef.current) return;
-            gsap.to(eyeGroupRef.current, {
-                x: 0,
-                y: 0,
-                duration: 0.6,
+            const tilt = Math.max(-6, Math.min(6, (dx / window.innerWidth) * 16));
+            const leanY = Math.max(-3, Math.min(3, (dy / window.innerHeight) * 8));
+
+            gsap.to(svgRef.current, {
+                rotate: tilt,
+                y: leanY,
+                duration: 0.5,
                 ease: "power2.out",
                 overwrite: "auto",
             });
         };
 
+        const handleMouseLeave = () => {
+            if (eyeGroupRef.current) {
+                gsap.to(eyeGroupRef.current, {
+                    x: 0,
+                    y: 0,
+                    duration: 0.6,
+                    ease: "power2.out",
+                    overwrite: "auto",
+                });
+            }
+            if (svgRef.current) {
+                gsap.to(svgRef.current, {
+                    rotate: 0,
+                    y: 0,
+                    duration: 0.6,
+                    ease: "power2.out",
+                    overwrite: "auto",
+                });
+            }
+        };
+
+        let blinkTimeout: NodeJS.Timeout;
+        const scheduleBlink = () => {
+            const delay = 2500 + Math.random() * 3500;
+            blinkTimeout = setTimeout(() => {
+                if (eyeGroupRef.current) {
+                    gsap.timeline()
+                        .to(eyeGroupRef.current, {
+                            scaleY: 0.08,
+                            transformOrigin: "center center",
+                            duration: 0.08,
+                            ease: "power2.inOut",
+                        })
+                        .to(eyeGroupRef.current, {
+                            scaleY: 1,
+                            transformOrigin: "center center",
+                            duration: 0.12,
+                            ease: "power2.out",
+                            onComplete: scheduleBlink,
+                        });
+                } else {
+                    scheduleBlink();
+                }
+            }, delay);
+        };
+
+        scheduleBlink();
+
         window.addEventListener("mousemove", handleMouseMove);
         window.addEventListener("mouseleave", handleMouseLeave);
 
         return () => {
+            clearTimeout(blinkTimeout);
             window.removeEventListener("mousemove", handleMouseMove);
             window.removeEventListener("mouseleave", handleMouseLeave);
         };
     }, []);
 
-    return (
-        <div className="flex flex-col items-center select-none">
-            <svg ref={svgRef} width="250" height="250" viewBox="-125 -125 250 250" role="img" className="w-10 h-10" xmlns="http://www.w3.org/2000/svg">
+    const handleJellySquish = () => {
+        if (!svgRef.current) return;
+        gsap.timeline()
+            .to(svgRef.current, { scaleX: 1.18, scaleY: 0.84, duration: 0.12, ease: "power2.out" })
+            .to(svgRef.current, { scaleX: 0.92, scaleY: 1.12, duration: 0.2, ease: "power2.out" })
+            .to(svgRef.current, { scaleX: 1, scaleY: 1, duration: 0.45, ease: "elastic.out(1.2, 0.4)" });
+    };
 
+    return (
+        <div
+            className="flex flex-col items-center select-none group"
+            onMouseEnter={handleJellySquish}
+            onClick={handleJellySquish}
+        >
+            <svg ref={svgRef} width="250" height="250" viewBox="-125 -125 250 250" role="img" aria-label={"Avatar bloub " + blob.name} className="w-10 h-10 transition-transform origin-bottom" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <mask id={maskId} maskUnits="userSpaceOnUse" x="-158" y="-158" width="316" height="316">
                         <path d={blob.bodyPath} fill="#ffffff" />
@@ -128,8 +188,8 @@ function BlobItem({ blob }: BlobItemProps) {
                         <rect x="-158" y="-158" width="316" height="316" fill={blob.rectColor || "var(--color-neutral-100)"} />
                     </g>
                 </g>
-                
             </svg>
+
         </div>
     );
 }

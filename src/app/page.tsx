@@ -1,5 +1,6 @@
 import { HomeAboutSection } from "@/views/home/about";
 import HomeDotsSection from "@/views/home/dots";
+import HomeExperienceSection from "@/views/home/experience";
 import { HomeViewEffect } from "@/views/home/view";
 import { StickyFooter } from "@/views/sticky-footer";
 
@@ -30,6 +31,7 @@ export default function Page() {
 
             <HomeViewEffect />
             <HomeAboutSection />
+            <HomeExperienceSection />
             <HomeDotsSection />
             <StickyFooter />
             
