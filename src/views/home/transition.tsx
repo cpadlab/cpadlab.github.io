@@ -14,11 +14,11 @@ export const HomeTransitionSection = ({ scrollYProgress }: { scrollYProgress: Mo
         return () => window.removeEventListener("resize", updateMedia);
     }, []);
 
-    const scale = useTransform(scrollYProgress, [0, 1], [isMobile ? 0.94 : 0.85, 1]);
-    const rotate = useTransform(scrollYProgress, [0, 1], [isMobile ? 0 : 4, 0]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
+    const rotate = useTransform(scrollYProgress, [0, 1], [4, 0]);
 
     return (
-        <motion.section style={{ scale, rotate }} className="relative h-dvh w-full z-10 origin-center transform-gpu will-change-transform">
+        <motion.section style={isMobile ? undefined : { scale, rotate }} className="sticky-transition-mobile relative h-dvh w-full z-10 origin-center md:transform-gpu md:will-change-transform">
             <Image src="/images/banner.webp" className="object-cover w-full h-full" alt="" fill priority />
         </motion.section>
     );

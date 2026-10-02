@@ -13,11 +13,11 @@ export const HomeHeroSection = ({ scrollYProgress }: { scrollYProgress: MotionVa
         return () => window.removeEventListener("resize", updateMedia);
     }, []);
 
-    const scale = useTransform(scrollYProgress, [0, 1], [1, isMobile ? 0.92 : 0.82]);
-    const rotate = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 0 : -4]);
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.82]);
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, -4]);
 
     return (
-        <motion.section style={{ scale, rotate }} className="sticky top-0 h-dvh w-full flex justify-center items-center overflow-hidden z-0 origin-center bg-black select-none transform-gpu will-change-transform">
+        <motion.section style={isMobile ? undefined : { scale, rotate }} className="sticky-transition-mobile sticky top-0 h-dvh w-full flex justify-center items-center overflow-hidden z-0 origin-center bg-black select-none md:transform-gpu md:will-change-transform">
             <div className="relative w-full h-full flex flex-col justify-center items-center">
 
                 <video autoPlay playsInline loop muted className="absolute -z-[1] inset-0 h-full w-full object-cover mask-180">
