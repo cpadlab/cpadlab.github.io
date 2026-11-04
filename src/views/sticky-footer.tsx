@@ -42,7 +42,7 @@ export const StickyFooter = () => {
 
     return (
         <div ref={containerRef} className="relative flex flex-col justify-end h-dvh bg-neutral-900 select-none z-0" style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
-            <div className="fixed bottom-0 w-full bg-neutral-900 text-neutral-400 font-sans border-t pt-20 border-neutral-800 py-8 flex flex-col justify-end gap-12">
+            <div className="fixed bottom-0 w-full bg-neutral-900 text-neutral-400 font-sans pt-20 border-neutral-800 py-8 flex flex-col justify-end gap-12">
 
                 <div className="px-4 md:px-12 text-center">
                     <h2 className="text-6xl sm:text-[8.5vw] font-editorial uppercase text-white select-none w-full">
@@ -58,7 +58,7 @@ export const StickyFooter = () => {
                     </div>
                 </div>
 
-                <div className="flex px-4 md:px-12 flex-col">
+                <div className="flex px-4 gap-2 md:px-12 flex-col">
                     <div className="flex gap-2 text-sm justify-center flex-wrap">
                         <Link href="/" className="hover:text-white transition-colors">
                             <span>Home</span>
@@ -73,7 +73,7 @@ export const StickyFooter = () => {
                             <span>LinkedIn</span>
                         </a>
                     </div>
-                    <div className="md:flex hidden flex-col justify-center items-center">
+                    <div className="md:flex hidden flex-col gap-2 justify-center items-center">
                         <p className="text-center text-sm">Based in Almería, Spain — {time || "00:00:00 UTC"}</p>
                         <p className="text-center text-sm">© {new Date().getFullYear()} Carlos Padilla. All rights reserved.</p>
                     </div>

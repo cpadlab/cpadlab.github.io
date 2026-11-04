@@ -1,6 +1,3 @@
-import { HomeAboutSection } from "@/views/home/about";
-import HomeDotsSection from "@/views/home/dots";
-import HomeExperienceSection from "@/views/home/experience";
 import { HomeViewEffect } from "@/views/home/view";
 import { StickyFooter } from "@/views/sticky-footer";
 
@@ -30,9 +27,6 @@ export default function Page() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
             <HomeViewEffect />
-            <HomeAboutSection />
-            <HomeExperienceSection />
-            <HomeDotsSection />
             <StickyFooter />
             
         </main>
