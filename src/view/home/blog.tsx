@@ -23,7 +23,7 @@ export const HomeBlogSection: FC = () => {
                 headline: post.title,
                 description: post.description,
                 datePublished: post.date,
-                url: `${siteUrl}/blog/${post.slug}`,
+                url: post.url || `${siteUrl}/blog`,
             },
         })),
     };
@@ -35,30 +35,34 @@ export const HomeBlogSection: FC = () => {
             <h2 id="blog-heading" className="text-sm uppercase text-muted-foreground font-bold">Recent writing</h2>
 
             <ol>
-                {posts.map((post, index) => (
-                    <li key={index}>
-                        <article itemScope itemType="https://schema.org/BlogPosting">
-              
-                            <header className="text-lg">
-                                {post.date && (
-                                    <>
-                                        <time className="text-muted-foreground inline" dateTime={post.date} itemProp="datePublished">{post.date}</time>{" "}
-                                    </>
-                                )}
-                                <h3 className="inline" itemProp="headline">
-                                    <Link className="hover:text-primary transition-colors" href={`/blog/${post.slug}`} itemProp="url">
-                                        <b className="uppercase">{post.title}</b>
-                                    </Link>
-                                </h3>
-                            </header>
+                {posts.map((post, index) => {
+                    const hasUrl = Boolean(post.url && post.url.trim() !== "");
 
-                            {post.description && (
-                                <p className="text-muted-foreground line-clamp-2" itemProp="description">{post.description}</p>
-                            )}
-                        
-                        </article>
-                    </li>
-                ))}
+                    return (
+                        <li key={index}>
+                            <article itemScope itemType="https://schema.org/BlogPosting">
+                  
+                                <header className="text-lg">
+                                    {post.date && (
+                                        <>
+                                            <time className="text-muted-foreground inline" dateTime={post.date} itemProp="datePublished">{post.date}</time>{" "}
+                                        </>
+                                    )}
+                                    <h3 className="inline" itemProp="headline">
+                                        <a className={`transition-colors ${hasUrl ? "hover:text-primary cursor-pointer" : "cursor-default"}`} href={hasUrl ? post.url : undefined} target={hasUrl ? "_blank" : undefined} rel={hasUrl ? "noopener noreferrer" : undefined} itemProp="url">
+                                            <b className="uppercase">{post.title}</b>
+                                        </a>
+                                    </h3>
+                                </header>
+
+                                {post.description && (
+                                    <p className="text-muted-foreground line-clamp-2" itemProp="description">{post.description}</p>
+                                )}
+                            
+                            </article>
+                        </li>
+                    );
+                })}
             </ol>
 
             <nav aria-label="View all posts">

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import type { BlogPostPreview } from "@/types/blog";
 import { formatDate } from "@/utils/dates";
 
@@ -25,33 +23,36 @@ export function BlogSection({ title, description, posts, needCategory, emptyMess
 
             {posts.length > 0 ? (
                 <div className="divide-y divide-border border-y border-border">
-                    {posts.map((post) => (
-                        <article key={post.id} className="group">    
-                            <Link href={`/blog/${post.slug}`} className="grid gap-2 py-6 transition-colors sm:grid-cols-[120px_1fr] sm:gap-8">
-                                
-                                <div className="flex flex-col gap-2">
-                                    <time dateTime={post.date} className="text-xs text-muted-foreground">{formatDate(post.date)}</time>
-                                    {needCategory && <span className="w-fit text-xs uppercase text-muted-foreground">{post.category}</span>}
-                                </div>
+                    {posts.map((post) => {
+                        const hasUrl = Boolean(post.url && post.url.trim() !== "");
 
-                                <div>
+                        return (
+                            <article key={post.id} className="group">    
+                                <a href={hasUrl ? post.url : undefined} target={hasUrl ? "_blank" : undefined} rel={hasUrl ? "noopener noreferrer" : undefined} className={`grid gap-2 py-6 transition-colors sm:grid-cols-[120px_1fr] sm:gap-8 ${hasUrl ? "cursor-pointer" : "cursor-default"}`}>
                                     
-                                    <h3 className="mb-2 font-bold transition-colors group-hover:text-primary">{post.title}</h3>
-                                    <p className="line-clamp-2 text-muted-foreground">{post.description}</p>
+                                    <div className="flex flex-col gap-2">
+                                        <time dateTime={post.date} className="text-xs text-muted-foreground">{formatDate(post.date)}</time>
+                                        {needCategory && <span className="w-fit text-xs uppercase text-muted-foreground">{post.category}</span>}
+                                    </div>
 
-                                    {post.tags?.length > 0 && (
-                                        <ul className="mt-4 flex flex-wrap gap-2">
-                                            {post.tags.map((tag) => (
-                                                <li key={tag} className="text-xs text-muted-foreground">#{tag}</li>
-                                            ))}
-                                        </ul>
-                                    )}
-                                
-                                </div>
-              
-                            </Link>
-                        </article>
-                    ))}
+                                    <div>
+
+                                        <h3 className={`mb-2 font-bold transition-colors ${hasUrl ? "group-hover:text-primary" : ""}`}>{post.title}</h3>
+                                        <p className="line-clamp-2 text-muted-foreground">{post.description}</p>
+
+                                        {post.tags?.length > 0 && (
+                                            <ul className="mt-4 flex flex-wrap gap-2">
+                                                {post.tags.map((tag) => (
+                                                    <li key={tag} className="text-xs text-muted-foreground">#{tag}</li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </div>
+                                    
+                                </a>
+                            </article>
+                        );
+                    })}
                 </div>
             ) : (
                 <div className="border-y border-border py-8">

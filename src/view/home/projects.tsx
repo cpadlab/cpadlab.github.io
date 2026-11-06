@@ -1,5 +1,4 @@
 import type { FC } from "react";
-import Link from "next/link";
 import { projects } from "@/assets/content/projects";
 
 export const HomeProjectsSection: FC = () => {
@@ -56,9 +55,9 @@ export const HomeProjectsSection: FC = () => {
                                         <svg aria-hidden="true" className="w-3.5 h-3.5 min-w-3.5 min-h-3.5 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M6 2h12v2H6zM4 4h2v18H4zm14 0h2v18h-2zm-2 16h2v2h-2zm-2-2h2v2h-2zm-8 2h2v2H6zm2-2h2v2H8zm2-2h4v2h-4z" />
                                         </svg>
-                                        <Link className="hover:text-primary text-muted-foreground transition-colors uppercase" href={item.article}>
+                                        <a className="hover:text-primary text-muted-foreground transition-colors uppercase" href={item.article} target="_blank" rel="noopener noreferrer">
                                             <span>Read article</span>
-                                        </Link>
+                                        </a>
                                     </>
                                 )}
                             

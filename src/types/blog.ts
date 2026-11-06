@@ -1,13 +1,13 @@
 export interface BlogPost {
     id: string;
-    slug: string;
     title: string;
     date: string;
     description: string;
     category: string;
-    cover: string;
+    cover?: string;
     tags: string[];
-    content: string;
+    url: string;
 }
 
-export type BlogPostPreview = Omit<BlogPost, "content">;
+export type BlogPostList = BlogPost[];
+export type BlogPostPreview = BlogPost;
