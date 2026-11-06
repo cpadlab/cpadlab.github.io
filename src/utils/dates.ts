@@ -32,3 +32,20 @@ export function parseDatesToIso(dateStr: string) {
         endDate: parsePart(parts[1]),
     };
 }
+
+
+export function formatDate(date: string): string {
+    
+    const parsedDate = new Date(date);
+
+    if (Number.isNaN(parsedDate.getTime())) {
+        return date;
+    }
+
+    return new Intl.DateTimeFormat("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+    }).format(parsedDate);
+
+}
