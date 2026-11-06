@@ -86,7 +86,6 @@ export const blogPosts: BlogPostList = [
         "date": "Aug 7, 2024",
         "description": "FNMT Crack is a tool designed to recover the password of a natural person’s FNMT digital certificate by means of a brute force attack.",
         "category": "Article",
-        "cover": "https://i.postimg.cc/rsT6Wjb7/1-I9-Dtk-GKx-YVk-R17-Zx-Xrv-L2w.webp",
         "tags": [
             "FNMT",
             "Brute Force"
@@ -99,7 +98,6 @@ export const blogPosts: BlogPostList = [
         "date": "Jun 17, 2024",
         "description": "Exploit Jenkins to gain an initial shell, then escalate your privileges by exploiting Windows authentication tokens.",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/FHHFkDDJ/0-T4l0a8w-QKbjyud-Sc.webp",
         "tags": [
             "Tryhackme Walkthrough",
             "Alfred"
@@ -112,7 +110,6 @@ export const blogPosts: BlogPostList = [
         "date": "Jun 15, 2024",
         "description": "New high score! | Difficulty: Hard | Questions: 3",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/rp74RbpQ/0-Szo-Den-Qy-EQr-B-g5.webp",
         "tags": [
             "Retro",
             "Thm",
@@ -171,7 +168,6 @@ export const blogPosts: BlogPostList = [
         "date": "Jun 10, 2024",
         "description": "A vulnerable Terminator themed Linux machine.",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/rm4knt3F/0-Vrpcqv833MHHSYsb.webp",
         "tags": [
             "Skynet",
             "Thm",
@@ -187,7 +183,6 @@ export const blogPosts: BlogPostList = [
         "date": "May 23, 2024",
         "description": "Can you exploit the CyberLens web server and discover the hidden flags?",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/CxfCPhJ0/0-u-Zq-Csg-Qjq5GANMf-P.webp",
         "tags": [
             "Pentesting",
             "Cyberlens",
@@ -203,7 +198,6 @@ export const blogPosts: BlogPostList = [
         "date": "May 20, 2024",
         "description": "Server trouble in Bedrock.",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/13c2t1VF/0-u5Jv-SYNCk91la-Zi-X.webp",
         "tags": [
             "Thm",
             "B3dr0ck",
@@ -219,7 +213,6 @@ export const blogPosts: BlogPostList = [
         "date": "Mar 13, 2024",
         "description": "Now with more Cat Pictures!",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/zGsC9yGt/0-1I-ju-Sui8375vl-HK.webp",
         "tags": [
             "Pentesting",
             "Writeup",
@@ -235,7 +228,6 @@ export const blogPosts: BlogPostList = [
         "date": "Mar 12, 2024",
         "description": "I always use the Pentest Monkey revserse shell when uploading php files when playing ctfs. So, for a change, I came up with the idea of…",
         "category": "Article",
-        "cover": "https://i.postimg.cc/zGBfNNBm/1-mtfq2i8Kvy-IL32s-I65m2Jw.webp",
         "tags": [
             "PHP",
             "Webshell",
@@ -251,7 +243,6 @@ export const blogPosts: BlogPostList = [
         "date": "Feb 28, 2024",
         "description": "My first CTF !",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/JhnLnspF/0-m-Gwap-JV1UXYYo6m-E.webp",
         "tags": [
             "Olympus",
             "Writeup",
@@ -267,7 +258,6 @@ export const blogPosts: BlogPostList = [
         "date": "Jan 30, 2024",
         "description": "Can you bypass the login form?",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/g2z4F8JG/0-ZZo-O8YO7VL4I7i9F.webp",
         "tags": [
             "Pentesting",
             "Ctf",
@@ -283,7 +273,6 @@ export const blogPosts: BlogPostList = [
         "date": "Nov 20, 2023",
         "description": "CTF challenge involving Sqli , WordPress , vhost enumeration and recognizing internal services ;)",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/G2byhmLK/0-50VGXi-Kw-XX6fc-GK8.webp",
         "tags": [
             "Wekor",
             "Thm",
@@ -299,7 +288,6 @@ export const blogPosts: BlogPostList = [
         "date": "Nov 19, 2023",
         "description": "Batman hits Joker.",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/htjQXtdz/0-Udh-UVSM9if0z-Xwrt.webp",
         "tags": [
             "Hajokerctf",
             "Thm Writeup",
@@ -315,7 +303,6 @@ export const blogPosts: BlogPostList = [
         "date": "Nov 13, 2023",
         "description": "Practice using tools such as Nmap and GoBuster to locate a hidden directory to get initial access to a vulnerable machine. Then escalate your privileges through a vulnerable cronjob.",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/8zY8SZG8/0-jg-Xc8G7d8v9s-Kit-J.webp",
         "tags": [
             "Thm",
             "Writeup",
@@ -324,5 +311,206 @@ export const blogPosts: BlogPostList = [
             "Tryhackme"
         ],
         "url": "https://medium.com/@cpadlab/easy-peasy-thm-writeup-fc6dc076e64c?sharedUserId=cpadlab"
+    },
+    {
+        "id": "boiler-ctf-thm",
+        "title": "Boiler CTF — THM WriteUp",
+        "date": "Oct 28, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Pentesting",
+            "Thm",
+            "Boilerctf",
+            "Ctf",
+            "Writeup"
+        ],
+        "url": "https://medium.com/@cpadlab/boiler-ctf-thm-writeup-b3c3430d64ca"
+    },
+    {
+        "id": "0x41haz-thm",
+        "title": "0x41haz — THM WriteUp",
+        "date": "Oct 23, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Programación",
+            "R2",
+            "Thm",
+            "Writeup",
+            "0x41haz"
+        ],
+        "url": "https://medium.com/@cpadlab/0x41haz-thm-writeup-7a18647af002"
+    },
+    {
+        "id": "overpass-2-thm",
+        "title": "Overpass 2 — THM WriteUp",
+        "date": "Oct 14, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Pentesting",
+            "Thm Writeup",
+            "Overpass2",
+            "Tryhackme",
+            "Writeup"
+        ],
+        "url": "https://medium.com/@cpadlab/overpass-2-thm-writeup-d258c2de4e67"
+    },
+    {
+        "id": "overpass-thm",
+        "title": "Overpass — THM WriteUp",
+        "date": "Oct 10, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Pentesting",
+            "Writeup",
+            "Thm",
+            "Tryhackme",
+            "Overpass Turbo"
+        ],
+        "url": "https://medium.com/@cpadlab/overpass-thm-writeup-8c68513a78fc"
+    },
+    {
+        "id": "jpgchat-thm",
+        "title": "JPGChat — THM WriteUp",
+        "date": "Oct 9, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Python",
+            "Thm",
+            "Writeup",
+            "Jpgchat",
+            "Pentesting"
+        ],
+        "url": "https://medium.com/@cpadlab/jpgchat-thm-writeup-12869394de3a"
+    },
+    {
+        "id": "agent-t-thm",
+        "title": "Agent T — THM WriteUp",
+        "date": "Sep 15, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm",
+            "Agent T"
+        ],
+        "url": "https://medium.com/@cpadlab/agent-t-thm-writeup-aa17e0e7f9d5"
+    },
+    {
+        "id": "agent-sudo-thm",
+        "title": "Agent Sudo — THM Scripts",
+        "date": "Aug 1, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm",
+            "Thm Writeup",
+            "Python",
+            "Pentesting",
+            "Agent Sudo"
+        ],
+        "url": "https://medium.com/@cpadlab/agent-sudo-thm-scripts-7b75eba19226"
+    },
+    {
+        "id": "sql-injection-thm",
+        "title": "SQL Injection — THM WriteUp",
+        "date": "Jul 26, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "SQL Injection",
+            "Thm"
+        ],
+        "url": "https://medium.com/@cpadlab/sql-injection-thm-writeup-cb104a3178b9"
+    },
+    {
+        "id": "mr-robot-ctf-thm",
+        "title": "Mr Robot CTF — THM WriteUp",
+        "date": "Jul 26, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm",
+            "Thm Writeup",
+            "Mr Robot Ctf",
+            "Pentesting",
+            "Tryhackme"
+        ],
+        "url": "https://medium.com/@cpadlab/mr-robot-ctf-33249057c6de"
+    },
+    {
+        "id": "cyborg-thm",
+        "title": "Cyborg — THM WriteUp",
+        "date": "Jul 26, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm",
+            "Thm Writeup",
+            "Cyborg",
+            "Tryhackme",
+            "Pentesting"
+        ],
+        "url": "https://medium.com/@cpadlab/cyborg-thm-writeup-71b90bf0dfcc"
+    },
+    {
+        "id": "vulnversity-thm",
+        "title": "Vulnversity — THM WriteUp",
+        "date": "Jul 26, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm",
+            "Vulnversity"
+        ],
+        "url": "https://medium.com/@cpadlab/vulnversity-thm-writeup-39ec5800011d"
+    },
+    {
+        "id": "basic-pentesting-thm",
+        "title": "Basic Pentesting — THM WriteUp",
+        "date": "Jul 26, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm",
+            "Thm Writeup",
+            "Basic Pentesting",
+            "Pentesting",
+            "Tryhackme"
+        ],
+        "url": "https://medium.com/@cpadlab/basic-pentesting-thm-writeup-39a17fdca985"
+    },
+    {
+        "id": "simplectf-thm",
+        "title": "SimpleCTF — THM WriteUp",
+        "date": "Jul 26, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm Writeup",
+            "Thm",
+            "Simple Ctf",
+            "Pentesting",
+            "Tryhackme"
+        ],
+        "url": "https://medium.com/@cpadlab/simplectf-thm-writeup-75ec002bbeb4"
+    },
+    {
+        "id": "kiba-thm",
+        "title": "Kiba — THM WriteUp",
+        "date": "Jul 15, 2023",
+        "description": "",
+        "category": "Walkthrough",
+        "tags": [
+            "Thm Writeup",
+            "Writeup",
+            "Pentesting",
+            "Thm",
+            "Kiba"
+        ],
+        "url": "https://medium.com/@cpadlab/kiba-thm-writeup-by-14wual-cc09f2f161d3"
     }
 ];
