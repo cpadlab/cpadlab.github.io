@@ -36,9 +36,11 @@ export const HomeProjectsSection: FC = () => {
                                     <time className="text-muted-foreground inline-block" dateTime={String(item.year)} itemProp="dateCreated">{item.year}</time>
                                 )}{` `}
                                 <h3 className="inline-block" itemProp="name">
-                                    <a className="hover:text-primary transition-colors" href={item.url} target="_blank" rel="noopener noreferrer external" aria-label={`${item.name} (opens in new tab)`} itemProp="url">
-                                        <b><span className="uppercase">{item.name}</span></b>
-                                    </a>
+                                    {item.url ? (
+                                        <a className="hover:text-primary transition-colors" href={item.url} target="_blank" rel="noopener noreferrer external" aria-label={`${item.name} (opens in new tab)`} itemProp="url">
+                                            <b><span className="uppercase">{item.name}</span></b>
+                                        </a>
+                                    ) : <b><span className="uppercase">{item.name}</span></b>}
                                 </h3>
                             </header>
 

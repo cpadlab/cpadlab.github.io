@@ -6,7 +6,19 @@ export const experiences: WorkExperience[] = [
         url: "https://trc.es/",
         job: "SOAR Cybersecurity Analyst",
         location: "Almería, Spain",
-        dates: "Oct. 2025 - Present"
+        dates: "Oct. 2025 - Present",
+        projects: [
+            {
+                name: "WebCSX",
+                description: "A multi-tenant cybersecurity operations platform featuring automated incident email generation, normalized security data, dynamic graph generation, and fine-grained ABAC access control.",
+                year: 2026
+            },
+            {
+                name: "PyTRC",
+                description: "An internal Python library that provides unified integrations with cybersecurity platforms such as CrowdStrike Falcon, Cortex XDR, and Wiz, as well as data transformation and standardized graphing tools.",
+                year: 2026
+            }
+        ]
     },
     {
         company: "Lealtadis Abogados S.L.P.",

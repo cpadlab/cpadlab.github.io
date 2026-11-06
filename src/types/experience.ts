@@ -1,3 +1,4 @@
+import type { ProjectList } from "./project";
 
 export interface WorkExperience {
     company: string;
@@ -5,6 +6,7 @@ export interface WorkExperience {
     job: string;
     location: string;
     dates: string;
+    projects?: ProjectList;
 }
 
 export type ExperienceList = WorkExperience[];
