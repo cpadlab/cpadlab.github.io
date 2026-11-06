@@ -15,9 +15,43 @@ const anonymous_pro = Anonymous_Pro({
     variable: "--font-monospace",
 });
 
+const siteUrl = "https://cpadlab.github.io";
+
 export const metadata: Metadata = {
-    title: "Carlos Padilla | SOAR Developer",
-    description: "Portfolio",
+    metadataBase: new URL(siteUrl),
+
+    title: {
+        default: "Carlos Padilla | Frontend Developer",
+        template: "%s | Carlos Padilla",
+    },
+    description: "Portfolio of Carlos Padilla, a full-stack SOAR developer specializing in Python, React, Next.js, TypeScript, and Angular.",
+    applicationName: "Carlos Padilla Portfolio",
+    authors: [
+        {
+            name: "Carlos Padilla",
+            url: siteUrl,
+        },
+    ],
+
+    creator: "Carlos Padilla",
+
+    alternates: {
+        canonical: "/",
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+    },
+
+    openGraph: {
+        type: "website",
+        locale: "es_ES",
+        url: siteUrl,
+        siteName: "Carlos Padilla Portfolio",
+        title: "Carlos Padilla | SOAR Developer",
+        description: "Portfolio of Carlos Padilla, a full-stack SOAR developer specializing in Python, React, Next.js, TypeScript, and Angular",
+    },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
@@ -56,3 +90,5 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </html>
     );
 }
+
+

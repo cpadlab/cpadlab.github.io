@@ -5,7 +5,7 @@ export const HomeAboutSection: FC = () => {
   
     return (
         <section id="about" aria-labelledby="about-heading" className="pb-8">
-            <p className="capitalize text-muted-foreground">{about.headline}</p>
+            <h2 className="capitalize text-muted-foreground">{about.headline}</h2>
             {about.subtext && <p>{about.subtext}</p>}
         </section>
     );
