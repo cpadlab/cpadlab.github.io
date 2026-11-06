@@ -1,34 +1,18 @@
-import { HomeViewEffect } from "@/views/home/view";
-import { StickyFooter } from "@/views/sticky-footer";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import HomeAboutSection from "@/view/home/about";
+import HomeBlogSection from "@/view/home/blog";
+import { HomeExperienceSection } from "@/view/home/experience";
+import HomeHeroSection from "@/view/home/hero";
+import { HomeProjectsSection } from "@/view/home/projects";
 
-export default function Page() {
-
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Carlos Padilla",
-        "url": "https://cpadlab.github.io",
-        "sameAs": [
-            "https://es.linkedin.com/in/cpadilla10",
-            "https://github.com/cpadlab"
-        ],
-        "jobTitle": "SOAR Developer & Security Engineer",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Grupo TRC"
-        },
-        "description": "Software developer focused on full-stack development, cybersecurity and automation. Explore my engineering blog, technical projects and professional experience.",
-        "image": "https://cpadlab.github.io/images/banner.webp"
-    };
-
+export default function Home() {
     return (
-        <main className="bg-black text-white min-h-dvh">
-
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-            <HomeViewEffect />
-            <StickyFooter />
-            
+        <main className="md:max-w-4xl max-w-xl mx-auto px-8 w-full">
+            <HomeHeroSection />
+            <HomeAboutSection />
+            <HomeExperienceSection />
+            <HomeProjectsSection />
+            <HomeBlogSection />
         </main>
     );
 }
