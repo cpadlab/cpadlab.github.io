@@ -80,7 +80,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </head>
 
             <body className="min-h-full flex flex-col">
-                <ScrollArea className="h-dvh max-h-dvh min-h-dvh overflow-hidden">
+                <ScrollArea scrollFade className="h-dvh max-h-dvh min-h-dvh overflow-hidden">
                     <Header />
                     {children}
                     <Footer />

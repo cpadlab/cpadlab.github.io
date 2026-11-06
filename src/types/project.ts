@@ -3,7 +3,8 @@ export interface Project {
     name: string;
     description: string;
     year: number;
-    url: string;
+    url?: string;
+    code?: string;
     article?: string;
 }
 

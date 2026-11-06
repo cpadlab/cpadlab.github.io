@@ -56,9 +56,11 @@ export const HomeExperienceSection: FC = () => {
                                 <span className="text-muted-foreground inline" itemProp="roleName">{item.job}</span>
                             </header>
 
-                            <div className="text-muted-foreground sm:flex-row flex-col flex sm:items-center gap-y-0 gap-2">
+                            <div className="text-muted-foreground">
                                 <span itemProp="addressLocality">{item.location}</span>{" "}
-                                <span><span className="sm:inline hidden">{"("}</span><time>{item.dates}</time><span className="sm:inline hidden">{")"}</span></span>
+                                <span>
+                                    (<time>{item.dates}</time>)
+                                </span>
                             </div>
 
                         </article>

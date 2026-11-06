@@ -46,9 +46,11 @@ export const HomeProjectsSection: FC = () => {
 
                             <nav aria-label={`${item.name} links`} className="flex items-center gap-2">
                                 
-                                <a className="hover:text-primary text-muted-foreground transition-colors uppercase" href={item.url} target="_blank" rel="noopener noreferrer external" itemProp="codeRepository">
-                                    <span>Source code</span>
-                                </a>
+                                {item.code && (
+                                    <a className="hover:text-primary text-muted-foreground transition-colors uppercase" href={item.code} target="_blank" rel="noopener noreferrer external" itemProp="codeRepository">
+                                        <span>Source code</span>
+                                    </a>
+                                )}
 
                                 {item.article && (
                                     <>
