@@ -24,22 +24,30 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en" className={cn("h-full antialiased font-monospace", anonymous_pro.variable)}>
-            
-            <Script id="theme-init" strategy="beforeInteractive">
-                {`
-                    (() => {
-                        try {
-                            const theme = localStorage.getItem("theme");
-                            if (theme === "dark" || theme === "light") {
-                                document.documentElement.classList.toggle(
-                                    "dark",
-                                    theme === "dark"
-                                );
-                            }
-                        } catch {}
-                    })();
-                `}
-            </Script>
+
+            <head>
+
+                <Script id="theme-init" strategy="beforeInteractive">
+                    {`
+                        (() => {
+                            try {
+                                const theme = localStorage.getItem("theme");
+                                if (theme === "dark" || theme === "light") {
+                                    document.documentElement.classList.toggle(
+                                        "dark",
+                                        theme === "dark"
+                                    );
+                                }
+                            } catch {}
+                        })();
+                    `}
+                </Script>
+
+                <meta name="apple-mobile-web-app-title" content="Carlos Padilla" />
+
+
+
+            </head>
 
             <body className="min-h-full flex flex-col">
                 <ScrollArea className="h-dvh max-h-dvh min-h-dvh overflow-hidden">

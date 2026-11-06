@@ -7,15 +7,20 @@ import Link from "next/link";
 
 export const Footer: FC = () => {
     
-    const [madridTime, setMadridTime] = useState<string>("");
-    const currentYear = new Date().getFullYear();
+      const [madridTime, setMadridTime] = useState<string>("");
+    const [currentYear, setCurrentYear] = useState<number | null>(null);
+    const [currentDateTime, setCurrentDateTime] = useState<string>("");
 
     useEffect(() => {
 
         const updateTime = () => {
+        
             const now = new Date();
+
+            setCurrentYear(now.getFullYear());
+
             setMadridTime(
-                now.toLocaleTimeString("en-US", {
+                now.toLocaleTimeString("en-GB", {
                     timeZone: "Europe/Madrid",
                     hour: "2-digit",
                     minute: "2-digit",
@@ -24,13 +29,28 @@ export const Footer: FC = () => {
                     timeZoneName: "short",
                 })
             );
+
+            setCurrentDateTime(
+                new Intl.DateTimeFormat("en-CA", {
+                    timeZone: "Europe/Madrid",
+                    year: "numeric",
+                    month: "2-digit",
+                    day: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                    hour12: false,
+                }).format(now)
+            );
+
         };
 
         updateTime();
         const interval = setInterval(updateTime, 1000);
         return () => clearInterval(interval);
-
+        
     }, []);
+
 
     const sameAsProfiles = socialMediaLinks.filter((item) => item.type === "link").map((item) => item.url);
 
