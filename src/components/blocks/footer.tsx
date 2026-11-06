@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Footer: FC = () => {
     
-      const [madridTime, setMadridTime] = useState<string>("");
+    const [madridTime, setMadridTime] = useState<string>("");
     const [currentYear, setCurrentYear] = useState<number | null>(null);
     const [currentDateTime, setCurrentDateTime] = useState<string>("");
 
@@ -48,7 +48,7 @@ export const Footer: FC = () => {
         updateTime();
         const interval = setInterval(updateTime, 1000);
         return () => clearInterval(interval);
-        
+
     }, []);
 
 
@@ -108,7 +108,7 @@ export const Footer: FC = () => {
             <div className="text-muted-foreground">
                 <p>
                     Based in Almería, Spain —{" "}
-                    <time dateTime={new Date().toISOString()} suppressHydrationWarning>{madridTime || "--:--:-- CET"}</time>
+                    <time dateTime={currentDateTime} suppressHydrationWarning>{madridTime || "--:--:-- CET"}</time>
                 </p>
                 <p>© {currentYear} Carlos Padilla.{" "} All rights reserved.</p>
             </div>
