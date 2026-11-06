@@ -18,9 +18,7 @@ export function BlogSection({ title, description, posts, needCategory, emptyMess
             <div className="mb-4">
                 <div className="flex justify-between gap-4">
                     <h2 id={`blog-${title.toLowerCase().replace(/\s+/g, "-")}`} className="text-sm uppercase text-muted-foreground font-bold">{title}</h2>
-                    <span className="text-xs text-muted-foreground">
-                        {posts.length.toString().padStart(2, "0")} posts
-                    </span>
+                    <span className="text-xs text-muted-foreground">{posts.length.toString().padStart(2, "0")} posts</span>
                 </div>
                 <p className="text-sm text-muted-foreground">{description}</p>
             </div>
@@ -38,13 +36,13 @@ export function BlogSection({ title, description, posts, needCategory, emptyMess
 
                                 <div>
                                     
-                                    <h3 className="mb-2 text-sm font-medium transition-colors group-hover:text-primary">{post.title}</h3>
-                                    <p className="line-clamp-2 text-sm text-muted-foreground">{post.description}</p>
+                                    <h3 className="mb-2 font-bold transition-colors group-hover:text-primary">{post.title}</h3>
+                                    <p className="line-clamp-2 text-muted-foreground">{post.description}</p>
 
                                     {post.tags?.length > 0 && (
                                         <ul className="mt-4 flex flex-wrap gap-2">
                                             {post.tags.map((tag) => (
-                                                <li key={tag} className="text-[10px] text-muted-foreground">#{tag}</li>
+                                                <li key={tag} className="text-xs text-muted-foreground">#{tag}</li>
                                             ))}
                                         </ul>
                                     )}
