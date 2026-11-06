@@ -7,7 +7,6 @@ export const blogPosts: BlogPostList = [
         "date": "Oct 18, 2025",
         "description": "Let me tell you how I deployed a modern app with React and FastAPI on an old Windows Server 2012 R2 using Docker and Hyper-V.",
         "category": "Article",
-        "cover": "https://i.postimg.cc/ht40mQSM/1-nrv-Gq-Vg-Fo-Elv-LXq-Hm-FYkmg.webp",
         "tags": [
             "Deployment",
             "Docker",
@@ -15,7 +14,7 @@ export const blogPosts: BlogPostList = [
             "Full Stack Development",
             "Software Development"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/from-excel-to-docker-chronicle-of-a-deployment-in-legacy-infrastructure-b68db1af5ca0?sharedUserId=cpadlab"
     },
     {
         "id": "billing-thm",
@@ -23,7 +22,6 @@ export const blogPosts: BlogPostList = [
         "date": "Jun 5, 2025",
         "description": "Some mistakes can be costly.",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/hPdsgRCg/0-3IYQlzi-Li-T1b-W0iv.webp",
         "tags": [
             "Thm",
             "Writeup",
@@ -31,7 +29,7 @@ export const blogPosts: BlogPostList = [
             "Pentesting",
             "Tryhackme Writeup"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/billing-thm-writeup-d11bed9a2ed3?sharedUserId=cpadlab"
     },
     {
         "id": "adventjs-2024",
@@ -39,12 +37,11 @@ export const blogPosts: BlogPostList = [
         "date": "Dec 26, 2024",
         "description": "Discover my 25 solutions to MiduDev’s AdventJs 2024 challenges.",
         "category": "Article",
-        "cover": "https://i.postimg.cc/jjmqT3Th/1-WZ8-KVFVJOd-GVu6uv9-TI7w.webp",
         "tags": [
             "AdventJS",
             "MiduDev"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/all-my-solutions-to-midudevs-adventjs-2024-25-python-javascript-and-typescript-programming-bf1f0bcdbde7?sharedUserId=cpadlab"
     },
     {
         "id": "text-parallax-with-framer-motion",
@@ -52,12 +49,11 @@ export const blogPosts: BlogPostList = [
         "date": "Dec 15, 2024",
         "description": "Implementation of a scrolling parallax text using Framer Motion and React.",
         "category": "Tutorial",
-        "cover": "https://i.postimg.cc/vH4whmbX/1-m98dq-KLp3-T-wwi-BZ8-P20y-A.webp",
         "tags": [
             "Framer Motion",
             "Parallax"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/text-parallax-with-framer-motion-a724d1ce85d0?sharedUserId=cpadlab"
     },
     {
         "id": "awesome-gsap-section-transition",
@@ -65,12 +61,11 @@ export const blogPosts: BlogPostList = [
         "date": "Dec 11, 2024",
         "description": "Implementation of a transition between sections using React and TailwindCSS, inspired by Jack Elder.",
         "category": "Tutorial",
-        "cover": "https://i.postimg.cc/Wz1F2G8c/1-Ot-hqd-U69-Qi7p-KBqw-Pvm-Q.webp",
         "tags": [
             "Jack Elder",
             "gsap"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/awesome-gsap-section-transition-aba4271c0e0c?sharedUserId=cpadlab"
     },
     {
         "id": "jquery-mask-entry-animation",
@@ -78,13 +73,12 @@ export const blogPosts: BlogPostList = [
         "date": "Nov 19, 2024",
         "description": "Implementation of an intro animation with clip-path mask for images using jQuery and jQuery UI, inspired by the Olivier Larose blog.",
         "category": "Tutorial",
-        "cover": "https://i.postimg.cc/Ghp360VQ/1-WCq-Crj-RWk-JS4wrqini-ISa-A.webp",
         "tags": [
             "Jquery",
             "Olivier Larose",
             "Clip Path"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/jquery-mask-entry-animation-62325bb9b35b?sharedUserId=cpadlab"
     },
     {
         "id": "how-to-crack-the-fnmt-certificate",
@@ -97,7 +91,7 @@ export const blogPosts: BlogPostList = [
             "FNMT",
             "Brute Force"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/how-to-crack-the-fnmt-certificate-7baac8bdf07a?sharedUserId=cpadlab"
     },
     {
         "id": "alfred-thm",
@@ -110,7 +104,7 @@ export const blogPosts: BlogPostList = [
             "Tryhackme Walkthrough",
             "Alfred"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/alfred-thm-writeup-6d0b4a6d12a8?sharedUserId=cpadlab"
     },
     {
         "id": "retro-thm",
@@ -126,7 +120,7 @@ export const blogPosts: BlogPostList = [
             "Walkthrough",
             "Tryhackme"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/retro-thm-writeup-a25e2c2eb218?sharedUserId=cpadlab"
     },
     {
         "id": "how-to-program-a-keylogger",
@@ -134,13 +128,12 @@ export const blogPosts: BlogPostList = [
         "date": "Jun 14, 2024",
         "description": "Discover the Hidden Dangers of Python: Learn how to program a Keylogger and know its Impact on Digital Security.",
         "category": "Article",
-        "cover": "https://i.postimg.cc/1RFR9vsL/1-T4sf-ky-Gi5Wk-Z3RCHImo-IQ.webp",
         "tags": [
             "Python",
             "Keylogger",
             "Keylogger Software"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/the-perils-of-python-how-to-program-a-keylogger-easy-0c01719354d6?sharedUserId=cpadlab"
     },
     {
         "id": "biblioteca-thm",
@@ -148,7 +141,6 @@ export const blogPosts: BlogPostList = [
         "date": "Jun 12, 2024",
         "description": "Shhh. Be very very quiet, no shouting inside the biblioteca.",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/RF7Hn4wD/0-W-XCd-BPn-RPADc6HD.webp",
         "tags": [
             "Pentesting",
             "Thm",
@@ -156,7 +148,7 @@ export const blogPosts: BlogPostList = [
             "Tryhackme Walkthrough",
             "Biblioteca"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/biblioteca-thm-writeup-5902e93cef86?sharedUserId=cpadlab"
     },
     {
         "id": "airplane-thm",
@@ -164,7 +156,6 @@ export const blogPosts: BlogPostList = [
         "date": "Jun 11, 2024",
         "description": "Are you ready to fly?",
         "category": "Walkthrough",
-        "cover": "https://i.postimg.cc/sXG41k2f/1-CPSkve21KE5Ws-SRUkdwdtw.webp",
         "tags": [
             "Airplane",
             "Thm",
@@ -172,7 +163,7 @@ export const blogPosts: BlogPostList = [
             "Tryhackme Walkthrough",
             "Writeup"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/airplane-thm-writeup-a4a8fad8d9f0?sharedUserId=cpadlab"
     },
     {
         "id": "skynet-thm",
@@ -188,7 +179,7 @@ export const blogPosts: BlogPostList = [
             "Writeup",
             "Tryhackme"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/skynet-thm-writeup-0cea67bb860d?sharedUserId=cpadlab"
     },
     {
         "id": "cyberlens-thm",
@@ -204,7 +195,7 @@ export const blogPosts: BlogPostList = [
             "Writeup",
             "Tryhackme"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/cyberlens-thm-writeup-7779197eaa20?sharedUserId=cpadlab"
     },
     {
         "id": "b3dr0ck-thm",
@@ -220,7 +211,7 @@ export const blogPosts: BlogPostList = [
             "Pentesting",
             "Walkthrough"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/b3dr0ck-thm-writeup-ba427b8372fd?sharedUserId=cpadlab"
     },
     {
         "id": "cat-pictures-2-thm",
@@ -236,7 +227,7 @@ export const blogPosts: BlogPostList = [
             "Cat Pictures",
             "Tryhackme"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/cat-pictures-2-thm-writeup-90580c6d6fcc?sharedUserId=cpadlab"
     },
     {
         "id": "how-to-create-a-simple-php-web-shell",
@@ -252,7 +243,7 @@ export const blogPosts: BlogPostList = [
             "Php Web Shell",
             "Writeup"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/this-is-how-to-create-a-simple-php-web-shell-gpwshell-proyect-aff0106a40e2?sharedUserId=cpadlab"
     },
     {
         "id": "olympus-thm",
@@ -268,7 +259,7 @@ export const blogPosts: BlogPostList = [
             "Pentesting",
             "Thm"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/olympus-thm-writeup-45d4ddee8c27?sharedUserId=cpadlab"
     },
     {
         "id": "capture-bypass-thm",
@@ -284,7 +275,7 @@ export const blogPosts: BlogPostList = [
             "Bypass",
             "Tryhackme"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/capture-bypass-thm-script-f97c5a0d9294?sharedUserId=cpadlab"
     },
     {
         "id": "wekor-thm",
@@ -300,7 +291,7 @@ export const blogPosts: BlogPostList = [
             "Writeup",
             "Tryhackme Walkthrough"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/wekor-thm-writeup-91f2c8853122?sharedUserId=cpadlab"
     },
     {
         "id": "ha-joker-thm",
@@ -316,7 +307,7 @@ export const blogPosts: BlogPostList = [
             "Writeup",
             "Pentesting"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/ha-joker-ctf-thm-writeup-353e2d909858?sharedUserId=cpadlab"
     },
     {
         "id": "easy-peasy-thm",
@@ -332,6 +323,6 @@ export const blogPosts: BlogPostList = [
             "Easypeasy",
             "Tryhackme"
         ],
-        "url": ""
+        "url": "https://medium.com/@cpadlab/easy-peasy-thm-writeup-fc6dc076e64c?sharedUserId=cpadlab"
     }
 ];
