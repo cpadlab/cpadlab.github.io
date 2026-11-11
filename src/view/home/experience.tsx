@@ -1,15 +1,19 @@
-import type { FC } from "react";
+import { getLocale, getTranslations } from "next-intl/server";
 import { experiences } from "@/assets/content/experience";
+import { routing } from "@/i18n/routing";
 import { parseDatesToIso } from "@/utils/dates";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
-export const HomeExperienceSection: FC = () => {
+export const HomeExperienceSection = async () => {
+    const locale = await getLocale();
+    const t = await getTranslations("pages.home.experience");
+    const localizedExperiences = experiences[locale] ?? experiences[routing.defaultLocale];
 
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        itemListElement: experiences.map((item, index) => {
-            
+        itemListElement: localizedExperiences.map((item, index) => {
+
             const [city, country] = item.location.split(", ");
             const { startDate, endDate } = parseDatesToIso(item.dates);
 
@@ -41,16 +45,16 @@ export const HomeExperienceSection: FC = () => {
         <section id="experience" aria-labelledby="experience-heading" className="py-8 space-y-2">
 
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <h2 id="experience-heading" className="text-sm uppercase text-muted-foreground font-bold">Work Experience</h2>
+            <h2 id="experience-heading" className="text-sm uppercase text-muted-foreground font-bold">{t("title")}</h2>
 
             <ol>
-                {experiences.map((item, index) => (
+                {localizedExperiences.map((item, index) => (
                     <li key={index}>
                         <article itemScope itemType="https://schema.org/OrganizationRole">
-                            
+
                             <header className="text-lg">
                                 <h3 className="inline">
-                                    <a href={item.url} target="_blank" className="hover:text-primary transition-colors" rel="noopener noreferrer external" aria-label={`${item.company} (opens in new tab)`} itemProp="url">
+                                    <a href={item.url} target="_blank" className="hover:text-primary transition-colors" rel="noopener noreferrer external" aria-label={t("opens_in_new_tab", { name: item.company })} itemProp="url">
                                         <b><span className="uppercase" itemProp="name">{item.company}</span></b>
                                     </a>
                                 </h3>{" "}
@@ -69,7 +73,7 @@ export const HomeExperienceSection: FC = () => {
                                         </span>
                                     </CollapsibleTrigger>
                                     <CollapsibleContent className="pl-4 border-l-2 ml-1">
-                                        <p className="text-sm uppercase text-muted-foreground font-bold">Projects:</p>
+                                        <p className="text-sm uppercase text-muted-foreground font-bold">{t("projects_label")}</p>
                                         <ul className="list-disc pl-4">
                                             {item.projects.map((itemproject, indexproject) => (
                                                 <li key={indexproject}>
@@ -78,7 +82,7 @@ export const HomeExperienceSection: FC = () => {
                                                     )}{` `}
                                                     <h4 className="inline-block" itemProp="name">
                                                         {itemproject.url ? (
-                                                            <a className="hover:text-primary transition-colors" href={itemproject.url} target="_blank" rel="noopener noreferrer external" aria-label={`${itemproject.name} (opens in new tab)`} itemProp="url">
+                                                            <a className="hover:text-primary transition-colors" href={itemproject.url} target="_blank" rel="noopener noreferrer external" aria-label={t("opens_in_new_tab", { name: itemproject.name })} itemProp="url">
                                                                 <b><span className="uppercase">{itemproject.name}</span></b>
                                                             </a>
                                                         ) : (

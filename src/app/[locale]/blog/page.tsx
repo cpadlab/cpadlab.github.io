@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import { getLocale, getTranslations } from "next-intl/server";
+import { hasLocale } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 import { getPathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import { BlogSection } from "@/view/blog/section";
 import { getPostsByCategory } from "@/utils/blog";
 
-export async function generateMetadata(): Promise<Metadata> {
-    
-    const locale = await getLocale();
-    const t = await getTranslations("pages.blog.metadata");
+type Props = {
+    params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+
+    if (!hasLocale(routing.locales, locale)) {
+        notFound();
+    }
+
+    setRequestLocale(locale);
+    const t = await getTranslations({ locale, namespace: "pages.blog.metadata" });
     const pathname = getPathname({ locale, href: "/blog" });
 
     return {
@@ -25,9 +37,14 @@ export async function generateMetadata(): Promise<Metadata> {
     };
 }
 
-export default async function BlogPage() {
+export default async function BlogPage({ params }: Props) {
+    const { locale } = await params;
 
-    const locale = await getLocale();
+    if (!hasLocale(routing.locales, locale)) {
+        notFound();
+    }
+
+    setRequestLocale(locale);
     const t = await getTranslations("pages.blog");
     const articles = getPostsByCategory(locale, "Article");
 

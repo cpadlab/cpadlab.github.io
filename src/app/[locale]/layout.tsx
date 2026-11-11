@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Anonymous_Pro } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { cn } from "cn";
 
 import Footer from "@/components/blocks/footer";
@@ -25,10 +25,16 @@ export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
 
-    const locale = await getLocale();
-    const t = await getTranslations("metadata");
+    const { locale } = await params;
+
+    if (!hasLocale(routing.locales, locale)) {
+        notFound();
+    }
+
+    setRequestLocale(locale);
+    const t = await getTranslations({ locale, namespace: "metadata" });
     const pathname = getPathname({ locale, href: "/" });
 
     return {
@@ -83,11 +89,11 @@ export default async function LocaleLayout({ children, params }: Props) {
         notFound();
     }
 
-    const currentLocale = await getLocale();
+    setRequestLocale(locale);
     const messages = await getMessages();
 
     return (
-        <html lang={currentLocale} className={cn("h-full antialiased font-monospace", anonymous_pro.variable)} suppressHydrationWarning>
+        <html lang={locale} className={cn("h-full antialiased font-monospace", anonymous_pro.variable)} suppressHydrationWarning>
 
             <head>
                 <script
@@ -113,8 +119,10 @@ export default async function LocaleLayout({ children, params }: Props) {
             <body className="min-h-full flex flex-col">
                 <NextIntlClientProvider messages={messages}>
                     <ScrollArea scrollFade className="h-dvh max-h-dvh min-h-dvh overflow-hidden">
-                        <Header />
-                        {children}
+                        <div className="min-h-screen">
+                            <Header />
+                            {children}
+                        </div>
                         <Footer />
                     </ScrollArea>
                 </NextIntlClientProvider>

@@ -1,12 +1,17 @@
 "use client";
 
 import { useEffect, useState, type FC } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { navigation } from "@/assets/content/navigation";
 import { socialMediaLinks } from "@/assets/content/social-media";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 
 export const Footer: FC = () => {
-    
+    const locale = useLocale();
+    const t = useTranslations("components.footer");
+    const navItems = navigation[locale] ?? navigation[routing.defaultLocale];
+
     const [madridTime, setMadridTime] = useState<string>("");
     const [currentYear, setCurrentYear] = useState<number | null>(null);
     const [currentDateTime, setCurrentDateTime] = useState<string>("");
@@ -14,7 +19,7 @@ export const Footer: FC = () => {
     useEffect(() => {
 
         const updateTime = () => {
-        
+
             const now = new Date();
 
             setCurrentYear(now.getFullYear());
@@ -75,12 +80,12 @@ export const Footer: FC = () => {
 
     return (
         <footer className="pt-8 md:max-w-4xl max-w-xl mx-auto px-8 w-full sm:pb-20 pb-8">
-            
+
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-            <nav aria-label="Main navigation">
+            <nav aria-label={t("main_navigation")}>
                 <ul className="flex items-center uppercase gap-2">
-                    {navigation.map((item) => (
+                    {navItems.map((item) => (
                         <li key={item.href}>
                             <Link className="hover:text-primary transition-colors" href={item.href}>
                                 <span>{item.name}</span>
@@ -90,13 +95,13 @@ export const Footer: FC = () => {
                 </ul>
             </nav>
 
-            <nav aria-label="Social media and contact">
+            <nav aria-label={t("social_navigation")}>
                 <ul className="flex items-center uppercase flex-wrap gap-y-0 gap-2">
                     {socialMediaLinks.map((item) => {
                         const isEmail = item.type === "email";
                         return (
                             <li key={item.name}>
-                                <a className="hover:text-primary transition-colors" href={item.url} {...(!isEmail && {target: "_blank", rel: "noopener noreferrer external me"})} aria-label={`${item.name} (${isEmail ? item.url.replace("mailto:", "") : "opens in new tab"})`}>
+                                <a className="hover:text-primary transition-colors" href={item.url} {...(!isEmail && {target: "_blank", rel: "noopener noreferrer external me"})} aria-label={isEmail ? `${item.name} (${item.url.replace("mailto:", "")})` : t("opens_in_new_tab", { name: item.name })}>
                                     <span>{item.name}</span>
                                 </a>
                             </li>
@@ -107,10 +112,10 @@ export const Footer: FC = () => {
 
             <div className="text-muted-foreground">
                 <p>
-                    Based in Almería, Spain —{" "}
+                    {t("based_in")}{" "}
                     <time dateTime={currentDateTime} suppressHydrationWarning>{madridTime || "--:--:-- CET"}</time>
                 </p>
-                <p>© {currentYear} Carlos Padilla.{" "} All rights reserved.</p>
+                <p>© {currentYear} Carlos Padilla.{" "} {t("rights")}</p>
             </div>
 
         </footer>

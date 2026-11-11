@@ -61,7 +61,7 @@ export async function BlogSection({ title, description, posts, needCategory, emp
                     })}
                 </div>
             ) : (
-                <div className="border-t border-border py-6">
+                <div className="border-t border-border py-4">
                     <p className="text-sm text-muted-foreground">{emptyMessage ?? t("sections.articles.empty_message")}</p>
                 </div>
             )}

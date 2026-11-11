@@ -13,7 +13,45 @@
             "description": "Portfolio of Carlos Padilla, a full-stack SOAR developer specializing in Python, React, Next.js, TypeScript, and Angular"
         }
     },
+    "components": {
+        "header": {
+            "site_header": "Site header",
+            "main_navigation": "Main navigation",
+            "language_switcher": "Language switcher",
+            "switch_to_en": "Switch to English",
+            "switch_to_es": "Switch to Spanish"
+        },
+        "footer": {
+            "main_navigation": "Main navigation",
+            "social_navigation": "Social media and contact",
+            "opens_in_new_tab": "{name} (opens in new tab)",
+            "based_in": "Based in Almería, Spain —",
+            "rights": "All rights reserved."
+        }
+    },
     "pages": {
+        "home": {
+            "metadata": {
+                "title": "Carlos Padilla | SOAR Developer",
+                "description": "SOAR Developer specializing in cybersecurity automation, software development and security engineering. Explore my projects and technical articles."
+            },
+            "experience": {
+                "title": "Work Experience",
+                "projects_label": "Projects:",
+                "opens_in_new_tab": "{name} (opens in new tab)"
+            },
+            "projects": {
+                "title": "Projects",
+                "opens_in_new_tab": "{name} (opens in new tab)",
+                "links_label": "{name} links",
+                "source_code": "Source code",
+                "read_article": "Read article"
+            },
+            "blog": {
+                "title": "Recent writing",
+                "view_all": "View all posts"
+            }
+        },
         "blog": {
             "metadata": {
                 "title": "Blog | Carlos Padilla",
@@ -29,6 +67,20 @@
                 }
             },
             "posts_count": "{count} posts"
+        },
+        "not_found": {
+            "metadata": {
+                "title": "404 - Page Not Found",
+                "description": "The page you are looking for does not exist or has been moved."
+            },
+            "title": "404: Lost in the code.",
+            "terminal": {
+                "searching": "Searching for requested resource...",
+                "not_found": "Resource not found.",
+                "status": "Status: 404"
+            },
+            "description": "It looks like you've reached a dead end. But don't worry—there's still plenty of code to explore.",
+            "cta": "Let's keep exploring"
         }
     }
 }

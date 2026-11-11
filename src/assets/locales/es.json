@@ -13,7 +13,45 @@
             "description": "Portfolio de Carlos Padilla, desarrollador full-stack SOAR especializado en Python, React, Next.js, TypeScript y Angular"
         }
     },
+    "components": {
+        "header": {
+            "site_header": "Cabecera del sitio",
+            "main_navigation": "Navegación principal",
+            "language_switcher": "Selector de idioma",
+            "switch_to_en": "Cambiar a inglés",
+            "switch_to_es": "Cambiar a español"
+        },
+        "footer": {
+            "main_navigation": "Navegación principal",
+            "social_navigation": "Redes sociales y contacto",
+            "opens_in_new_tab": "{name} (se abre en una nueva pestaña)",
+            "based_in": "Con base en Almería, España —",
+            "rights": "Todos los derechos reservados."
+        }
+    },
     "pages": {
+        "home": {
+            "metadata": {
+                "title": "Carlos Padilla | Desarrollador SOAR",
+                "description": "Desarrollador SOAR especializado en automatización de ciberseguridad, desarrollo de software e ingeniería de seguridad. Explora mis proyectos y artículos técnicos."
+            },
+            "experience": {
+                "title": "Experiencia Laboral",
+                "projects_label": "Proyectos:",
+                "opens_in_new_tab": "{name} (se abre en una nueva pestaña)"
+            },
+            "projects": {
+                "title": "Proyectos",
+                "opens_in_new_tab": "{name} (se abre en una nueva pestaña)",
+                "links_label": "Enlaces de {name}",
+                "source_code": "Código fuente",
+                "read_article": "Leer artículo"
+            },
+            "blog": {
+                "title": "Escritos recientes",
+                "view_all": "Ver todas las publicaciones"
+            }
+        },
         "blog": {
             "metadata": {
                 "title": "Blog | Carlos Padilla",
@@ -29,6 +67,20 @@
                 }
             },
             "posts_count": "{count} publicaciones"
+        },
+        "not_found": {
+            "metadata": {
+                "title": "404 - Página no encontrada",
+                "description": "La página que buscas no existe o ha sido movida."
+            },
+            "title": "404: Perdido en el código.",
+            "terminal": {
+                "searching": "Buscando el recurso solicitado...",
+                "not_found": "Recurso no encontrado.",
+                "status": "Estado: 404"
+            },
+            "description": "Parece que has llegado a un callejón sin salida. Pero no te preocupes, todavía queda mucho código por explorar.",
+            "cta": "Sigamos explorando"
         }
     }
 }
