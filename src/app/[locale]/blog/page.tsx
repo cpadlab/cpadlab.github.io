@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { BlogSection } from "@/view/blog/section";
-import { getPostsByCategory, getRecentPosts } from "@/utils/blog";
+import { getPostsByCategory } from "@/utils/blog";
 
 export const metadata: Metadata = {
     title: "Blog | Carlos Padilla",
