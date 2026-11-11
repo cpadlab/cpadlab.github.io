@@ -18,10 +18,6 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
 
-    const recentPosts = getRecentPosts(5);
-
-    const writeups = getPostsByCategory("Walkthrough");
-    const tutorials = getPostsByCategory("Tutorial");
     const articles = getPostsByCategory("Article");
 
   return (
@@ -32,11 +28,8 @@ export default function BlogPage() {
             <p className="capitalize text-muted-foreground">Technical writeups, security research, development tutorials and notes from the things I explore along the way.</p>
         </section>
 
-        <div className="space-y-16">
-            <BlogSection needCategory={true} title="Recent writing" description="The latest articles, notes and things I've been working on." posts={recentPosts} emptyMessage="No recent posts available." />
+        <div className="space-y-16 py-8">
             <BlogSection needCategory={false} title="All articles" description="Browse everything I've published, from technical notes to personal learnings." posts={articles} emptyMessage="No articles available." />
-            <BlogSection needCategory={false} title="writeups" description="Research, technical analysis and security-related findings." posts={writeups} emptyMessage="No security writeups available." />
-            <BlogSection needCategory={false} title="Tutorials" description="Practical guides, implementation details and development workflows." posts={tutorials} emptyMessage="No tutorials available." />
         </div>
 
     </main>

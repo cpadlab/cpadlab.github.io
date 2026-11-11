@@ -55,7 +55,7 @@ export function BlogSection({ title, description, posts, needCategory, emptyMess
                     })}
                 </div>
             ) : (
-                <div className="border-y border-border py-8">
+                <div className="border-t border-border py-8">
                     <p className="text-sm text-muted-foreground">{emptyMessage}</p>
                 </div>
             )}

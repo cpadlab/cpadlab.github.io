@@ -8,6 +8,11 @@ export const experiences: WorkExperience[] = [
         location: "Almería, Spain",
         dates: "Oct. 2025 - Present",
         projects: [
+         /* {
+                name: "SOC Sentinel",
+                description: "A Hyperautomation and Agent-Based Cybersecurity Operations Platform",
+                year: 2026
+            }, */
             {
                 name: "WebCSX",
                 description: "A multi-tenant cybersecurity operations platform featuring automated incident email generation, normalized security data, dynamic graph generation, and fine-grained ABAC access control.",
