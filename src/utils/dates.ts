@@ -1,4 +1,3 @@
-
 const MONTH_MAP: Record<string, string> = {
     mar: "03",
     jul: "07",
@@ -8,24 +7,29 @@ const MONTH_MAP: Record<string, string> = {
     jun: "06",
 };
 
+const DATE_LOCALE_MAP: Record<string, string> = {
+    en: "en-GB",
+    es: "es-ES",
+};
+
 export function parseDatesToIso(dateStr: string) {
-    
+
     const parts = dateStr.split(" - ");
 
     const parsePart = (p?: string) => {
-        
+
         if (!p) return undefined;
         const clean = p.trim().toLowerCase();
-    
+
         if (clean.includes("present") || clean.includes("presente")) return undefined;
         const match = clean.match(/([a-z]+)\.?\s*(\d{4})/i);
-    
+
         if (!match) return undefined;
         const monthNum = MONTH_MAP[match[1].toLowerCase()] ?? "01";
 
         return `${match[2]}-${monthNum}`;
 
-  };
+    };
 
     return {
         startDate: parsePart(parts[0]),
@@ -34,15 +38,15 @@ export function parseDatesToIso(dateStr: string) {
 }
 
 
-export function formatDate(date: string): string {
-    
+export function formatDate(date: string, locale = "en"): string {
+
     const parsedDate = new Date(date);
 
     if (Number.isNaN(parsedDate.getTime())) {
         return date;
     }
 
-    return new Intl.DateTimeFormat("en-GB", {
+    return new Intl.DateTimeFormat(DATE_LOCALE_MAP[locale] ?? "en-GB", {
         day: "2-digit",
         month: "short",
         year: "numeric",

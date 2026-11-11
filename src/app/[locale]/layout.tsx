@@ -8,7 +8,7 @@ import { cn } from "cn";
 import Footer from "@/components/blocks/footer";
 import Header from "@/components/blocks/header";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { getPathname } from "@/i18n/navigation";
+import { getAlternateLanguages, getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
 import "./globals.css";
@@ -57,6 +57,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
         alternates: {
             canonical: pathname,
+            languages: getAlternateLanguages("/"),
         },
 
         robots: {

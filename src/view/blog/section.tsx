@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { BlogPostPreview } from "@/types/blog";
 import { formatDate } from "@/utils/dates";
 
@@ -12,6 +12,7 @@ interface BlogSectionProps {
 
 export async function BlogSection({ title, description, posts, needCategory, emptyMessage }: BlogSectionProps) {
     
+    const locale = await getLocale();
     const t = await getTranslations("pages.blog");
 
     return (
@@ -36,7 +37,7 @@ export async function BlogSection({ title, description, posts, needCategory, emp
                                 <a href={hasUrl ? post.url : undefined} target={hasUrl ? "_blank" : undefined} rel={hasUrl ? "noopener noreferrer" : undefined} className={`grid gap-2 py-6 transition-colors sm:grid-cols-[120px_1fr] sm:gap-8 ${hasUrl ? "cursor-pointer" : "cursor-default"}`}>
 
                                     <div className="flex flex-col gap-2">
-                                        <time dateTime={post.date} className="text-xs text-muted-foreground">{formatDate(post.date)}</time>
+                                        <time dateTime={post.date} className="text-xs text-muted-foreground">{formatDate(post.date, locale)}</time>
                                         {needCategory && <span className="w-fit text-xs uppercase text-muted-foreground">{post.category}</span>}
                                     </div>
 

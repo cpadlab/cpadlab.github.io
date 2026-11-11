@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { getPathname } from "@/i18n/navigation";
+import { getAlternateLanguages, getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { BlogSection } from "@/view/blog/section";
 import { getPostsByCategory } from "@/utils/blog";
@@ -23,10 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const pathname = getPathname({ locale, href: "/blog" });
 
     return {
-        title: t("title"),
+        title: {
+            absolute: t("title"),
+        },
         description: t("description"),
         alternates: {
             canonical: pathname,
+            languages: getAlternateLanguages("/blog"),
         },
         openGraph: {
             title: t("title"),
