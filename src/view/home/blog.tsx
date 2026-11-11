@@ -1,10 +1,11 @@
-import type { FC } from "react";
+import { getLocale } from "next-intl/server";
 import { getRecentPosts } from "@/utils/blog";
 import Link from "next/link";
 
-export const HomeBlogSection: FC = () => {
+export const HomeBlogSection = async () => {
   
-    const posts = getRecentPosts(5);
+    const locale = await getLocale();
+    const posts = getRecentPosts(locale, 5);
 
     if (posts.length === 0) {
         return null;

@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import type { BlogPostPreview } from "@/types/blog";
 import { formatDate } from "@/utils/dates";
 
@@ -9,27 +10,31 @@ interface BlogSectionProps {
     emptyMessage?: string;
 }
 
-export function BlogSection({ title, description, posts, needCategory, emptyMessage = "No posts available." }: BlogSectionProps) {
+export async function BlogSection({ title, description, posts, needCategory, emptyMessage }: BlogSectionProps) {
+    
+    const t = await getTranslations("pages.blog");
+
     return (
         <section aria-labelledby={`blog-${title.toLowerCase().replace(/\s+/g, "-")}`}>
-            
+
             <div className="mb-4">
                 <div className="flex justify-between gap-4">
                     <h2 id={`blog-${title.toLowerCase().replace(/\s+/g, "-")}`} className="text-sm uppercase text-muted-foreground font-bold">{title}</h2>
-                    <span className="text-xs text-muted-foreground">{posts.length.toString().padStart(2, "0")} posts</span>
+                    <span className="text-xs text-muted-foreground">{t("posts_count", { count: posts.length.toString().padStart(2, "0") })}</span>
                 </div>
                 <p className="text-sm text-muted-foreground">{description}</p>
             </div>
 
             {posts.length > 0 ? (
-                <div className="divide-y divide-border border-y border-border">
+                <div className="border-t border-border">
                     {posts.map((post) => {
+
                         const hasUrl = Boolean(post.url && post.url.trim() !== "");
 
                         return (
-                            <article key={post.id} className="group">    
+                            <article key={post.id} className="group">
                                 <a href={hasUrl ? post.url : undefined} target={hasUrl ? "_blank" : undefined} rel={hasUrl ? "noopener noreferrer" : undefined} className={`grid gap-2 py-6 transition-colors sm:grid-cols-[120px_1fr] sm:gap-8 ${hasUrl ? "cursor-pointer" : "cursor-default"}`}>
-                                    
+
                                     <div className="flex flex-col gap-2">
                                         <time dateTime={post.date} className="text-xs text-muted-foreground">{formatDate(post.date)}</time>
                                         {needCategory && <span className="w-fit text-xs uppercase text-muted-foreground">{post.category}</span>}
@@ -48,15 +53,16 @@ export function BlogSection({ title, description, posts, needCategory, emptyMess
                                             </ul>
                                         )}
                                     </div>
-                                    
+
                                 </a>
                             </article>
                         );
+                        
                     })}
                 </div>
             ) : (
-                <div className="border-t border-border py-8">
-                    <p className="text-sm text-muted-foreground">{emptyMessage}</p>
+                <div className="border-t border-border py-6">
+                    <p className="text-sm text-muted-foreground">{emptyMessage ?? t("sections.articles.empty_message")}</p>
                 </div>
             )}
 

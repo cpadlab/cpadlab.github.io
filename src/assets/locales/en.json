@@ -1,1 +1,34 @@
-{}
+{
+    "metadata": {
+        "title": {
+            "default": "Carlos Padilla | Frontend Developer",
+            "template": "%s | Carlos Padilla"
+        },
+        "description": "Portfolio of Carlos Padilla, a full-stack SOAR developer specializing in Python, React, Next.js, TypeScript, and Angular.",
+        "application_name": "Carlos Padilla Portfolio",
+        "open_graph": {
+            "locale": "en_US",
+            "site_name": "Carlos Padilla Portfolio",
+            "title": "Carlos Padilla | SOAR Developer",
+            "description": "Portfolio of Carlos Padilla, a full-stack SOAR developer specializing in Python, React, Next.js, TypeScript, and Angular"
+        }
+    },
+    "pages": {
+        "blog": {
+            "metadata": {
+                "title": "Blog | Carlos Padilla",
+                "description": "Technical writeups, security research, development tutorials and notes from the things I explore along the way."
+            },
+            "title": "A collection of things I've learned, built and broken.",
+            "description": "Technical writeups, security research, development tutorials and notes from the things I explore along the way.",
+            "sections": {
+                "articles": {
+                    "title": "All articles",
+                    "description": "Browse everything I've published, from technical notes to personal learnings.",
+                    "empty_message": "No articles available."
+                }
+            },
+            "posts_count": "{count} posts"
+        }
+    }
+}
