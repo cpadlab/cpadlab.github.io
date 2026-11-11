@@ -33,3 +33,12 @@ export function getPostsByCategory(locale: Locale, category: string): BlogPostPr
         (post) => normalizeCategory(post.category) === normalizedCategory,
     );
 }
+
+export function isExternalUrl(url: string): boolean {
+    return /^https?:\/\//i.test(url.trim());
+}
+
+export function getInternalPostHref(url: string): string {
+    const trimmed = url.trim();
+    return trimmed.replace(/^\/(en|es)(?=\/)/, "") || "/";
+}

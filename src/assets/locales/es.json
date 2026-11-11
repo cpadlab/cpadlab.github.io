@@ -68,6 +68,10 @@
             },
             "posts_count": "{count} publicaciones"
         },
+        "post": {
+            "back_to_blog": "Volver al blog",
+            "reading_time": "{minutes} min de lectura"
+        },
         "not_found": {
             "metadata": {
                 "title": "404 - Página no encontrada",

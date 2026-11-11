@@ -8,7 +8,7 @@ export const en_projects: ProjectList = [
         year: 2026,
         url: "https://github.com/cpadlab/pde",
         code: "https://github.com/cpadlab/pde",
-        /* article: "https://medium.com/@cpadlab/how-to-crack-the-fnmt-certificate-7baac8bdf07a?sharedUserId=cpadlab" */
+        article: "/posts/pattern-discovery-engine"
     }
 ];
 
@@ -19,6 +19,7 @@ export const es_projects: ProjectList = [
         year: 2026,
         url: "https://github.com/cpadlab/pde",
         code: "https://github.com/cpadlab/pde",
+        article: "/es/posts/pattern-discovery-engine"
     }
 ];
 
