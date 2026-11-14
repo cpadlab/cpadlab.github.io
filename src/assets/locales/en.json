@@ -26,7 +26,17 @@
             "social_navigation": "Social media and contact",
             "opens_in_new_tab": "{name} (opens in new tab)",
             "based_in": "Based in Almería, Spain —",
-            "rights": "All rights reserved."
+            "rights": "All rights reserved.",
+            "cookie_policy": "Cookie Policy"
+        },
+        "cookies": {
+            "aria_label": "Cookie consent banner",
+            "title": "Cookie Preferences",
+            "badge": "Privacy & Analytics",
+            "description": "This website uses privacy-friendly analytics via Firebase to measure visitor traffic and improve content. No personal tracking or advertising cookies are used.",
+            "policy_link": "Cookie Policy",
+            "decline": "Decline",
+            "accept": "Accept"
         }
     },
     "pages": {
@@ -85,6 +95,66 @@
             },
             "description": "It looks like you've reached a dead end. But don't worry—there's still plenty of code to explore.",
             "cta": "Let's keep exploring"
+        },
+        "cookies": {
+            "metadata": {
+                "title": "Cookie Policy",
+                "description": "Detailed information about the cookies and analytical tools used on this website."
+            },
+            "title": "Cookie Policy",
+            "last_updated": "Last updated: November 2026. This policy explains what cookies are, how they are used, and how you can control them.",
+            "sections": {
+                "what_are_cookies": {
+                    "title": "1. What are cookies?",
+                    "content": "Cookies and similar storage technologies (such as localStorage) are small text files placed on your device when you visit a website. They allow the website to remember user actions and preferences over a period of time."
+                },
+                "used_cookies": {
+                    "title": "2. Cookies used on this site",
+                    "intro": "This portfolio only uses two categories of data storage:",
+                    "essential_label": "Technical & Functional Storage (Essential):",
+                    "essential_description": "We use browser localStorage to remember your dark/light theme preference and your cookie consent decision. These do not track personal information and are strictly necessary for the site to function as expected.",
+                    "analytics_label": "Analytics Cookies (Optional):",
+                    "analytics_description": "With your consent, we use Firebase Analytics (Google Analytics for Firebase) to collect anonymized data on page views, device types, and visitor navigation. This helps understand which content is most relevant and improve site performance."
+                },
+                "analytics_details": {
+                    "title": "3. Analytics details (Firebase / Google)",
+                    "table": {
+                        "identifier": "Identifier",
+                        "provider": "Provider",
+                        "purpose": "Purpose",
+                        "duration": "Duration"
+                    },
+                    "rows": {
+                        "ga": {
+                            "identifier": "_ga, _ga_*",
+                            "provider": "Google Ireland Ltd.",
+                            "purpose": "Distinguishes unique anonymous sessions and users for site analytics",
+                            "duration": "Up to 2 years"
+                        },
+                        "consent": {
+                            "identifier": "cookie_consent",
+                            "provider": "First party (Local)",
+                            "purpose": "Remembers your cookie consent choice (accepted/declined)",
+                            "duration": "Persistent"
+                        },
+                        "theme": {
+                            "identifier": "theme",
+                            "provider": "First party (Local)",
+                            "purpose": "Remembers light/dark mode selection",
+                            "duration": "Persistent"
+                        }
+                    }
+                },
+                "manage_consent": {
+                    "title": "4. Manage your consent",
+                    "description": "You can change or revoke your cookie preferences at any time. When you click the button below, the consent banner will reappear, allowing you to update your choice:",
+                    "button": "Change cookie preferences"
+                },
+                "browser_control": {
+                    "title": "5. Browser control",
+                    "description": "You can also prevent cookies from being placed on your browser by adjusting your browser settings (Chrome, Firefox, Safari, Edge, etc.). Note that disabling essential local storage may affect the dark mode persistence on the website."
+                }
+            }
         }
     }
 }

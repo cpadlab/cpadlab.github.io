@@ -12,6 +12,7 @@ import { getAlternateLanguages, getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
 import "./globals.css";
+import CookieBanner from "@/components/blocks/cookies";
 
 const anonymous_pro = Anonymous_Pro({
     weight: ["400", "700"],
@@ -126,6 +127,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                         </div>
                         <Footer />
                     </ScrollArea>
+                    <CookieBanner />
                 </NextIntlClientProvider>
             </body>
 

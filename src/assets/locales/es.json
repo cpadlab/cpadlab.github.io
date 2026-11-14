@@ -26,7 +26,17 @@
             "social_navigation": "Redes sociales y contacto",
             "opens_in_new_tab": "{name} (se abre en una nueva pestaña)",
             "based_in": "Con base en Almería, España —",
-            "rights": "Todos los derechos reservados."
+            "rights": "Todos los derechos reservados.",
+            "cookie_policy": "Política de cookies"
+        },
+        "cookies": {
+            "aria_label": "Banner de consentimiento de cookies",
+            "title": "Preferencias de cookies",
+            "badge": "Privacidad y analítica",
+            "description": "Este sitio web utiliza analíticas respetuosas con la privacidad a través de Firebase para medir el tráfico y mejorar el contenido. No se utilizan cookies publicitarias ni de seguimiento personal.",
+            "policy_link": "Política de cookies",
+            "decline": "Rechazar",
+            "accept": "Aceptar"
         }
     },
     "pages": {
@@ -85,6 +95,66 @@
             },
             "description": "Parece que has llegado a un callejón sin salida. Pero no te preocupes, todavía queda mucho código por explorar.",
             "cta": "Sigamos explorando"
+        },
+        "cookies": {
+            "metadata": {
+                "title": "Política de Cookies",
+                "description": "Información detallada sobre las cookies y herramientas analíticas utilizadas en este sitio web."
+            },
+            "title": "Política de Cookies",
+            "last_updated": "Última actualización: Noviembre de 2026. Esta política explica qué son las cookies, cómo se utilizan y cómo puedes controlarlas.",
+            "sections": {
+                "what_are_cookies": {
+                    "title": "1. ¿Qué son las cookies?",
+                    "content": "Las cookies y tecnologías de almacenamiento similares (como localStorage) son pequeños archivos de texto que se guardan en tu dispositivo al visitar un sitio web. Permiten que el sitio web recuerde las acciones y preferencias del usuario durante un período de tiempo."
+                },
+                "used_cookies": {
+                    "title": "2. Cookies utilizadas en este sitio",
+                    "intro": "Este portfolio solo utiliza dos categorías de almacenamiento de datos:",
+                    "essential_label": "Almacenamiento técnico y funcional (Esencial):",
+                    "essential_description": "Utilizamos el localStorage del navegador para recordar tu preferencia de tema claro/oscuro y tu decisión de consentimiento de cookies. No recopilan información personal y son estrictamente necesarias para el funcionamiento del sitio tal como se espera.",
+                    "analytics_label": "Cookies analíticas (Opcionales):",
+                    "analytics_description": "Con tu consentimiento, utilizamos Firebase Analytics (Google Analytics para Firebase) para recopilar datos anónimos sobre visitas, tipos de dispositivos y navegación de usuarios. Esto nos ayuda a entender qué contenido es más relevante y a mejorar el rendimiento del sitio web."
+                },
+                "analytics_details": {
+                    "title": "3. Detalle de analítica (Firebase / Google)",
+                    "table": {
+                        "identifier": "Identificador",
+                        "provider": "Proveedor",
+                        "purpose": "Finalidad",
+                        "duration": "Duración"
+                    },
+                    "rows": {
+                        "ga": {
+                            "identifier": "_ga, _ga_*",
+                            "provider": "Google Ireland Ltd.",
+                            "purpose": "Distingue usuarios y sesiones anónimas únicas para la analítica del sitio",
+                            "duration": "Hasta 2 años"
+                        },
+                        "consent": {
+                            "identifier": "cookie_consent",
+                            "provider": "Propia (Local)",
+                            "purpose": "Recuerda tu elección de consentimiento de cookies (aceptada/rechazada)",
+                            "duration": "Persistente"
+                        },
+                        "theme": {
+                            "identifier": "theme",
+                            "provider": "Propia (Local)",
+                            "purpose": "Recuerda la selección del modo claro/oscuro",
+                            "duration": "Persistente"
+                        }
+                    }
+                },
+                "manage_consent": {
+                    "title": "4. Gestiona tu consentimiento",
+                    "description": "Puedes cambiar o revocar tus preferencias de cookies en cualquier momento. Al pulsar el siguiente botón, volverá a mostrarse el banner de consentimiento para que puedas actualizar tu elección:",
+                    "button": "Cambiar preferencias de cookies"
+                },
+                "browser_control": {
+                    "title": "5. Control en el navegador",
+                    "description": "También puedes bloquear el uso de cookies ajustando la configuración de tu navegador (Chrome, Firefox, Safari, Edge, etc.). Ten en cuenta que deshabilitar el almacenamiento local esencial puede afectar a la persistencia del modo oscuro en el sitio web."
+                }
+            }
         }
     }
 }

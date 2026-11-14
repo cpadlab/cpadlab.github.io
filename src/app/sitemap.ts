@@ -11,6 +11,7 @@ const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://cpadlab.github.io"
 const routes = [
     { href: "/", changeFrequency: "weekly", priority: 1.0 },
     { href: "/blog", changeFrequency: "daily", priority: 0.8 },
+    { href: "/cookies", changeFrequency: "monthly", priority: 0.3 },
 ] as const;
 
 function buildUrl(href: string, locale: (typeof routing.locales)[number]): string {

@@ -110,12 +110,19 @@ export const Footer: FC = () => {
                 </ul>
             </nav>
 
-            <div className="text-muted-foreground">
-                <p>
-                    {t("based_in")}{" "}
-                    <time dateTime={currentDateTime} suppressHydrationWarning>{madridTime || "--:--:-- CET"}</time>
-                </p>
-                <p>© {currentYear} Carlos Padilla.{" "} {t("rights")}</p>
+            <div className="flex flex-wrap items-center justify-between gap-4 gap-y-0">
+                    <div className="text-muted-foreground">
+                        <p>
+                            {t("based_in")}{" "}
+                            <time dateTime={currentDateTime} suppressHydrationWarning>{madridTime || "--:--:-- CET"}</time>
+                        </p>
+                        <p>© {currentYear} Carlos Padilla.{" "} {t("rights")}</p>
+                    </div>
+                    <div>
+                        <Link href="/cookies" className="hover:text-primary transition-colors uppercase text-muted-foreground">
+                            <span>{t("cookie_policy")}</span>
+                        </Link>
+                    </div>
             </div>
 
         </footer>
